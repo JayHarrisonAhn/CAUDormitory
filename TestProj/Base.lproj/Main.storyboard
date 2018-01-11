@@ -36,7 +36,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="z5K-eH-f2M"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="생활정보" id="OfT-JN-NHC"/>
+                    <tabBarItem key="tabBarItem" title="생활정보" image="logo_info" selectedImage="logo_info" id="OfT-JN-NHC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3PW-vE-376" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,7 +123,7 @@
                             <outlet property="delegate" destination="x44-Cl-6bp" id="GZo-f3-uZp"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="설정" id="P5s-wS-C3o"/>
+                    <tabBarItem key="tabBarItem" title="설정" image="logo_settings" selectedImage="logo_settings" id="P5s-wS-C3o"/>
                     <navigationItem key="navigationItem" title="설정" id="QbP-iF-jcd"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLq-Fs-KbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -516,7 +516,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bgi-kB-kii">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.0" green="0.29803921568627451" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.29803921570000003" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="dey-KN-zEk" kind="relationship" relationship="viewControllers" id="3JA-Xq-hFG"/>
@@ -533,7 +533,9 @@
     <resources>
         <image name="CAU_Logo" width="1520" height="883"/>
         <image name="Main_Banner" width="1080" height="639"/>
+        <image name="logo_info" width="24" height="24"/>
         <image name="logo_noti" width="24" height="24"/>
+        <image name="logo_settings" width="24" height="24"/>
         <image name="logo_submit" width="24" height="24"/>
     </resources>
 </document>
