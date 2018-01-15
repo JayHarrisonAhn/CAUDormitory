@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CAU_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="aSU-AY-kWQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="aSU-AY-kWQ">
                                 <rect key="frame" x="46" y="272" width="104" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -54,6 +54,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CAU_Logo" width="1520" height="883"/>
+        <image name="HeadLogo" width="1520" height="883"/>
     </resources>
 </document>
