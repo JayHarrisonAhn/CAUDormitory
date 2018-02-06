@@ -14,4 +14,3 @@ var SeoulData = CampusData(notices:[
     Notice(title: "[생활관]2018학년도 1학기 입관서류 제출 안내", date: "18.02.02", image: [#imageLiteral(resourceName: "SeoulNotice_2")]),
     Notice(title: "[생활관]2018학년도 1학기 입관 안내/Moving-in Guide", date: "18.02.02", image: [#imageLiteral(resourceName: "SeoulNotice_3_1"), #imageLiteral(resourceName: "SeoulNotice_3_2"), #imageLiteral(resourceName: "SeoulNotice_3_3")])
 ])
-

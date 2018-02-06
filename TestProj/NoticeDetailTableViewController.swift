@@ -1,15 +1,21 @@
 //
-//  NoticeMainTableViewController.swift
+//  NoticeDetailTableViewController.swift
 //  TestProj
 //
-//  Created by CAUADC on 2018. 2. 6..
+//  Created by Harrison on 2018. 2. 6..
 //  Copyright © 2018년 CAUADC. All rights reserved.
 //
 
 import UIKit
 
-class NoticeMainTableViewController: UITableViewController {
+class NoticeDetailTableViewCell: UITableViewCell {
+    @IBOutlet weak var img: UIImageView!
+}
 
+class NoticeDetailTableViewController: UITableViewController {
+    
+    var notice:Notice?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,17 +40,20 @@ class NoticeMainTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return SeoulData.notices.count
+        
+        let number = notice?.image.count
+        
+        return number!
     }
 
-   
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "noticeCell", for: indexPath)
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> NoticeDetailTableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "imageIdentifier", for: indexPath) as? NoticeDetailTableViewCell
 
-        cell.textLabel?.text = SeoulData.notices[indexPath.row].title
-        cell.detailTextLabel?.text = SeoulData.notices[indexPath.row].date
+        cell?.img.image = notice?.image[indexPath.row]
+        
 
-        return cell
+        return cell!
     }
     
 
@@ -83,16 +92,16 @@ class NoticeMainTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        if let indexPath = tableView.indexPathForSelectedRow {
-            let selectedRow = indexPath.row
-            
-            let vc = segue.destination as? NoticeDetailTableViewController
-            vc?.notice = SeoulData.notices[selectedRow]
-        }
     }
+    */
+
 }
+
+
