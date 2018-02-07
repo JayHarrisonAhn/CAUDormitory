@@ -33,7 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6605E7CF2003234E00B3A154 /* TestProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6605E7CF2003234E00B3A154 /* CAUDormitory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAUDormitory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6605E7D22003234E00B3A154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6605E7D42003234E00B3A154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6605E7D72003234E00B3A154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		6605E7C62003234E00B3A154 = {
 			isa = PBXGroup;
 			children = (
-				6605E7D12003234E00B3A154 /* TestProj */,
+				6605E7D12003234E00B3A154 /* CAUDormitory */,
 				6605E7D02003234E00B3A154 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,12 +82,12 @@
 		6605E7D02003234E00B3A154 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6605E7CF2003234E00B3A154 /* TestProj.app */,
+				6605E7CF2003234E00B3A154 /* CAUDormitory.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6605E7D12003234E00B3A154 /* TestProj */ = {
+		6605E7D12003234E00B3A154 /* CAUDormitory */ = {
 			isa = PBXGroup;
 			children = (
 				66E49E6B2029598A006AF127 /* DataSets */,
@@ -101,7 +101,7 @@
 				66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */,
 				849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */,
 			);
-			path = TestProj;
+			path = CAUDormitory;
 			sourceTree = "<group>";
 		};
 		6605E856200325E200B3A154 /* PilotPlant */ = {
@@ -137,9 +137,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6605E7CE2003234E00B3A154 /* TestProj */ = {
+		6605E7CE2003234E00B3A154 /* CAUDormitory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6605E7E12003234E00B3A154 /* Build configuration list for PBXNativeTarget "TestProj" */;
+			buildConfigurationList = 6605E7E12003234E00B3A154 /* Build configuration list for PBXNativeTarget "CAUDormitory" */;
 			buildPhases = (
 				6605E7CB2003234E00B3A154 /* Sources */,
 				6605E7CC2003234E00B3A154 /* Frameworks */,
@@ -149,9 +149,9 @@
 			);
 			dependencies = (
 			);
-			name = TestProj;
+			name = CAUDormitory;
 			productName = TestProj;
-			productReference = 6605E7CF2003234E00B3A154 /* TestProj.app */;
+			productReference = 6605E7CF2003234E00B3A154 /* CAUDormitory.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6605E7CA2003234E00B3A154 /* Build configuration list for PBXProject "TestProj" */;
+			buildConfigurationList = 6605E7CA2003234E00B3A154 /* Build configuration list for PBXProject "CAUDormitory" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -183,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6605E7CE2003234E00B3A154 /* TestProj */,
+				6605E7CE2003234E00B3A154 /* CAUDormitory */,
 			);
 		};
 /* End PBXProject section */
@@ -365,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.TestProj;
+				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.CAUDormitory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,7 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.TestProj;
+				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.CAUDormitory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6605E7CA2003234E00B3A154 /* Build configuration list for PBXProject "TestProj" */ = {
+		6605E7CA2003234E00B3A154 /* Build configuration list for PBXProject "CAUDormitory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6605E7DF2003234E00B3A154 /* Debug */,
@@ -398,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6605E7E12003234E00B3A154 /* Build configuration list for PBXNativeTarget "TestProj" */ = {
+		6605E7E12003234E00B3A154 /* Build configuration list for PBXNativeTarget "CAUDormitory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6605E7E22003234E00B3A154 /* Debug */,
