@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TestProj.xcodeproj">
+      location = "self:/Users/jaehyungahn/Desktop/iOS_prototype/CAUDormitory.xcodeproj">
    </FileRef>
 </Workspace>

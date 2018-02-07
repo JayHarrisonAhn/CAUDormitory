@@ -25,10 +25,15 @@
 		6605E86E200325E200B3A154 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605E861200325E200B3A154 /* RecordButton.swift */; };
 		6605E86F200325E200B3A154 /* SwipeActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605E862200325E200B3A154 /* SwipeActionTableViewCell.swift */; };
 		6605E870200325E200B3A154 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605E863200325E200B3A154 /* UIViewController+Navigation.swift */; };
+		66E49E6D202959A3006AF127 /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E6C202959A3006AF127 /* DataClass.swift */; };
+		66E49E6F202959F6006AF127 /* AppClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E6E202959F6006AF127 /* AppClass.swift */; };
+		66E49E7120295B5B006AF127 /* SeoulData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E7020295B5B006AF127 /* SeoulData.swift */; };
+		66E49E7320295E59006AF127 /* NoticeMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */; };
+		849117BB20297B680001F8DB /* NoticeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6605E7CF2003234E00B3A154 /* TestProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6605E7CF2003234E00B3A154 /* CAUDormitory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAUDormitory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6605E7D22003234E00B3A154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6605E7D42003234E00B3A154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6605E7D72003234E00B3A154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +53,11 @@
 		6605E861200325E200B3A154 /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		6605E862200325E200B3A154 /* SwipeActionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeActionTableViewCell.swift; sourceTree = "<group>"; };
 		6605E863200325E200B3A154 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		66E49E6C202959A3006AF127 /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
+		66E49E6E202959F6006AF127 /* AppClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClass.swift; sourceTree = "<group>"; };
+		66E49E7020295B5B006AF127 /* SeoulData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeoulData.swift; sourceTree = "<group>"; };
+		66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeMainTableViewController.swift; sourceTree = "<group>"; };
+		849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +74,7 @@
 		6605E7C62003234E00B3A154 = {
 			isa = PBXGroup;
 			children = (
-				6605E7D12003234E00B3A154 /* TestProj */,
+				6605E7D12003234E00B3A154 /* CAUDormitory */,
 				6605E7D02003234E00B3A154 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,14 +82,15 @@
 		6605E7D02003234E00B3A154 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6605E7CF2003234E00B3A154 /* TestProj.app */,
+				6605E7CF2003234E00B3A154 /* CAUDormitory.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6605E7D12003234E00B3A154 /* TestProj */ = {
+		6605E7D12003234E00B3A154 /* CAUDormitory */ = {
 			isa = PBXGroup;
 			children = (
+				66E49E6B2029598A006AF127 /* DataSets */,
 				6605E856200325E200B3A154 /* PilotPlant */,
 				6605E7D22003234E00B3A154 /* AppDelegate.swift */,
 				6605E7D42003234E00B3A154 /* ViewController.swift */,
@@ -87,8 +98,10 @@
 				6605E7D92003234E00B3A154 /* Assets.xcassets */,
 				6605E7DB2003234E00B3A154 /* LaunchScreen.storyboard */,
 				6605E7DE2003234E00B3A154 /* Info.plist */,
+				66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */,
+				849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */,
 			);
-			path = TestProj;
+			path = CAUDormitory;
 			sourceTree = "<group>";
 		};
 		6605E856200325E200B3A154 /* PilotPlant */ = {
@@ -111,12 +124,22 @@
 			path = PilotPlant;
 			sourceTree = "<group>";
 		};
+		66E49E6B2029598A006AF127 /* DataSets */ = {
+			isa = PBXGroup;
+			children = (
+				66E49E6E202959F6006AF127 /* AppClass.swift */,
+				66E49E6C202959A3006AF127 /* DataClass.swift */,
+				66E49E7020295B5B006AF127 /* SeoulData.swift */,
+			);
+			path = DataSets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6605E7CE2003234E00B3A154 /* TestProj */ = {
+		6605E7CE2003234E00B3A154 /* CAUDormitory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6605E7E12003234E00B3A154 /* Build configuration list for PBXNativeTarget "TestProj" */;
+			buildConfigurationList = 6605E7E12003234E00B3A154 /* Build configuration list for PBXNativeTarget "CAUDormitory" */;
 			buildPhases = (
 				6605E7CB2003234E00B3A154 /* Sources */,
 				6605E7CC2003234E00B3A154 /* Frameworks */,
@@ -126,9 +149,9 @@
 			);
 			dependencies = (
 			);
-			name = TestProj;
+			name = CAUDormitory;
 			productName = TestProj;
-			productReference = 6605E7CF2003234E00B3A154 /* TestProj.app */;
+			productReference = 6605E7CF2003234E00B3A154 /* CAUDormitory.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -147,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6605E7CA2003234E00B3A154 /* Build configuration list for PBXProject "TestProj" */;
+			buildConfigurationList = 6605E7CA2003234E00B3A154 /* Build configuration list for PBXProject "CAUDormitory" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -160,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6605E7CE2003234E00B3A154 /* TestProj */,
+				6605E7CE2003234E00B3A154 /* CAUDormitory */,
 			);
 		};
 /* End PBXProject section */
@@ -188,13 +211,18 @@
 				6605E86A200325E200B3A154 /* CHViews.swift in Sources */,
 				6605E86C200325E200B3A154 /* FIlters.swift in Sources */,
 				6605E86E200325E200B3A154 /* RecordButton.swift in Sources */,
+				66E49E7120295B5B006AF127 /* SeoulData.swift in Sources */,
+				66E49E7320295E59006AF127 /* NoticeMainTableViewController.swift in Sources */,
 				6605E7D52003234E00B3A154 /* ViewController.swift in Sources */,
 				6605E870200325E200B3A154 /* UIViewController+Navigation.swift in Sources */,
 				6605E86F200325E200B3A154 /* SwipeActionTableViewCell.swift in Sources */,
 				6605E865200325E200B3A154 /* CHControls.swift in Sources */,
+				66E49E6D202959A3006AF127 /* DataClass.swift in Sources */,
 				6605E7D32003234E00B3A154 /* AppDelegate.swift in Sources */,
+				66E49E6F202959F6006AF127 /* AppClass.swift in Sources */,
 				6605E86B200325E200B3A154 /* DrawingCanvasView.swift in Sources */,
 				6605E869200325E200B3A154 /* CHTableViewControllers.swift in Sources */,
+				849117BB20297B680001F8DB /* NoticeDetailTableViewController.swift in Sources */,
 				6605E867200325E200B3A154 /* CHPagingScrollViewController.swift in Sources */,
 				6605E866200325E200B3A154 /* CHModalViewController.swift in Sources */,
 				6605E868200325E200B3A154 /* CHPickerViewController.swift in Sources */,
@@ -337,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.TestProj;
+				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.CAUDormitory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,7 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.TestProj;
+				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.CAUDormitory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -361,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6605E7CA2003234E00B3A154 /* Build configuration list for PBXProject "TestProj" */ = {
+		6605E7CA2003234E00B3A154 /* Build configuration list for PBXProject "CAUDormitory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6605E7DF2003234E00B3A154 /* Debug */,
@@ -370,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6605E7E12003234E00B3A154 /* Build configuration list for PBXNativeTarget "TestProj" */ = {
+		6605E7E12003234E00B3A154 /* Build configuration list for PBXNativeTarget "CAUDormitory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6605E7E22003234E00B3A154 /* Debug */,
