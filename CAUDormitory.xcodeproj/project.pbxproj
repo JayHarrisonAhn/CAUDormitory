@@ -25,6 +25,9 @@
 		6605E86E200325E200B3A154 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605E861200325E200B3A154 /* RecordButton.swift */; };
 		6605E86F200325E200B3A154 /* SwipeActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605E862200325E200B3A154 /* SwipeActionTableViewCell.swift */; };
 		6605E870200325E200B3A154 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605E863200325E200B3A154 /* UIViewController+Navigation.swift */; };
+		66D0786A202AABB30062F4D7 /* FirstExecuteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D07869202AABB30062F4D7 /* FirstExecuteViewController.swift */; };
+		66D0786C202AABE40062F4D7 /* IsFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D0786B202AABE40062F4D7 /* IsFirstViewController.swift */; };
+		66D0786F202AAE310062F4D7 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D0786E202AAE310062F4D7 /* TabBar.swift */; };
 		66E49E6D202959A3006AF127 /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E6C202959A3006AF127 /* DataClass.swift */; };
 		66E49E6F202959F6006AF127 /* AppClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E6E202959F6006AF127 /* AppClass.swift */; };
 		66E49E7120295B5B006AF127 /* SeoulData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E7020295B5B006AF127 /* SeoulData.swift */; };
@@ -53,6 +56,9 @@
 		6605E861200325E200B3A154 /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		6605E862200325E200B3A154 /* SwipeActionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeActionTableViewCell.swift; sourceTree = "<group>"; };
 		6605E863200325E200B3A154 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		66D07869202AABB30062F4D7 /* FirstExecuteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstExecuteViewController.swift; sourceTree = "<group>"; };
+		66D0786B202AABE40062F4D7 /* IsFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsFirstViewController.swift; sourceTree = "<group>"; };
+		66D0786E202AAE310062F4D7 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		66E49E6C202959A3006AF127 /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
 		66E49E6E202959F6006AF127 /* AppClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClass.swift; sourceTree = "<group>"; };
 		66E49E7020295B5B006AF127 /* SeoulData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeoulData.swift; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 		6605E7D12003234E00B3A154 /* CAUDormitory */ = {
 			isa = PBXGroup;
 			children = (
+				66D0786D202AABF50062F4D7 /* FirstExecute */,
 				66E49E6B2029598A006AF127 /* DataSets */,
 				6605E856200325E200B3A154 /* PilotPlant */,
 				6605E7D22003234E00B3A154 /* AppDelegate.swift */,
@@ -100,6 +107,7 @@
 				6605E7DE2003234E00B3A154 /* Info.plist */,
 				66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */,
 				849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */,
+				66D0786E202AAE310062F4D7 /* TabBar.swift */,
 			);
 			path = CAUDormitory;
 			sourceTree = "<group>";
@@ -122,6 +130,15 @@
 				6605E863200325E200B3A154 /* UIViewController+Navigation.swift */,
 			);
 			path = PilotPlant;
+			sourceTree = "<group>";
+		};
+		66D0786D202AABF50062F4D7 /* FirstExecute */ = {
+			isa = PBXGroup;
+			children = (
+				66D07869202AABB30062F4D7 /* FirstExecuteViewController.swift */,
+				66D0786B202AABE40062F4D7 /* IsFirstViewController.swift */,
+			);
+			path = FirstExecute;
 			sourceTree = "<group>";
 		};
 		66E49E6B2029598A006AF127 /* DataSets */ = {
@@ -209,6 +226,7 @@
 				6605E864200325E200B3A154 /* CHContentViewController.swift in Sources */,
 				6605E86D200325E200B3A154 /* NavigationControllers.swift in Sources */,
 				6605E86A200325E200B3A154 /* CHViews.swift in Sources */,
+				66D0786A202AABB30062F4D7 /* FirstExecuteViewController.swift in Sources */,
 				6605E86C200325E200B3A154 /* FIlters.swift in Sources */,
 				6605E86E200325E200B3A154 /* RecordButton.swift in Sources */,
 				66E49E7120295B5B006AF127 /* SeoulData.swift in Sources */,
@@ -224,8 +242,10 @@
 				6605E869200325E200B3A154 /* CHTableViewControllers.swift in Sources */,
 				849117BB20297B680001F8DB /* NoticeDetailTableViewController.swift in Sources */,
 				6605E867200325E200B3A154 /* CHPagingScrollViewController.swift in Sources */,
+				66D0786C202AABE40062F4D7 /* IsFirstViewController.swift in Sources */,
 				6605E866200325E200B3A154 /* CHModalViewController.swift in Sources */,
 				6605E868200325E200B3A154 /* CHPickerViewController.swift in Sources */,
+				66D0786F202AAE310062F4D7 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
