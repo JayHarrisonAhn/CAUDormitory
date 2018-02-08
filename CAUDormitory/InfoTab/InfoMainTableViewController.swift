@@ -1,19 +1,22 @@
 //
-//  NoticeMainTableViewController.swift
-//  TestProj
+//  InfoMainTableViewController.swift
+//  CAUDormitory
 //
-//  Created by CAUADC on 2018. 2. 6..
+//  Created by CAUADC on 2018. 2. 8..
 //  Copyright © 2018년 CAUADC. All rights reserved.
 //
 
 import UIKit
 
-class NoticeMainTableViewController: UITableViewController {
+class InfoMainTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        if UserDefaults.standard.object(forKey: "Checked") == nil {
+            self.performSegue(withIdentifier: "modalWelcome", sender: self)
+            print("Hello2")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,24 +28,23 @@ class NoticeMainTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return SeoulData.notices.count
+        return 0
     }
 
-   
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "noticeCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        cell.textLabel?.text = SeoulData.notices[indexPath.row].title
-        cell.detailTextLabel?.text = SeoulData.notices[indexPath.row].date
+        // Configure the cell...
 
         return cell
     }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -79,16 +81,14 @@ class NoticeMainTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        if let indexPath = tableView.indexPathForSelectedRow {
-            let selectedRow = indexPath.row
-            
-            let vc = segue.destination as? NoticeDetailTableViewController
-            vc?.notice = SeoulData.notices[selectedRow]
-        }
     }
+    */
+
 }

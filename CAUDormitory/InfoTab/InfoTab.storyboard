@@ -9,10 +9,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--FirstExecute-->
+        <scene sceneID="U9W-NH-XhX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FirstExecute" id="mP9-mK-oCC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Uu-fa-lKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-914" y="-345"/>
+        </scene>
         <!--Info Main Table View Controller-->
         <scene sceneID="p3W-dk-ljd">
             <objects>
-                <tableViewController id="cRh-9i-ohk" customClass="Info_MainTableViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="cRh-9i-ohk" customClass="InfoMainTableViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="S91-uK-ClY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,10 +57,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="L1O-AX-YbZ"/>
+                    <connections>
+                        <segue destination="mP9-mK-oCC" kind="presentation" identifier="modalWelcome" id="B1m-vZ-nAU"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rpZ-LR-ZQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-697" y="64"/>
+            <point key="canvasLocation" x="-700" y="64"/>
         </scene>
         <!--생활정보-->
         <scene sceneID="FUL-Jl-jMR">
