@@ -20,3 +20,11 @@ class Notice {
         self.image = image
     }
 }
+
+class CampusData {
+    var notices:[Notice]
+    
+    init (notices:[Notice]) {
+        self.notices = notices
+    }
+}

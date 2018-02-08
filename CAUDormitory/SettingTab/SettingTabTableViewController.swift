@@ -1,25 +1,23 @@
 //
-//  CHTableViewControllers.swift
-//  PilotPlant
+//  SettingTabTableViewController.swift
+//  CAUDormitory
 //
-//  Created by Lingostar on 2017. 3. 31..
-//
+//  Created by CAUADC on 2018. 2. 8..
+//  Copyright © 2018년 CAUADC. All rights reserved.
 //
 
 import UIKit
 
-
-
-class CHTableViewControllers: UITableViewController {
+class SettingTabTableViewController: UITableViewController {
+    
+    struct SettingValue {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
     }
 
     override func didReceiveMemoryWarning() {

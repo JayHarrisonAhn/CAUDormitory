@@ -29,8 +29,8 @@ class FirstExecuteViewController: UIViewController {
     @IBAction func NextButton(_ sender: Any) {
         
         if (check1 == true) && (check2 == true) {
-            UserDefaults.standard.set(true, forKey: "Checked")
-            self.modalDismiss(self)
+            InitUserData()            
+            self.dismiss(animated: true)
         }
     }
     
