@@ -14,6 +14,9 @@ class SubmitTab1ViewController: UIViewController, UICollectionViewDelegate, UICo
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
 
         // Do any additional setup after loading the view.
     }

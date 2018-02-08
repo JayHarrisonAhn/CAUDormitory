@@ -15,7 +15,6 @@ class InfoMainTableViewController: UITableViewController {
 
         if UserDefaults.standard.object(forKey: "Checked") == nil {
             self.performSegue(withIdentifier: "modalWelcome", sender: self)
-            print("Hello2")
         }
     }
 

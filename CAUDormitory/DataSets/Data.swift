@@ -19,8 +19,8 @@ var SeoulData = CampusData(notices:[
 
 func InitUserData() {
     UserDefaults.standard.set(true, forKey: "Checked")
-    UserDefaults.standard.set(Campus.Seoul, forKey: "userCampus")
-    UserDefaults.standard.set(DormitoryBuilding.blueMir309, forKey: "userBuilding")
+    UserDefaults.standard.set(Campus.Seoul.rawValue, forKey: "userCampus")
+    UserDefaults.standard.set(DormitoryBuilding.blueMir309.rawValue, forKey: "userBuilding")
     
     UserDefaults.standard.set(18, forKey: "userSchoolNum")
     UserDefaults.standard.set(1120, forKey: "userRoom")
@@ -48,7 +48,9 @@ class Submit {
 
 var doingSubmit:[Submit] = [
     Submit(title:"입관신청", icon:#imageLiteral(resourceName: "submit_doing1")),
-    Submit(title:"퇴관신청", icon:#imageLiteral(resourceName: "submit_doing2"))
+    Submit(title:"퇴관신청", icon:#imageLiteral(resourceName: "submit_doing2")),
+    Submit(title:"Test1", icon:#imageLiteral(resourceName: "submit_always1")),
+    Submit(title: "Test2", icon: #imageLiteral(resourceName: "submit_doing2"))
 ]
 
 var regularSubmit:[Submit] = [
