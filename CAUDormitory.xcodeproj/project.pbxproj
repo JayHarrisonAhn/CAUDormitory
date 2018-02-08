@@ -27,7 +27,10 @@
 		6605E870200325E200B3A154 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605E863200325E200B3A154 /* UIViewController+Navigation.swift */; };
 		66D0786A202AABB30062F4D7 /* FirstExecuteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D07869202AABB30062F4D7 /* FirstExecuteViewController.swift */; };
 		66D0786C202AABE40062F4D7 /* IsFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D0786B202AABE40062F4D7 /* IsFirstViewController.swift */; };
-		66D0786F202AAE310062F4D7 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D0786E202AAE310062F4D7 /* TabBar.swift */; };
+		66D07874202BF0DB0062F4D7 /* FirstExecute.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D07873202BF0DB0062F4D7 /* FirstExecute.storyboard */; };
+		66D07876202BF15B0062F4D7 /* NoticeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D07875202BF15B0062F4D7 /* NoticeTab.storyboard */; };
+		66D07878202BF2230062F4D7 /* InfoTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D07877202BF2230062F4D7 /* InfoTab.storyboard */; };
+		66D0787A202BF34A0062F4D7 /* SubmitTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D07879202BF34A0062F4D7 /* SubmitTab.storyboard */; };
 		66E49E6D202959A3006AF127 /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E6C202959A3006AF127 /* DataClass.swift */; };
 		66E49E6F202959F6006AF127 /* AppClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E6E202959F6006AF127 /* AppClass.swift */; };
 		66E49E7120295B5B006AF127 /* SeoulData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E7020295B5B006AF127 /* SeoulData.swift */; };
@@ -58,7 +61,10 @@
 		6605E863200325E200B3A154 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		66D07869202AABB30062F4D7 /* FirstExecuteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstExecuteViewController.swift; sourceTree = "<group>"; };
 		66D0786B202AABE40062F4D7 /* IsFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsFirstViewController.swift; sourceTree = "<group>"; };
-		66D0786E202AAE310062F4D7 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		66D07873202BF0DB0062F4D7 /* FirstExecute.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstExecute.storyboard; sourceTree = "<group>"; };
+		66D07875202BF15B0062F4D7 /* NoticeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoticeTab.storyboard; sourceTree = "<group>"; };
+		66D07877202BF2230062F4D7 /* InfoTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoTab.storyboard; sourceTree = "<group>"; };
+		66D07879202BF34A0062F4D7 /* SubmitTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubmitTab.storyboard; sourceTree = "<group>"; };
 		66E49E6C202959A3006AF127 /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
 		66E49E6E202959F6006AF127 /* AppClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClass.swift; sourceTree = "<group>"; };
 		66E49E7020295B5B006AF127 /* SeoulData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeoulData.swift; sourceTree = "<group>"; };
@@ -97,17 +103,17 @@
 			isa = PBXGroup;
 			children = (
 				66D0786D202AABF50062F4D7 /* FirstExecute */,
-				66E49E6B2029598A006AF127 /* DataSets */,
+				66D07871202BF0570062F4D7 /* InfoTab */,
+				66D07872202BF06D0062F4D7 /* SubmitTab */,
+				66D07870202BF0450062F4D7 /* NoticeTab */,
 				6605E856200325E200B3A154 /* PilotPlant */,
 				6605E7D22003234E00B3A154 /* AppDelegate.swift */,
 				6605E7D42003234E00B3A154 /* ViewController.swift */,
 				6605E7D62003234E00B3A154 /* Main.storyboard */,
-				6605E7D92003234E00B3A154 /* Assets.xcassets */,
 				6605E7DB2003234E00B3A154 /* LaunchScreen.storyboard */,
+				6605E7D92003234E00B3A154 /* Assets.xcassets */,
 				6605E7DE2003234E00B3A154 /* Info.plist */,
-				66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */,
-				849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */,
-				66D0786E202AAE310062F4D7 /* TabBar.swift */,
+				66E49E6B2029598A006AF127 /* DataSets */,
 			);
 			path = CAUDormitory;
 			sourceTree = "<group>";
@@ -137,8 +143,35 @@
 			children = (
 				66D07869202AABB30062F4D7 /* FirstExecuteViewController.swift */,
 				66D0786B202AABE40062F4D7 /* IsFirstViewController.swift */,
+				66D07873202BF0DB0062F4D7 /* FirstExecute.storyboard */,
 			);
 			path = FirstExecute;
+			sourceTree = "<group>";
+		};
+		66D07870202BF0450062F4D7 /* NoticeTab */ = {
+			isa = PBXGroup;
+			children = (
+				66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */,
+				849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */,
+				66D07875202BF15B0062F4D7 /* NoticeTab.storyboard */,
+			);
+			path = NoticeTab;
+			sourceTree = "<group>";
+		};
+		66D07871202BF0570062F4D7 /* InfoTab */ = {
+			isa = PBXGroup;
+			children = (
+				66D07877202BF2230062F4D7 /* InfoTab.storyboard */,
+			);
+			path = InfoTab;
+			sourceTree = "<group>";
+		};
+		66D07872202BF06D0062F4D7 /* SubmitTab */ = {
+			isa = PBXGroup;
+			children = (
+				66D07879202BF34A0062F4D7 /* SubmitTab.storyboard */,
+			);
+			path = SubmitTab;
 			sourceTree = "<group>";
 		};
 		66E49E6B2029598A006AF127 /* DataSets */ = {
@@ -211,8 +244,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6605E7DD2003234E00B3A154 /* LaunchScreen.storyboard in Resources */,
+				66D07874202BF0DB0062F4D7 /* FirstExecute.storyboard in Resources */,
 				6605E7DA2003234E00B3A154 /* Assets.xcassets in Resources */,
+				66D0787A202BF34A0062F4D7 /* SubmitTab.storyboard in Resources */,
 				6605E7D82003234E00B3A154 /* Main.storyboard in Resources */,
+				66D07878202BF2230062F4D7 /* InfoTab.storyboard in Resources */,
+				66D07876202BF15B0062F4D7 /* NoticeTab.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +282,6 @@
 				66D0786C202AABE40062F4D7 /* IsFirstViewController.swift in Sources */,
 				6605E866200325E200B3A154 /* CHModalViewController.swift in Sources */,
 				6605E868200325E200B3A154 /* CHPickerViewController.swift in Sources */,
-				66D0786F202AAE310062F4D7 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
