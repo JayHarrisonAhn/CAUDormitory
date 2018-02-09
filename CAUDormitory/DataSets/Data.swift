@@ -40,19 +40,21 @@ enum DormitoryBuilding:String {
 class Submit {
     var title:String
     var icon:UIImage
-    init(title:String, icon:UIImage) {
+    var url:URL
+    init(title:String, icon:UIImage, url:URL) {
         self.title = title
         self.icon = icon
+        self.url = url
     }
 }
 
 var doingSubmit:[Submit] = [
-    Submit(title:"입관신청", icon:#imageLiteral(resourceName: "submit_doing1")),
-    Submit(title:"퇴관신청", icon:#imageLiteral(resourceName: "submit_doing2")),
-    Submit(title:"Test1", icon:#imageLiteral(resourceName: "submit_always1")),
-    Submit(title: "Test2", icon: #imageLiteral(resourceName: "submit_doing2"))
+    Submit(title:"입관신청", icon:#imageLiteral(resourceName: "submit_doing1"), url:URL(string:"http://dormitory.cau.ac.kr/application/application.php")!),
+    Submit(title:"퇴관신청", icon:#imageLiteral(resourceName: "submit_doing2"), url:URL(string:"http://dormitory.cau.ac.kr/application/application.php")!),
+    Submit(title:"Test1", icon:#imageLiteral(resourceName: "submit_always1"), url:URL(string:"http://dormitory.cau.ac.kr/application/application.php")!),
+    Submit(title: "Test2", icon: #imageLiteral(resourceName: "submit_doing2"), url:URL(string:"http://dormitory.cau.ac.kr/application/application.php")!)
 ]
 
 var regularSubmit:[Submit] = [
-    Submit(title:"고장수리신청", icon:#imageLiteral(resourceName: "submit_always1")),
+    Submit(title:"고장수리신청", icon:#imageLiteral(resourceName: "submit_always1"), url:URL(string:"http://dormitory.cau.ac.kr/garden/broken_confirm.php")!)
 ]
