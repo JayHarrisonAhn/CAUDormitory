@@ -11,14 +11,9 @@ import UIKit
 class SubmitTab1ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var table = doingSubmit
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
