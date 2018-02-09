@@ -29,21 +29,14 @@
             </objects>
             <point key="canvasLocation" x="-781.60000000000002" y="-635.53223388305855"/>
         </scene>
-        <!--View Controller-->
+        <!--Submit Tab View Controller-->
         <scene sceneID="PtV-Dm-qJM">
             <objects>
-                <viewController id="CkL-Yh-AuY" sceneMemberID="viewController">
+                <viewController id="CkL-Yh-AuY" customClass="SubmitTabViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hZV-6K-dr0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5PW-1M-Vif">
-                                <rect key="frame" x="0.0" y="93" width="375" height="149"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="Ub4-Wy-Ek8" kind="embed" id="TsG-oM-oIr"/>
-                                </connections>
-                            </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="현재 진행중인 신청" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY5-0a-gcg">
                                 <rect key="frame" x="7" y="69" width="127" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -51,47 +44,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="am4-TN-TsY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="uOb-Tx-xIN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aMt-iI-ZNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-18.399999999999999" y="-636.4317841079461"/>
-        </scene>
-        <!--Submit Tab1 View Controller-->
-        <scene sceneID="TCu-Md-TOV">
-            <objects>
-                <viewController id="Ub4-Wy-Ek8" customClass="SubmitTab1ViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6rZ-Mm-fCD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Vnd-Pz-Xwb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JmK-te-XA2">
+                                <rect key="frame" x="0.0" y="90" width="375" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mb4-3a-1GP">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="24Y-q6-ePL">
                                     <size key="itemSize" width="130" height="130"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubmitTab1CollectionViewCell" id="8Vi-kX-avc" customClass="SubmitTab1CollectionViewCell" customModule="CAUDormitory" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="15" width="130" height="130"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tab1Cell" id="qFO-Ao-8F9" customClass="SubmitTab1CollectionViewCell" customModule="CAUDormitory" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="5" width="130" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nBi-Q1-ZSh">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1TM-Qx-4JE">
                                                     <rect key="frame" x="20" y="7" width="90" height="90"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHT-HZ-XcU">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUq-ve-3X4">
                                                     <rect key="frame" x="5" y="100" width="120" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -101,24 +76,24 @@
                                             </subviews>
                                         </view>
                                         <connections>
-                                            <outlet property="iconImage" destination="nBi-Q1-ZSh" id="qqs-IX-gsO"/>
-                                            <outlet property="iconLabel" destination="yHT-HZ-XcU" id="sqe-ar-2in"/>
+                                            <outlet property="iconImage" destination="1TM-Qx-4JE" id="RYI-YV-yac"/>
+                                            <outlet property="iconLabel" destination="dUq-ve-3X4" id="xAd-dF-wH2"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="Ub4-Wy-Ek8" id="aak-DH-K12"/>
-                                    <outlet property="delegate" destination="Ub4-Wy-Ek8" id="Brj-1F-M95"/>
-                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="U7j-Ix-CR5"/>
+                        <viewLayoutGuide key="safeArea" id="am4-TN-TsY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uOb-Tx-xIN"/>
+                    <connections>
+                        <outlet property="submit1CollectionView" destination="JmK-te-XA2" id="hpj-dB-bmw"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="321-9L-eut" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMt-iI-ZNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773.60000000000002" y="-770.0149925037482"/>
+            <point key="canvasLocation" x="-18.399999999999999" y="-636.4317841079461"/>
         </scene>
     </scenes>
     <resources>

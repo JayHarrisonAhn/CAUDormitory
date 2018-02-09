@@ -1,19 +1,25 @@
 //
-//  SubmitTab1ViewController.swift
+//  SubmitTabViewController.swift
 //  CAUDormitory
 //
-//  Created by CAUADC on 2018. 2. 8..
+//  Created by JaeHyung Ahn on 2018. 2. 10..
 //  Copyright © 2018년 CAUADC. All rights reserved.
 //
 
 import UIKit
 
-class SubmitTab1ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class SubmitTabViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var table = doingSubmit
+    @IBOutlet weak var submit1CollectionView: UICollectionView!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        submit1CollectionView.delegate = self
+        submit1CollectionView.dataSource = self
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +27,19 @@ class SubmitTab1ViewController: UIViewController, UICollectionViewDelegate, UICo
         // Dispose of any resources that can be recreated.
     }
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return table.count
+        return doingSubmit.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SubmitTab1CollectionViewCell", for: indexPath) as! SubmitTab1CollectionViewCell
+        let cell:SubmitTab1CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "tab1Cell", for: indexPath) as! SubmitTab1CollectionViewCell
         
-        cell.iconLabel.text = table[indexPath.row].title
-        cell.iconImage.image = table[indexPath.row].icon
+        cell.iconImage.image = doingSubmit[indexPath.row].icon
+        cell.iconLabel.text = doingSubmit[indexPath.row].title
         
         return cell
     }

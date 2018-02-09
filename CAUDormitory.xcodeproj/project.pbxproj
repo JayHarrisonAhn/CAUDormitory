@@ -21,11 +21,11 @@
 		66D07889202C248B0062F4D7 /* SettingTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D07888202C248B0062F4D7 /* SettingTab.storyboard */; };
 		66D078AC202C2D170062F4D7 /* SettingTabTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D078AB202C2D170062F4D7 /* SettingTabTableViewController.swift */; };
 		66D078B2202C35DE0062F4D7 /* SubmitTab1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D078B1202C35DE0062F4D7 /* SubmitTab1CollectionViewCell.swift */; };
-		66D078B4202C3F560062F4D7 /* SubmitTab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D078B3202C3F560062F4D7 /* SubmitTab1ViewController.swift */; };
 		66E49E6F202959F6006AF127 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E6E202959F6006AF127 /* Definition.swift */; };
 		66E49E7120295B5B006AF127 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E7020295B5B006AF127 /* Data.swift */; };
 		66E49E7320295E59006AF127 /* NoticeMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */; };
 		849117BB20297B680001F8DB /* NoticeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */; };
+		9458B271202E0875007C2A8C /* SubmitTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458B270202E0874007C2A8C /* SubmitTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,11 +45,11 @@
 		66D07888202C248B0062F4D7 /* SettingTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingTab.storyboard; sourceTree = "<group>"; };
 		66D078AB202C2D170062F4D7 /* SettingTabTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTabTableViewController.swift; sourceTree = "<group>"; };
 		66D078B1202C35DE0062F4D7 /* SubmitTab1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTab1CollectionViewCell.swift; sourceTree = "<group>"; };
-		66D078B3202C3F560062F4D7 /* SubmitTab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTab1ViewController.swift; sourceTree = "<group>"; };
 		66E49E6E202959F6006AF127 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
 		66E49E7020295B5B006AF127 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeMainTableViewController.swift; sourceTree = "<group>"; };
 		849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailTableViewController.swift; sourceTree = "<group>"; };
+		9458B270202E0874007C2A8C /* SubmitTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				66D07879202BF34A0062F4D7 /* SubmitTab.storyboard */,
+				9458B270202E0874007C2A8C /* SubmitTabViewController.swift */,
 				66D078B1202C35DE0062F4D7 /* SubmitTab1CollectionViewCell.swift */,
-				66D078B3202C3F560062F4D7 /* SubmitTab1ViewController.swift */,
 			);
 			path = SubmitTab;
 			sourceTree = "<group>";
@@ -231,12 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66D078B4202C3F560062F4D7 /* SubmitTab1ViewController.swift in Sources */,
 				66D0786A202AABB30062F4D7 /* FirstExecuteViewController.swift in Sources */,
 				66E49E7120295B5B006AF127 /* Data.swift in Sources */,
 				66E49E7320295E59006AF127 /* NoticeMainTableViewController.swift in Sources */,
 				6605E7D52003234E00B3A154 /* ViewController.swift in Sources */,
 				6605E7D32003234E00B3A154 /* AppDelegate.swift in Sources */,
+				9458B271202E0875007C2A8C /* SubmitTabViewController.swift in Sources */,
 				66E49E6F202959F6006AF127 /* Definition.swift in Sources */,
 				66D078B2202C35DE0062F4D7 /* SubmitTab1CollectionViewCell.swift in Sources */,
 				66D078AC202C2D170062F4D7 /* SettingTabTableViewController.swift in Sources */,
