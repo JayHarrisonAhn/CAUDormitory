@@ -50,9 +50,15 @@ enum DormitoryBuilding:String {
 var facilities:[[facility]] = [
     [facility(name: "식당", icon: #imageLiteral(resourceName: "info_logo_cafeteria"), iconSize:2, baseInfo: [["308관 1층":"7:00 ~ 20:00"], ["309관 1층":"13:00 ~ 19:00"]]),
     facility(name: "편의점", icon: #imageLiteral(resourceName: "info_logo_cvs"), iconSize:1, baseInfo: [["308관 1층":"7:00 ~ 20:00"], ["309관 1층":"7:00 ~ 21:00"]]),
+    facility(name: "자판기", icon: #imageLiteral(resourceName: "info_logo_vendingmachine"), iconSize:1, baseInfo: [["309관 홀수층":"24시간 운영"]]),
     facility(name: "자판기", icon: #imageLiteral(resourceName: "info_logo_vendingmachine"), iconSize:1, baseInfo: [["309관 홀수층":"24시간 운영"]])],
     
-    [facility(name: "세탁실", icon: #imageLiteral(resourceName: "info_logo_laundryroom"), iconSize:2, baseInfo: [["308관 2층":"7:00 ~ 20:00"], ["309관 2층":"6:00 ~ 24:00"]])]
+    [facility(name: "세탁실", icon: #imageLiteral(resourceName: "info_logo_laundryroom"), iconSize:2, baseInfo: [["308관 2층":"7:00 ~ 20:00"], ["309관 2층":"6:00 ~ 24:00"]]),
+     facility(name: "피트니스실", icon: #imageLiteral(resourceName: "info_logo_fitness"), iconSize:2, baseInfo: [["308관 외부":"7:00 ~ 20:00"], ["309관 2층":"6:00 ~ 23:00"]]),
+     facility(name: "택배실", icon: #imageLiteral(resourceName: "info_logo_delivery"), iconSize:2, baseInfo: [["308관 1층":"8:00 ~ 19:00"]])],
+    
+    [facility(name: "공용PC", icon: #imageLiteral(resourceName: "info_logo_pc"), iconSize:2, baseInfo: [["308관 2층":"5:00 ~ 24:00"], ["309관 2층":"6:00 ~ 24:00"]]),
+     facility(name: "프린터(유료)", icon: #imageLiteral(resourceName: "info_logo_printer"), iconSize:2, baseInfo: [["309관 2층":"24시간 이용가능"]])]
 ]
 
 //submit 탭

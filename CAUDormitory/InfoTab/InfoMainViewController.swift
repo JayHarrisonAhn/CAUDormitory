@@ -44,6 +44,7 @@ class InfoMainViewController: UIViewController, UICollectionViewDataSource, UICo
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "smallCell", for: indexPath) as! SmallCollectionViewCell
             cell.iconImage.image = facilities[indexPath.section][indexPath.row].icon
             cell.iconLabel.text = facilities[indexPath.section][indexPath.row].name
+            cell.frame.size.height = 76
             return cell
         } else if facilities[indexPath.section][indexPath.row].iconSize == 2 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bigCell", for: indexPath) as! BigCollectionViewCell
@@ -55,7 +56,28 @@ class InfoMainViewController: UIViewController, UICollectionViewDataSource, UICo
             return collectionView.dequeueReusableCell(withReuseIdentifier: "bigCell", for: indexPath)
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath) as! headerCell
+        
+        switch indexPath.section {
+        case 0:
+            headerView.headLabel.text = "상업시설"
+        case 1:
+            headerView.headLabel.text = "생활시설"
+        case 2:
+            headerView.headLabel.text = "공용기기"
+        case 3:
+            headerView.headLabel.text = "정기행사"
+        default:
+            print("error")
+        }
+        
+        return headerView
+    }
+    
 
+    
     /*
     // MARK: - Navigation
 

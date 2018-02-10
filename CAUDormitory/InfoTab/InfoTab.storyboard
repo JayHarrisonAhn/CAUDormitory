@@ -57,6 +57,7 @@
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.74117647058823533" green="0.91764705882352937" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <size key="customSize" width="180" height="76"/>
                                         <connections>
                                             <outlet property="iconImage" destination="gUK-ev-9CH" id="87Z-h3-MKT"/>
@@ -71,18 +72,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgP-z4-Xhs">
-                                                    <rect key="frame" x="20" y="149" width="140" height="21"/>
+                                                    <rect key="frame" x="13" y="144" width="140" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7v3-Oa-Tum">
-                                                    <rect key="frame" x="46" y="37" width="89" height="89"/>
+                                                    <rect key="frame" x="39" y="33" width="89" height="89"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.74117647058823533" green="0.91764705882352937" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <size key="customSize" width="180" height="180"/>
                                         <connections>
                                             <outlet property="iconImage" destination="7v3-Oa-Tum" id="Kw8-p3-B3a"/>
@@ -90,9 +92,21 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7il-fR-6Ny">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="7il-fR-6Ny" customClass="headerCell" customModule="CAUDormitory" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MV-4B-zIm">
+                                            <rect key="frame" x="18" y="15" width="267" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <connections>
+                                        <outlet property="headLabel" destination="0MV-4B-zIm" id="LnB-ni-bbG"/>
+                                    </connections>
                                 </collectionReusableView>
                             </collectionView>
                         </subviews>

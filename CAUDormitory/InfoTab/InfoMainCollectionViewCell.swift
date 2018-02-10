@@ -17,3 +17,8 @@ class BigCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet weak var iconLabel: UILabel!
 }
+
+class headerCell: UICollectionReusableView {
+    @IBOutlet weak var headLabel: UILabel!
+    
+}
