@@ -70,7 +70,7 @@ class NoticeDetailTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let isLast = notice?.image.count {
             if indexPath.row == (isLast) {
-                let url = URL(string: "https://dormitory.cau.ac.kr/bbs/bbs_view.php?pNum=" + String(2252 - noticeKey!) + "&bbsID=notice")
+                let url = URL(string: "https://dormitory.cau.ac.kr/bbs/bbs_view.php?pNum=" + String(SeoulData.latestNoticeKey - noticeKey!) + "&bbsID=notice")
                 
                 UIApplication.shared.open(url!, options: [:], completionHandler: nil)
             }

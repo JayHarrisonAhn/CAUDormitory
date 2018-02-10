@@ -23,8 +23,10 @@ class Notice {
 
 class CampusData {
     var notices:[Notice]
+    var latestNoticeKey:Int
     
-    init (notices:[Notice]) {
+    init (latestNoticeKey:Int, notices:[Notice]) {
+        self.latestNoticeKey = latestNoticeKey
         self.notices = notices
     }
 }

@@ -9,7 +9,10 @@
 import Foundation
 import UIKit
 
-var SeoulData = CampusData(notices:[
+var SeoulData = CampusData(
+    latestNoticeKey : 2252,
+    
+    notices:[
     Notice(title: "2018학년도 1학기 서울캠퍼스 생활관 1차 충원 합격자 발표 - 복학생/전과생", date: "18.02.09", image: []),
     Notice(title: "[생활관]정비기간 편의시설 및 생활관 일정 안내", date: "18.02.09", image: [#imageLiteral(resourceName: "SeoulNotice_6")]),
     Notice(title: "[생활관]주말당직 사감 안내/Night and Weekend Duty", date: "18.02.09", image: [#imageLiteral(resourceName: "SeoulNotice_5_1"), #imageLiteral(resourceName: "SeoulNotice_5_2")]),
