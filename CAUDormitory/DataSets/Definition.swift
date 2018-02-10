@@ -28,3 +28,24 @@ class CampusData {
         self.notices = notices
     }
 }
+
+//Submit 탭
+class Submit {
+    var title:String
+    var icon:UIImage
+    var url:URL
+    init(title:String, icon:UIImage, url:URL) {
+        self.title = title
+        self.icon = icon
+        self.url = url
+    }
+}
+class Contact {
+    var title:String
+    var url:URL
+    init(title:String, url:URL) {
+        self.title = title
+        self.url = url
+    }
+}
+
