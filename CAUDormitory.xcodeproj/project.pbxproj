@@ -26,6 +26,7 @@
 		66E49E7320295E59006AF127 /* NoticeMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */; };
 		849117BB20297B680001F8DB /* NoticeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */; };
 		9458B271202E0875007C2A8C /* SubmitTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458B270202E0874007C2A8C /* SubmitTabViewController.swift */; };
+		9458B273202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458B272202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeMainTableViewController.swift; sourceTree = "<group>"; };
 		849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailTableViewController.swift; sourceTree = "<group>"; };
 		9458B270202E0874007C2A8C /* SubmitTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTabViewController.swift; sourceTree = "<group>"; };
+		9458B272202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTab2CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				66D07879202BF34A0062F4D7 /* SubmitTab.storyboard */,
 				9458B270202E0874007C2A8C /* SubmitTabViewController.swift */,
 				66D078B1202C35DE0062F4D7 /* SubmitTab1CollectionViewCell.swift */,
+				9458B272202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift */,
 			);
 			path = SubmitTab;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				66E49E6F202959F6006AF127 /* Definition.swift in Sources */,
 				66D078B2202C35DE0062F4D7 /* SubmitTab1CollectionViewCell.swift in Sources */,
 				66D078AC202C2D170062F4D7 /* SettingTabTableViewController.swift in Sources */,
+				9458B273202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift in Sources */,
 				849117BB20297B680001F8DB /* NoticeDetailTableViewController.swift in Sources */,
 				66D0787C202BF52C0062F4D7 /* InfoMainTableViewController.swift in Sources */,
 			);

@@ -11,15 +11,16 @@ import UIKit
 class SubmitTabViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var submit1CollectionView: UICollectionView!
+    @IBOutlet weak var submit2CollectionView: UICollectionView!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         submit1CollectionView.delegate = self
         submit1CollectionView.dataSource = self
 
-        // Do any additional setup after loading the view.
+        submit2CollectionView.delegate = self
+        submit2CollectionView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,16 +33,32 @@ class SubmitTabViewController: UIViewController, UICollectionViewDataSource, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return doingSubmit.count
+        if collectionView == self.submit1CollectionView {
+            return doingSubmit.count
+        } else {
+            return regularSubmit.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell:SubmitTab1CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "tab1Cell", for: indexPath) as! SubmitTab1CollectionViewCell
         
-        cell.iconImage.image = doingSubmit[indexPath.row].icon
-        cell.iconLabel.text = doingSubmit[indexPath.row].title
+        if collectionView == self.submit1CollectionView {
+            let cell:SubmitTab1CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "tab1Cell", for: indexPath) as! SubmitTab1CollectionViewCell
+            
+            cell.iconImage.image = doingSubmit[indexPath.row].icon
+            cell.iconLabel.text = doingSubmit[indexPath.row].title
+            
+            return cell
+        } else {
+            let cell:SubmitTab2CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "tab2Cell", for: indexPath) as! SubmitTab2CollectionViewCell
+            
+            cell.iconImage.image = regularSubmit[indexPath.row].icon
+            cell.iconLabel.text = regularSubmit[indexPath.row].title
+            
+            return cell
+        }
         
-        return cell
+        
     }
     
 
