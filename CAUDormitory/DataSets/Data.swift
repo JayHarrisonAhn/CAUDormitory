@@ -45,6 +45,16 @@ enum DormitoryBuilding:String {
     case blueMir308 = "블루미르 308관"
 }
 
+//info 탭
+    //시설정보
+var facilities:[[facility]] = [
+    [facility(name: "식당", icon: #imageLiteral(resourceName: "info_logo_cafeteria"), iconSize:2, baseInfo: [["308관 1층":"7:00 ~ 20:00"], ["309관 1층":"13:00 ~ 19:00"]]),
+    facility(name: "편의점", icon: #imageLiteral(resourceName: "info_logo_cvs"), iconSize:1, baseInfo: [["308관 1층":"7:00 ~ 20:00"], ["309관 1층":"7:00 ~ 21:00"]]),
+    facility(name: "자판기", icon: #imageLiteral(resourceName: "info_logo_vendingmachine"), iconSize:1, baseInfo: [["309관 홀수층":"24시간 운영"]])],
+    
+    [facility(name: "세탁실", icon: #imageLiteral(resourceName: "info_logo_laundryroom"), iconSize:2, baseInfo: [["308관 2층":"7:00 ~ 20:00"], ["309관 2층":"6:00 ~ 24:00"]])]
+]
+
 //submit 탭
     //현재 진행중인 신청
 var doingSubmit:[Submit] = [

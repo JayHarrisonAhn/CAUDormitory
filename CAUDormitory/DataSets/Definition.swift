@@ -31,6 +31,21 @@ class CampusData {
     }
 }
 
+//Info 탭
+class facility {
+    var name:String
+    var icon:UIImage
+    var iconSize:Int
+    var baseInfo:[[String:String]]//location:time
+    init(name:String, icon:UIImage, iconSize:Int, baseInfo:[[String:String]]) {
+        self.name = name
+        self.icon = icon
+        self.iconSize = iconSize
+        self.baseInfo = baseInfo
+    }
+}
+
+
 //Submit 탭
 class Submit {
     var title:String
