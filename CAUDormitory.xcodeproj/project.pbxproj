@@ -114,9 +114,9 @@
 		66D07870202BF0450062F4D7 /* NoticeTab */ = {
 			isa = PBXGroup;
 			children = (
+				66D07875202BF15B0062F4D7 /* NoticeTab.storyboard */,
 				66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */,
 				849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */,
-				66D07875202BF15B0062F4D7 /* NoticeTab.storyboard */,
 			);
 			path = NoticeTab;
 			sourceTree = "<group>";

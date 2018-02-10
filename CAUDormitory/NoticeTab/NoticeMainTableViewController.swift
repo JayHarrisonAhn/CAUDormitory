@@ -89,6 +89,7 @@ class NoticeMainTableViewController: UITableViewController {
             
             let vc = segue.destination as? NoticeDetailTableViewController
             vc?.notice = SeoulData.notices[selectedRow]
+            vc?.noticeKey = selectedRow
         }
     }
 }

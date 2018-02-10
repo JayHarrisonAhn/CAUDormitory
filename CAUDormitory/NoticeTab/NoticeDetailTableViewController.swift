@@ -15,10 +15,12 @@ class NoticeDetailTableViewCell: UITableViewCell {
 class NoticeDetailTableViewController: UITableViewController {
     
     var notice:Notice?
+    var noticeKey:Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -43,17 +45,36 @@ class NoticeDetailTableViewController: UITableViewController {
         
         let number = notice?.image.count
         
-        return number!
+        return number! + 1
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> NoticeDetailTableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if let isLast = notice?.image.count {
+            if indexPath.row == (isLast) {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "lastCell", for: indexPath)
+                cell.textLabel?.text = "공지 바로가기"
+                self.tableView.rowHeight = 44
+                return cell
+            }
+        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "imageIdentifier", for: indexPath) as? NoticeDetailTableViewCell
-
         cell?.img.image = notice?.image[indexPath.row]
         
-
         return cell!
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let isLast = notice?.image.count {
+            if indexPath.row == (isLast) {
+                let url = URL(string: "https://dormitory.cau.ac.kr/bbs/bbs_view.php?pNum=" + String(2252 - noticeKey!) + "&bbsID=notice")
+                
+                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+            }
+        }
     }
     
 
