@@ -40,6 +40,15 @@ class SubmitTabViewController: UIViewController, UICollectionViewDataSource, UIC
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == self.submit1CollectionView {
+            UIApplication.shared.open(doingSubmit[indexPath.row].url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.open(regularSubmit[indexPath.row].url, options: [:], completionHandler: nil)
+        }
+
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if collectionView == self.submit1CollectionView {
