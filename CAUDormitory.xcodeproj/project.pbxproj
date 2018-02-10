@@ -17,7 +17,6 @@
 		66D07876202BF15B0062F4D7 /* NoticeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D07875202BF15B0062F4D7 /* NoticeTab.storyboard */; };
 		66D07878202BF2230062F4D7 /* InfoTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D07877202BF2230062F4D7 /* InfoTab.storyboard */; };
 		66D0787A202BF34A0062F4D7 /* SubmitTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D07879202BF34A0062F4D7 /* SubmitTab.storyboard */; };
-		66D0787C202BF52C0062F4D7 /* InfoMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D0787B202BF52C0062F4D7 /* InfoMainTableViewController.swift */; };
 		66D07889202C248B0062F4D7 /* SettingTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D07888202C248B0062F4D7 /* SettingTab.storyboard */; };
 		66D078AC202C2D170062F4D7 /* SettingTabTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D078AB202C2D170062F4D7 /* SettingTabTableViewController.swift */; };
 		66D078B2202C35DE0062F4D7 /* SubmitTab1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D078B1202C35DE0062F4D7 /* SubmitTab1CollectionViewCell.swift */; };
@@ -26,6 +25,7 @@
 		66E49E7320295E59006AF127 /* NoticeMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */; };
 		84841081202EF3D800A9B97E /* SubmitSupportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */; };
 		849117BB20297B680001F8DB /* NoticeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */; };
+		9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997D202F57D700EB79AA /* InfoMainViewController.swift */; };
 		9458B271202E0875007C2A8C /* SubmitTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458B270202E0874007C2A8C /* SubmitTabViewController.swift */; };
 		9458B273202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458B272202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -43,7 +43,6 @@
 		66D07875202BF15B0062F4D7 /* NoticeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoticeTab.storyboard; sourceTree = "<group>"; };
 		66D07877202BF2230062F4D7 /* InfoTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoTab.storyboard; sourceTree = "<group>"; };
 		66D07879202BF34A0062F4D7 /* SubmitTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubmitTab.storyboard; sourceTree = "<group>"; };
-		66D0787B202BF52C0062F4D7 /* InfoMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainTableViewController.swift; sourceTree = "<group>"; };
 		66D07888202C248B0062F4D7 /* SettingTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingTab.storyboard; sourceTree = "<group>"; };
 		66D078AB202C2D170062F4D7 /* SettingTabTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTabTableViewController.swift; sourceTree = "<group>"; };
 		66D078B1202C35DE0062F4D7 /* SubmitTab1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTab1CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		66E49E7220295E59006AF127 /* NoticeMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeMainTableViewController.swift; sourceTree = "<group>"; };
 		84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitSupportTableViewController.swift; sourceTree = "<group>"; };
 		849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailTableViewController.swift; sourceTree = "<group>"; };
+		9437997D202F57D700EB79AA /* InfoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainViewController.swift; sourceTree = "<group>"; };
 		9458B270202E0874007C2A8C /* SubmitTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTabViewController.swift; sourceTree = "<group>"; };
 		9458B272202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTab2CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				66D07877202BF2230062F4D7 /* InfoTab.storyboard */,
-				66D0787B202BF52C0062F4D7 /* InfoMainTableViewController.swift */,
+				9437997D202F57D700EB79AA /* InfoMainViewController.swift */,
 			);
 			path = InfoTab;
 			sourceTree = "<group>";
@@ -249,7 +249,7 @@
 				66D078AC202C2D170062F4D7 /* SettingTabTableViewController.swift in Sources */,
 				9458B273202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift in Sources */,
 				849117BB20297B680001F8DB /* NoticeDetailTableViewController.swift in Sources */,
-				66D0787C202BF52C0062F4D7 /* InfoMainTableViewController.swift in Sources */,
+				9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
