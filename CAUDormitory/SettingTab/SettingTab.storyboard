@@ -29,7 +29,7 @@
             </objects>
             <point key="canvasLocation" x="-2433" y="268"/>
         </scene>
-        <!--설정-->
+        <!--어플리케이션 설정-->
         <scene sceneID="9mM-uR-qJs">
             <objects>
                 <tableViewController id="Prg-mU-Nad" customClass="SettingTabTableViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                             <outlet property="delegate" destination="Prg-mU-Nad" id="goQ-At-KV0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="설정" id="zD1-Y7-afg"/>
+                    <navigationItem key="navigationItem" title="어플리케이션 설정" id="zD1-Y7-afg"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qji-00-30C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

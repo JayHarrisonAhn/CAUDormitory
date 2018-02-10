@@ -56,14 +56,33 @@
                             <outlet property="delegate" destination="cRh-9i-ohk" id="cyk-ci-vQE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="L1O-AX-YbZ"/>
+                    <navigationItem key="navigationItem" id="Gq3-Sv-TJi">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="qiS-5w-kK7">
+                            <rect key="frame" x="33.5" y="2" width="308" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="SuS-eS-6RI">
+                                    <rect key="frame" x="38" y="5" width="55" height="29"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="중앙대학교 기숙사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbJ-Ti-tLd">
+                                    <rect key="frame" x="98" y="9" width="200" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </view>
+                    </navigationItem>
                     <connections>
                         <segue destination="mP9-mK-oCC" kind="presentation" identifier="modalWelcome" id="B1m-vZ-nAU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rpZ-LR-ZQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-700" y="64"/>
+            <point key="canvasLocation" x="-700" y="63.418290854572717"/>
         </scene>
         <!--생활정보-->
         <scene sceneID="FUL-Jl-jMR">
@@ -89,6 +108,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HeadLogo" width="1520" height="883"/>
         <image name="logo_info" width="24" height="24"/>
     </resources>
 </document>

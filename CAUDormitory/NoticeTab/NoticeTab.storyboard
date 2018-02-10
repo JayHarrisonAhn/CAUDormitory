@@ -73,7 +73,26 @@
                             <outlet property="delegate" destination="CK1-qt-1K0" id="ROI-3l-BGS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="4Ke-oI-i19"/>
+                    <navigationItem key="navigationItem" id="djD-sc-QTO">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="dVi-8D-ohd">
+                            <rect key="frame" x="33.5" y="2" width="308" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="RhC-9G-GKs">
+                                    <rect key="frame" x="38" y="5" width="55" height="29"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="중앙대학교 기숙사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aY-GX-zo3">
+                                    <rect key="frame" x="98" y="9" width="200" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </view>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAN-mY-hl4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,7 +114,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="419.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2T-xt-mFI">
+                                        <imageView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2T-xt-mFI">
                                             <rect key="frame" x="10" y="0.0" width="355" height="400"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -135,6 +154,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HeadLogo" width="1520" height="883"/>
         <image name="logo_noti" width="24" height="24"/>
     </resources>
 </document>

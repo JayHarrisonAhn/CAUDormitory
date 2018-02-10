@@ -147,7 +147,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="am4-TN-TsY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uOb-Tx-xIN"/>
+                    <navigationItem key="navigationItem" id="0xI-oc-B0A">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="WJE-JV-eUc">
+                            <rect key="frame" x="33.5" y="2" width="308" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pVR-Ux-UnQ">
+                                    <rect key="frame" x="38" y="5" width="55" height="29"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="중앙대학교 기숙사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6A9-NW-Au2">
+                                    <rect key="frame" x="98" y="9" width="200" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </view>
+                    </navigationItem>
                     <connections>
                         <outlet property="submit1CollectionView" destination="JmK-te-XA2" id="hpj-dB-bmw"/>
                         <outlet property="submit2CollectionView" destination="e4N-Vi-Zfo" id="hMo-6y-5cj"/>
@@ -196,6 +215,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HeadLogo" width="1520" height="883"/>
         <image name="logo_submit" width="24" height="24"/>
     </resources>
 </document>
