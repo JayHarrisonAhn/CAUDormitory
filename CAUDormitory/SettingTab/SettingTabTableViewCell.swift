@@ -10,6 +10,8 @@ import UIKit
 
 class SettingDetailTableViewCell: UITableViewCell {
     
+    var basicValue:SettingValue?
+    
     @IBOutlet weak var cellName: UILabel!
     @IBOutlet weak var cellDetail: UILabel!
 
@@ -28,10 +30,16 @@ class SettingDetailTableViewCell: UITableViewCell {
 
 class SettingButtonTableViewCell: UITableViewCell {
     
+    var basicValue:SettingValue?
     
     @IBOutlet weak var cellButton: UISwitch!
     @IBOutlet weak var cellName: UILabel!
     @IBAction func cellButton(_ sender: Any) {
+        if self.cellButton.isOn {
+            basicValue?.setValue(true)
+        } else {
+            basicValue?.setValue(false)
+        }
     }
     
     

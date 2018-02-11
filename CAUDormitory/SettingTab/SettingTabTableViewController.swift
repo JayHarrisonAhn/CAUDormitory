@@ -40,17 +40,20 @@ class SettingTabTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellButton", for: indexPath) as! SettingButtonTableViewCell
             cell.cellName.text = setting[indexPath.section][indexPath.row].name
             cell.cellButton.isOn = setting[indexPath.section][indexPath.row].readValue() as! Bool
+            cell.basicValue = setting[indexPath.section][indexPath.row]
             return cell
         case .Building:
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellDetail", for: indexPath) as! SettingDetailTableViewCell
             cell.cellName.text = setting[indexPath.section][indexPath.row].name
             let temp = setting[indexPath.section][indexPath.row].readValue() as? String
             cell.cellDetail.text = DormitoryBuilding(rawValue: temp!)?.definition
+            cell.basicValue = setting[indexPath.section][indexPath.row]
             return cell
         case .String:
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellDetail", for: indexPath) as! SettingDetailTableViewCell
             cell.cellName.text = setting[indexPath.section][indexPath.row].name
             cell.cellDetail.text = setting[indexPath.section][indexPath.row].readValue() as? String
+            cell.basicValue = setting[indexPath.section][indexPath.row]
             return cell
         }
         
