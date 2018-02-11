@@ -21,7 +21,9 @@ var SeoulData = CampusData(
     Notice(title: "[생활관]정비기간(휴관) 정비 계획", date: "18.02.07", image: [#imageLiteral(resourceName: "SeoulNotice_4")]),
     Notice(title: "[긴급공지]308관 호실 천장 냉,난방기 정밀세척작업 일정 안내/Schedule for cleaning air conditioner filters", date: "18.02.06", image: [#imageLiteral(resourceName: "SeoulNotice_1")]),
     Notice(title: "[생활관]2018학년도 1학기 입관서류 제출 안내", date: "18.02.02", image: [#imageLiteral(resourceName: "SeoulNotice_2")]),
-    Notice(title: "[생활관]2018학년도 1학기 입관 안내/Moving-in Guide", date: "18.02.02", image: [#imageLiteral(resourceName: "SeoulNotice_3_1"), #imageLiteral(resourceName: "SeoulNotice_3_2"), #imageLiteral(resourceName: "SeoulNotice_3_3")])
+    Notice(title: "[생활관]2018학년도 1학기 입관 안내/Moving-in Guide", date: "18.02.02", image: [#imageLiteral(resourceName: "SeoulNotice_3_1"), #imageLiteral(resourceName: "SeoulNotice_3_2"), #imageLiteral(resourceName: "SeoulNotice_3_3")]),
+    Notice(title: "생활관 사감(행정인턴) 모집 공고", date: "18.02.01", image: []),
+    Notice(title: "2017학년도 동계방학 호실 이동 관생 퇴관 검사 예약 신청/2017-Winter Register an inspection schedule", date: "18.02.01", image: []),
 ])
 
 
@@ -60,9 +62,9 @@ enum DormitoryBuilding:String {
     //시설정보
 var facilities:[[facility]] = [
     [facility(name: "식당", icon: #imageLiteral(resourceName: "info_logo_cafeteria"), iconSize:2, baseInfo: [["308관 1층":"7:00 ~ 20:00"], ["309관 1층":"13:00 ~ 19:00"]]),
-    facility(name: "편의점", icon: #imageLiteral(resourceName: "info_logo_cvs"), iconSize:1, baseInfo: [["308관 1층":"7:00 ~ 20:00"], ["309관 1층":"7:00 ~ 21:00"]]),
-    facility(name: "자판기", icon: #imageLiteral(resourceName: "info_logo_vendingmachine"), iconSize:1, baseInfo: [["309관 홀수층":"24시간 운영"]]),
-    facility(name: "자판기", icon: #imageLiteral(resourceName: "info_logo_vendingmachine"), iconSize:1, baseInfo: [["309관 홀수층":"24시간 운영"]])],
+    facility(name: "편의점", icon: #imageLiteral(resourceName: "info_logo_cvs"), iconSize:2, baseInfo: [["308관 1층":"7:00 ~ 20:00"], ["309관 1층":"7:00 ~ 21:00"]]),
+    facility(name: "자판기", icon: #imageLiteral(resourceName: "info_logo_vendingmachine"), iconSize:2, baseInfo: [["309관 홀수층":"24시간 운영"]]),
+    facility(name: "자판기", icon: #imageLiteral(resourceName: "info_logo_vendingmachine"), iconSize:2, baseInfo: [["309관 홀수층":"24시간 운영"]])],
     
     [facility(name: "세탁실", icon: #imageLiteral(resourceName: "info_logo_laundryroom"), iconSize:2, baseInfo: [["308관 2층":"7:00 ~ 20:00"], ["309관 2층":"6:00 ~ 24:00"]]),
      facility(name: "피트니스실", icon: #imageLiteral(resourceName: "info_logo_fitness"), iconSize:2, baseInfo: [["308관 외부":"7:00 ~ 20:00"], ["309관 2층":"6:00 ~ 23:00"]]),
