@@ -43,6 +43,17 @@ enum Campus:String {
 enum DormitoryBuilding:String {
     case blueMir309 = "블루미르 309관"
     case blueMir308 = "블루미르 308관"
+    case future = "퓨처하우스"
+    case global = "글로벌하우스"
+    
+    var definition:String? {
+        switch self {
+        case .blueMir308: return "blueMir308"
+        case .blueMir309: return "blueMir309"
+        case .future: return "future"
+        case .global: return "global"
+        }
+    }
 }
 
 //info 탭
@@ -81,5 +92,21 @@ var contact:[Contact] = [
     Contact(title: "자주 묻는 질문(FAQ)", url:URL(string:"http://dormitory.cau.ac.kr/bbs/bbs_list.php?bbsID=faq")!),
     Contact(title: "생활관에 문의하기(Q&A)", url:URL(string:"http://dormitory.cau.ac.kr/bbs/bbs_list.php?bbsID=qna")!),
     Contact(title: "관생전용 게시판", url:URL(string:"http://dormitory.cau.ac.kr/bbs/bbs_list.php?bbsID=student")!),
-    Contact(title: "어플리케이션 관리자에게 문의하기", url:URL(string:"https://projectintheclass.github.io/CAUDormitory/")!)
+    Contact(title: "어플리케이션 관리자에게 문의하기", url:URL(string:"https://projectintheclass.github.io/CAUDormitory/#footer")!)
+]
+
+//setting 탭
+var setting:[[SettingValue]] = [[
+        SettingValue(name: "학번", settingCode: "studentID", type: .String, value: nil),
+        SettingValue(name: "성별", settingCode: "studentGender", type: .String, value: nil)
+    ],[
+        //SettingValue(name: "생활관 건물", settingCode: "DormBuilding", type: .Building, value: DormitoryBuilding.blueMir309),
+        SettingValue(name: "생활관 호실", settingCode: "studentGender", type: .String, value: nil)
+    ],[
+        SettingValue(name: "정기점검", settingCode: "alertCheck", type: .Bool, value: nil),
+        SettingValue(name: "방역소독", settingCode: "alertDisinfection", type: .Bool, value: nil),
+        SettingValue(name: "정기소방훈련", settingCode: "alertFiredrill", type: .Bool, value: nil),
+        SettingValue(name: "입관신청", settingCode: "alertMovein", type: .Bool, value: nil),
+        SettingValue(name: "퇴관신청", settingCode: "alertMoveout", type: .Bool, value: nil)
+    ]
 ]

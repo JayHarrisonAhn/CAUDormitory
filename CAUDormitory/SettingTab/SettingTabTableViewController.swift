@@ -9,11 +9,6 @@
 import UIKit
 
 class SettingTabTableViewController: UITableViewController {
-    
-    struct SettingValue {
-        
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,23 +24,54 @@ class SettingTabTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return setting.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return setting[section].count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        switch setting[indexPath.section][indexPath.row].type {
+        case .Bool:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellButton", for: indexPath) as! SettingButtonTableViewCell
+            cell.cellName.text = setting[indexPath.section][indexPath.row].name
+            cell.cellButton.isOn = setting[indexPath.section][indexPath.row].readValue() as! Bool
+            return cell
+        case .Building:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellDetail", for: indexPath) as! SettingDetailTableViewCell
+            cell.cellName.text = setting[indexPath.section][indexPath.row].name
+            let temp = setting[indexPath.section][indexPath.row].readValue() as? String
+            cell.cellDetail.text = DormitoryBuilding(rawValue: temp!)?.definition
+            return cell
+        case .String:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellDetail", for: indexPath) as! SettingDetailTableViewCell
+            cell.cellName.text = setting[indexPath.section][indexPath.row].name
+            cell.cellDetail.text = setting[indexPath.section][indexPath.row].readValue() as? String
+            return cell
+        }
+        
+        
 
-        // Configure the cell...
+        
 
-        return cell
     }
-    */
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0:
+            return "사용자 정보"
+        case 1:
+            return "호실 정보"
+        case 2:
+            return "푸시알림"
+        default:
+            return nil
+        }
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
