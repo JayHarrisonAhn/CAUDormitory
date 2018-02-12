@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 var SeoulData = CampusData(
-    latestNoticeKey : 2254,
+    latestNoticeKey : 2252,
     
     notices:[
     Notice(title: "2018학년도 1학기 서울캠퍼스 생활관 1차 충원 합격자 발표 - 복학생/전과생", date: "18.02.09", image: []),
