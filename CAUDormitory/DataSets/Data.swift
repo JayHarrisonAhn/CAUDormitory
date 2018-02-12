@@ -63,7 +63,6 @@ enum DormitoryBuilding:String {
 var facilities:[[facility]] = [
     [facility(name: "식당", icon: #imageLiteral(resourceName: "info_logo_cafeteria"), iconSize:2, baseInfo: [["308관 1층":"7:00 ~ 20:00"], ["309관 1층":"13:00 ~ 19:00"]]),
     facility(name: "편의점", icon: #imageLiteral(resourceName: "info_logo_cvs"), iconSize:2, baseInfo: [["308관 1층":"7:00 ~ 20:00"], ["309관 1층":"7:00 ~ 21:00"]]),
-    facility(name: "자판기", icon: #imageLiteral(resourceName: "info_logo_vendingmachine"), iconSize:2, baseInfo: [["309관 홀수층":"24시간 운영"]]),
     facility(name: "자판기", icon: #imageLiteral(resourceName: "info_logo_vendingmachine"), iconSize:2, baseInfo: [["309관 홀수층":"24시간 운영"]])],
     
     [facility(name: "세탁실", icon: #imageLiteral(resourceName: "info_logo_laundryroom"), iconSize:2, baseInfo: [["308관 2층":"7:00 ~ 20:00"], ["309관 2층":"6:00 ~ 24:00"]]),
@@ -85,8 +84,8 @@ var doingSubmit:[Submit] = [
     //상시 진행중인 신청
 var regularSubmit:[Submit] = [
     Submit(title:"고장수리신청", icon:#imageLiteral(resourceName: "submit_always1"), url:URL(string:"http://dormitory.cau.ac.kr/garden/broken_confirm.php")!),
-    Submit(title:"칭찬릴레이", icon:#imageLiteral(resourceName: "submit_always1"), url:URL(string:"http://dormitory.cau.ac.kr/bbs/bbs_list.php?bbsID=praise")!),
-    Submit(title:"추가선발신청", icon:#imageLiteral(resourceName: "submit_always1"), url:URL(string:"http://dormitory.cau.ac.kr/bbs/bbs_list.php?bbsID=praise")!)
+    Submit(title:"칭찬릴레이", icon:#imageLiteral(resourceName: "submit_always2"), url:URL(string:"http://dormitory.cau.ac.kr/bbs/bbs_list.php?bbsID=praise")!),
+    Submit(title:"추가선발신청", icon:#imageLiteral(resourceName: "submit_always3"), url:URL(string:"http://dormitory.cau.ac.kr/bbs/bbs_list.php?bbsID=praise")!)
 ]
 
     //문의하기
