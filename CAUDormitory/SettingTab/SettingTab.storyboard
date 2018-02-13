@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -44,9 +45,11 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaa-Re-3DI">
-                                            <rect key="frame" x="206" y="11" width="143" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaa-Re-3DI">
+                                            <rect key="frame" x="307" y="11" width="42" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="ZUg-XX-enc"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -59,6 +62,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="oaa-Re-3DI" firstAttribute="centerY" secondItem="JbC-oC-Fem" secondAttribute="centerY" id="DqN-J8-Idx"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="oaa-Re-3DI" secondAttribute="trailing" constant="10" id="OIT-zT-0Ld"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cellDetail" destination="oaa-Re-3DI" id="mEr-xL-hV8"/>
@@ -79,14 +86,22 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x7H-Az-LLb">
-                                            <rect key="frame" x="303" y="6" width="49" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x7H-Az-LLb">
+                                            <rect key="frame" x="301" y="6" width="51" height="31"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="Qmx-PD-wZZ"/>
+                                                <constraint firstAttribute="width" constant="49" id="RHP-7X-Hmb"/>
+                                                <constraint firstAttribute="height" constant="31" id="oiM-1g-C8c"/>
+                                            </constraints>
                                             <connections>
                                                 <action selector="cellButton:" destination="pka-Bj-Ikh" eventType="valueChanged" id="XHV-Wo-7TO"/>
                                             </connections>
                                         </switch>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="x7H-Az-LLb" secondAttribute="trailing" constant="25" id="htU-Cn-r5Q"/>
+                                        <constraint firstItem="x7H-Az-LLb" firstAttribute="centerY" secondItem="c5B-zl-ufy" secondAttribute="centerY" id="xtO-fc-WCz"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cellButton" destination="x7H-Az-LLb" id="UI8-Cu-Zdp"/>
