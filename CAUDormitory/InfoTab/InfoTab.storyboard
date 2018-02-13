@@ -26,9 +26,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eGB-Fs-ZE7">
-                                <rect key="frame" x="10" y="64" width="355" height="552"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eGB-Fs-ZE7">
+                                <rect key="frame" x="10" y="64" width="355" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="G0l-sY-2Mr">
                                     <size key="itemSize" width="170" height="170"/>
@@ -111,6 +110,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pe2-7z-625" firstAttribute="trailing" secondItem="eGB-Fs-ZE7" secondAttribute="trailing" constant="10" id="09w-Rc-6o4"/>
+                            <constraint firstItem="eGB-Fs-ZE7" firstAttribute="leading" secondItem="Pe2-7z-625" secondAttribute="leading" constant="10" id="B9D-bG-PrT"/>
+                            <constraint firstItem="Pe2-7z-625" firstAttribute="bottom" secondItem="eGB-Fs-ZE7" secondAttribute="bottom" id="BtV-Id-K22"/>
+                            <constraint firstItem="eGB-Fs-ZE7" firstAttribute="top" secondItem="Pe2-7z-625" secondAttribute="top" id="hzR-3B-wHD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Pe2-7z-625"/>
                     </view>
                     <navigationItem key="navigationItem" id="kIC-fl-BZ8">
