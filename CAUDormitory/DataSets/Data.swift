@@ -57,7 +57,6 @@ enum DormitoryBuilding:String {
         }
     }
 }
-
 enum Gender:String {
     case man = "Man"
     case woman = "Woman"

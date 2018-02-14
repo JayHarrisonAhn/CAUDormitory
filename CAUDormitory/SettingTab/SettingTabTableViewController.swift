@@ -13,8 +13,12 @@ protocol settingElement {
     var identifier:String {get}
     func setCell(cell:UITableViewCell) -> UITableViewCell
     func initializeKey()
+    func selected()
 }
-
+protocol intForm:settingElement {
+    func read() -> Int
+    func write(_ to:Int)
+}
 class settingBoolElement:settingElement {
     var name:String
     var identifier: String = "bool"
@@ -35,6 +39,9 @@ class settingBoolElement:settingElement {
     }
     func initializeKey() {
         write(false)
+    }
+    func selected() {
+        
     }
 }
 class settingAlertElement:settingElement {
@@ -58,6 +65,9 @@ class settingAlertElement:settingElement {
     func initializeKey() {
         write(false)
     }
+    func selected() {
+        
+    }
 }
 class settingStringElement:settingElement {
     var name:String
@@ -79,6 +89,9 @@ class settingStringElement:settingElement {
     }
     func initializeKey() {
         write(" ")
+    }
+    func selected() {
+        
     }
 }
 class settingBuildingElement:settingElement {
@@ -105,8 +118,11 @@ class settingBuildingElement:settingElement {
     func initializeKey() {
         write(.blueMir309)
     }
+    func selected() {
+        
+    }
 }
-class settingIntElement:settingElement {
+class settingIntElement:intForm {
     var name:String
     var identifier: String = "detail"
     init(name:String) {
@@ -126,6 +142,58 @@ class settingIntElement:settingElement {
     }
     func initializeKey() {
         write(18)
+    }
+    func selected() {
+        
+    }
+}
+class settingIDElement:settingElement {
+    var name:String
+    var identifier: String = "studentID"
+    init(name:String) {
+        self.name = name
+    }
+    func read() -> Int {
+        return UserDefaults.standard.integer(forKey: "setting_" + name)
+    }
+    func write(_ to:Int) {
+        UserDefaults.standard.set(to, forKey: "setting_" + name)
+    }
+    func setCell(cell: UITableViewCell) -> UITableViewCell{
+        let resultCell = cell as! SettingStudentIDTableViewCell
+        resultCell.cellName.text = name
+        resultCell.cellDetail.text = String(read())
+        return resultCell
+    }
+    func initializeKey() {
+        write(20180000)
+    }
+    func selected() {
+        let alertController = UIAlertController(title: nil, message: "학번 수정", preferredStyle: .alert)
+        
+        let adjustAction = UIAlertAction(title: "수정", style: .default) {(_) in
+            let ID = alertController.textFields![0] as UITextField
+            let value = Int(ID.text!)
+            
+            if (value! < 20190000) && (value! > 19180000) {
+                studentID.write(value!)
+                
+            } else {
+                print("Error")
+            }
+        }
+        
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel)
+        
+        alertController.addTextField(configurationHandler: {(textField) in
+            textField.placeholder = "학번(8자리)"
+            textField.keyboardType = .numberPad
+        })
+        alertController.addAction(adjustAction)
+        alertController.addAction(cancelAction)
+        
+        
+        UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
 }
 class settingGenderElement:settingElement {
@@ -152,10 +220,15 @@ class settingGenderElement:settingElement {
     func initializeKey() {
         write(.man)
     }
+    func selected() {
+        
+    }
 }
 
+let studentID = settingIDElement(name:"학번")
+
 var setting:[[settingElement]] = [
-    [settingIntElement(name:"학번"),
+    [studentID,
      settingGenderElement(name:"성별")],
     
     [settingBuildingElement(name:"생활관 건물"),
@@ -211,6 +284,10 @@ class SettingTabTableViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        setting[indexPath.section][indexPath.row].selected()
+        reloadInputViews()
+    }
 
     /*
     // Override to support conditional editing of the table view.
