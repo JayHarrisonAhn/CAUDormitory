@@ -30,11 +30,11 @@ var SeoulData = CampusData(
 
 func InitUserData() {
     UserDefaults.standard.set(true, forKey: "Checked")
-    UserDefaults.standard.set(Campus.Seoul.rawValue, forKey: "userCampus")
-    UserDefaults.standard.set(DormitoryBuilding.blueMir309.rawValue, forKey: "userBuilding")
-    
-    UserDefaults.standard.set(18, forKey: "userSchoolNum")
-    UserDefaults.standard.set(1120, forKey: "userRoom")
+    for section:[settingElement] in setting {
+        for element:settingElement in section {
+            element.initializeKey()
+        }
+    }
 }
 
 enum Campus:String {
@@ -43,17 +43,29 @@ enum Campus:String {
 }
 
 enum DormitoryBuilding:String {
-    case blueMir309 = "블루미르 309관"
-    case blueMir308 = "블루미르 308관"
-    case future = "퓨처하우스"
-    case global = "글로벌하우스"
+    case blueMir309 = "blueMir308"
+    case blueMir308 = "blueMir309"
+    case future = "future"
+    case global = "global"
     
-    var definition:String? {
+    var korean:String? {
         switch self {
-        case .blueMir308: return "blueMir308"
-        case .blueMir309: return "blueMir309"
-        case .future: return "future"
-        case .global: return "global"
+        case .blueMir308: return "블루미르 309관"
+        case .blueMir309: return "블루미르 308관"
+        case .future: return "퓨처하우스"
+        case .global: return "글로벌하우스"
+        }
+    }
+}
+
+enum Gender:String {
+    case man = "Man"
+    case woman = "Woman"
+    
+    var korean:String? {
+        switch self {
+        case .man: return "남성"
+        case .woman: return "여성"
         }
     }
 }
@@ -97,17 +109,3 @@ var contact:[Contact] = [
 ]
 
 //setting 탭
-var setting:[[SettingValue]] = [[
-        SettingValue(name: "학번", settingCode: "studentID", type: .String, value: nil),
-        SettingValue(name: "성별", settingCode: "studentGender", type: .String, value: nil)
-    ],[
-        //SettingValue(name: "생활관 건물", settingCode: "DormBuilding", type: .Building, value: DormitoryBuilding.blueMir309),
-        SettingValue(name: "생활관 호실", settingCode: "studentGender", type: .String, value: nil)
-    ],[
-        SettingValue(name: "정기점검", settingCode: "alertCheck", type: .Bool, value: nil),
-        SettingValue(name: "방역소독", settingCode: "alertDisinfection", type: .Bool, value: nil),
-        SettingValue(name: "정기소방훈련", settingCode: "alertFiredrill", type: .Bool, value: nil),
-        SettingValue(name: "입관신청", settingCode: "alertMovein", type: .Bool, value: nil),
-        SettingValue(name: "퇴관신청", settingCode: "alertMoveout", type: .Bool, value: nil)
-    ]
-]

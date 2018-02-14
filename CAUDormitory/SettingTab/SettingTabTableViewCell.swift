@@ -10,7 +10,7 @@ import UIKit
 
 class SettingDetailTableViewCell: UITableViewCell {
     
-    var basicValue:SettingValue?
+    
     
     @IBOutlet weak var cellName: UILabel!
     @IBOutlet weak var cellDetail: UILabel!
@@ -18,6 +18,8 @@ class SettingDetailTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -25,22 +27,14 @@ class SettingDetailTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
 
 class SettingButtonTableViewCell: UITableViewCell {
     
-    var basicValue:SettingValue?
     
-    @IBOutlet weak var cellButton: UISwitch!
+    
     @IBOutlet weak var cellName: UILabel!
-    @IBAction func cellButton(_ sender: Any) {
-        if self.cellButton.isOn {
-            basicValue?.setValue(true)
-        } else {
-            basicValue?.setValue(false)
-        }
-    }
+    @IBOutlet weak var cellButton: UISwitch!
     
     
     override func awakeFromNib() {
@@ -55,5 +49,22 @@ class SettingButtonTableViewCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
+}
+
+class SettingAlertTableViewCell: UITableViewCell {
+    @IBOutlet weak var cellName: UILabel!
+    @IBOutlet weak var cellButton: UISwitch!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+        
+        
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
 }

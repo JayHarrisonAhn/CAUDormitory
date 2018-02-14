@@ -8,22 +8,180 @@
 
 import UIKit
 
+protocol settingElement {
+    var name:String {get}
+    var identifier:String {get}
+    func setCell(cell:UITableViewCell) -> UITableViewCell
+    func initializeKey()
+}
+
+class settingBoolElement:settingElement {
+    var name:String
+    var identifier: String = "bool"
+    init(name:String) {
+        self.name = name
+    }
+    func read() -> Bool {
+        return UserDefaults.standard.bool(forKey: "setting_" + name)
+    }
+    func write(_ to:Bool) {
+        UserDefaults.standard.set(to, forKey: "setting_" + name)
+    }
+    func setCell(cell:UITableViewCell) -> UITableViewCell {
+        let resultCell = cell as! SettingButtonTableViewCell
+        resultCell.cellName.text = name
+        resultCell.cellButton.isOn = read()
+        return resultCell
+    }
+    func initializeKey() {
+        write(false)
+    }
+}
+class settingAlertElement:settingElement {
+    var name:String
+    var identifier: String = "alert"
+    init(name:String) {
+        self.name = name
+    }
+    func read() -> Bool {
+        return UserDefaults.standard.bool(forKey: "setting_" + name)
+    }
+    func write(_ to:Bool) {
+        UserDefaults.standard.set(to, forKey: "setting_" + name)
+    }
+    func setCell(cell:UITableViewCell) -> UITableViewCell  {
+        let resultCell = cell as! SettingAlertTableViewCell
+        resultCell.cellName.text = name
+        resultCell.cellButton.isOn = read()
+        return resultCell
+    }
+    func initializeKey() {
+        write(false)
+    }
+}
+class settingStringElement:settingElement {
+    var name:String
+    var identifier: String = "detail"
+    init(name:String) {
+        self.name = name
+    }
+    func read() -> String? {
+        return UserDefaults.standard.string(forKey: "setting_" + name)
+    }
+    func write(_ to:String) {
+        UserDefaults.standard.set(to, forKey: "setting_" + name)
+    }
+    func setCell(cell:UITableViewCell) -> UITableViewCell {
+        let resultCell = cell as! SettingDetailTableViewCell
+        resultCell.cellName.text = name
+        resultCell.cellDetail.text = read()
+        return resultCell
+    }
+    func initializeKey() {
+        write(" ")
+    }
+}
+class settingBuildingElement:settingElement {
+    var name:String
+    var identifier: String = "detail"
+    init(name:String) {
+        self.name = name
+    }
+    func read() -> DormitoryBuilding? {
+        guard let resultString = UserDefaults.standard.string(forKey: "setting_" + name) else {
+            return nil
+        }
+        return DormitoryBuilding(rawValue: resultString)
+    }
+    func write(_ to:DormitoryBuilding) {
+        UserDefaults.standard.set(to.rawValue, forKey: "setting_" + name)
+    }
+    func setCell(cell:UITableViewCell) -> UITableViewCell {
+        let resultCell = cell as! SettingDetailTableViewCell
+        resultCell.cellName.text = name
+        resultCell.cellDetail.text = read()?.korean
+        return resultCell
+    }
+    func initializeKey() {
+        write(.blueMir309)
+    }
+}
+class settingIntElement:settingElement {
+    var name:String
+    var identifier: String = "detail"
+    init(name:String) {
+        self.name = name
+    }
+    func read() -> Int {
+        return UserDefaults.standard.integer(forKey: "setting_" + name)
+    }
+    func write(_ to:Int) {
+        UserDefaults.standard.set(to, forKey: "setting_" + name)
+    }
+    func setCell(cell: UITableViewCell) -> UITableViewCell{
+        let resultCell = cell as! SettingDetailTableViewCell
+        resultCell.cellName.text = name
+        resultCell.cellDetail.text = String(read())
+        return resultCell
+    }
+    func initializeKey() {
+        write(18)
+    }
+}
+class settingGenderElement:settingElement {
+    var name:String
+    var identifier: String = "detail"
+    init(name:String) {
+        self.name = name
+    }
+    func read() -> Gender? {
+        guard let resultString = UserDefaults.standard.string(forKey: "setting_" + name) else {
+            return nil
+        }
+        return Gender(rawValue: resultString)
+    }
+    func write(_ to:Gender) {
+        UserDefaults.standard.set(to.rawValue, forKey: "setting_" + name)
+    }
+    func setCell(cell:UITableViewCell) -> UITableViewCell {
+        let resultCell = cell as! SettingDetailTableViewCell
+        resultCell.cellName.text = name
+        resultCell.cellDetail.text = read()?.korean
+        return resultCell
+    }
+    func initializeKey() {
+        write(.man)
+    }
+}
+
+var setting:[[settingElement]] = [
+    [settingIntElement(name:"학번"),
+     settingGenderElement(name:"성별")],
+    
+    [settingBuildingElement(name:"생활관 건물"),
+     settingIntElement(name:"생활관 호실")],
+    
+    [settingAlertElement(name:"푸시알림"),
+     settingBoolElement(name:"정기생활점검"),
+     settingBoolElement(name:"정기소방훈련"),
+     settingBoolElement(name:"오리엔테이션"),
+     settingBoolElement(name:"방역소독"),
+     settingBoolElement(name:"입관신청"),
+     settingBoolElement(name:"퇴관신청")]
+]
+
 class SettingTabTableViewController: UITableViewController {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return setting.count
     }
 
@@ -34,34 +192,12 @@ class SettingTabTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let value = setting[indexPath.section][indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: value.identifier, for: indexPath)
         
-        switch setting[indexPath.section][indexPath.row].type {
-        case .Bool:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cellButton", for: indexPath) as! SettingButtonTableViewCell
-            cell.cellName.text = setting[indexPath.section][indexPath.row].name
-            cell.cellButton.isOn = setting[indexPath.section][indexPath.row].readValue() as! Bool
-            cell.basicValue = setting[indexPath.section][indexPath.row]
-            return cell
-        case .Building:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cellDetail", for: indexPath) as! SettingDetailTableViewCell
-            cell.cellName.text = setting[indexPath.section][indexPath.row].name
-            let temp = setting[indexPath.section][indexPath.row].readValue() as? String
-            cell.cellDetail.text = DormitoryBuilding(rawValue: temp!)?.definition
-            cell.basicValue = setting[indexPath.section][indexPath.row]
-            return cell
-        case .String:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cellDetail", for: indexPath) as! SettingDetailTableViewCell
-            cell.cellName.text = setting[indexPath.section][indexPath.row].name
-            cell.cellDetail.text = setting[indexPath.section][indexPath.row].readValue() as? String
-            cell.basicValue = setting[indexPath.section][indexPath.row]
-            return cell
-        }
-        
-        
-
-        
-
+        return value.setCell(cell: cell)
     }
+    
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
