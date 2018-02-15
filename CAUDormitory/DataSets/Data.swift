@@ -42,11 +42,20 @@ enum Campus:String {
     case Ansung = "안성"
 }
 
-enum DormitoryBuilding:String {
-    case blueMir309 = "blueMir308"
-    case blueMir308 = "blueMir309"
-    case future = "future"
-    case global = "global"
+enum DormitoryBuilding:Int {
+    case blueMir309 = 0
+    case blueMir308
+    case future
+    case global
+    
+    var english:String? {
+        switch self {
+        case .blueMir308: return "blueMir 309"
+        case .blueMir309: return "blueMir 308"
+        case .future: return "future house"
+        case .global: return "global house"
+        }
+    }
     
     var korean:String? {
         switch self {
