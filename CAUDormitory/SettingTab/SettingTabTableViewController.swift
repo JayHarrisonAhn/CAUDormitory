@@ -206,6 +206,44 @@ class settingStudentID:settingElement {
         UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
 }
+class settingStudentGender:settingElement {
+    var name:String
+    var identifier: String = "detail"
+    init(name:String) {
+        self.name = name
+    }
+    func read() -> Gender {
+        return Gender(rawValue: (UserDefaults.standard.integer(forKey: "setting_" + name)))!
+    }
+    func write(_ to:Gender) {
+        UserDefaults.standard.set(to.rawValue, forKey: "setting_" + name)
+    }
+    func setCell(cell: UITableViewCell) -> UITableViewCell{
+        let resultCell = cell as! SettingDetailTableViewCell
+        resultCell.cellName.text = name
+        resultCell.cellDetail.text = read().korean
+        return resultCell
+    }
+    func initializeKey() {
+        write(.man)
+    }
+    
+    func selected(_ tableView:UITableView) {
+        let vc = UIViewController()
+        vc.preferredContentSize = CGSize(width: 250,height: 300)
+        let pickerView = GenderPickerView(frame: CGRect(x: 0, y: 0, width: 250, height: 300))
+        pickerView.dataSource = pickerView
+        pickerView.delegate = pickerView
+        vc.view.addSubview(pickerView)
+        let editRadiusAlert = UIAlertController(title: "Choose distance", message: "", preferredStyle: .alert)
+        editRadiusAlert.setValue(vc, forKey: "contentViewController")
+        editRadiusAlert.addAction(UIAlertAction(title: "Done", style: .default, handler: {(_) in
+            tableView.reloadData()
+        }))
+        editRadiusAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        UIApplication.shared.keyWindow?.rootViewController?.present(editRadiusAlert, animated: true, completion: nil)
+    }
+}
 class settingDormitoryRoom:settingElement {
     var name:String
     var identifier: String = "detail"
@@ -251,41 +289,14 @@ class settingDormitoryRoom:settingElement {
         UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
 }
-class settingGenderElement:settingElement {
-    var name:String
-    var identifier: String = "detail"
-    init(name:String) {
-        self.name = name
-    }
-    func read() -> Gender? {
-        guard let resultString = UserDefaults.standard.string(forKey: "setting_" + name) else {
-            return nil
-        }
-        return Gender(rawValue: resultString)
-    }
-    func write(_ to:Gender) {
-        UserDefaults.standard.set(to.rawValue, forKey: "setting_" + name)
-    }
-    func setCell(cell:UITableViewCell) -> UITableViewCell {
-        let resultCell = cell as! SettingDetailTableViewCell
-        resultCell.cellName.text = name
-        resultCell.cellDetail.text = read()?.korean
-        return resultCell
-    }
-    func initializeKey() {
-        write(.man)
-    }
-    func selected(_ tableView:UITableView) {
-        
-    }
-}
 
 let studentID = settingStudentID(name:"학번")
+let studentGender = settingStudentGender(name: "성별")
 let dormitoryRoom = settingDormitoryRoom(name: "생활관 호실")
 
 var setting:[[settingElement]] = [
     [studentID,
-     settingGenderElement(name:"성별")],
+     studentGender],
     
     [settingBuildingElement(name:"생활관 건물"),
      dormitoryRoom],

@@ -30,6 +30,7 @@
 		94379980202F83AD00EB79AA /* InfoMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */; };
 		9458B271202E0875007C2A8C /* SubmitTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458B270202E0874007C2A8C /* SubmitTabViewController.swift */; };
 		9458B273202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458B272202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift */; };
+		948BC73D20353F7A003D467B /* SettingTabPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948BC73C20353F7A003D467B /* SettingTabPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainCollectionViewCell.swift; sourceTree = "<group>"; };
 		9458B270202E0874007C2A8C /* SubmitTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTabViewController.swift; sourceTree = "<group>"; };
 		9458B272202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTab2CollectionViewCell.swift; sourceTree = "<group>"; };
+		948BC73C20353F7A003D467B /* SettingTabPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTabPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				66D07888202C248B0062F4D7 /* SettingTab.storyboard */,
 				66D078AB202C2D170062F4D7 /* SettingTabTableViewController.swift */,
 				8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */,
+				948BC73C20353F7A003D467B /* SettingTabPickerView.swift */,
 			);
 			path = SettingTab;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				849117BB20297B680001F8DB /* NoticeDetailTableViewController.swift in Sources */,
 				9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */,
 				8463B3F02030CE090031C1DD /* SettingTabTableViewCell.swift in Sources */,
+				948BC73D20353F7A003D467B /* SettingTabPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

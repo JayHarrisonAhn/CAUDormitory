@@ -57,17 +57,25 @@ enum DormitoryBuilding:String {
         }
     }
 }
-enum Gender:String {
-    case man = "Man"
-    case woman = "Woman"
+enum Gender:Int {
+    case man = 0
+    case woman
     
+    var english:String? {
+        switch self {
+        case .man: return "Man"
+        case .woman: return "Woman"
+        }
+    }
     var korean:String? {
         switch self {
         case .man: return "남성"
         case .woman: return "여성"
         }
     }
+    
 }
+
 
 //info 탭
     //시설정보
