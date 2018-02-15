@@ -16,6 +16,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		word-break: normal;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -1789,7 +1790,7 @@
 			padding-bottom: 1em;
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 			font-size: 45px;
-			word-wrap: break-word;
+			word-wrap: keep-all;
 		}
 
 	h2 {
