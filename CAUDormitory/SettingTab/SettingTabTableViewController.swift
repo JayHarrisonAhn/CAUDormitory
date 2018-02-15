@@ -13,7 +13,7 @@ protocol settingElement {
     var identifier:String {get}
     func setCell(cell:UITableViewCell) -> UITableViewCell
     func initializeKey()
-    func selected()
+    func selected(_ tableView:UITableView)
 }
 protocol intForm:settingElement {
     func read() -> Int
@@ -40,7 +40,7 @@ class settingBoolElement:settingElement {
     func initializeKey() {
         write(false)
     }
-    func selected() {
+    func selected(_ tableView:UITableView) {
         
     }
 }
@@ -65,7 +65,7 @@ class settingAlertElement:settingElement {
     func initializeKey() {
         write(false)
     }
-    func selected() {
+    func selected(_ tableView:UITableView) {
         
     }
 }
@@ -90,7 +90,7 @@ class settingStringElement:settingElement {
     func initializeKey() {
         write(" ")
     }
-    func selected() {
+    func selected(_ tableView:UITableView) {
         
     }
 }
@@ -118,7 +118,7 @@ class settingBuildingElement:settingElement {
     func initializeKey() {
         write(.blueMir309)
     }
-    func selected() {
+    func selected(_ tableView:UITableView) {
         
     }
 }
@@ -143,7 +143,7 @@ class settingIntElement:intForm {
     func initializeKey() {
         write(18)
     }
-    func selected() {
+    func selected(_ tableView:UITableView) {
         
     }
 }
@@ -168,18 +168,28 @@ class settingIDElement:settingElement {
     func initializeKey() {
         write(20180000)
     }
-    func selected() {
-        let alertController = UIAlertController(title: nil, message: "학번 수정", preferredStyle: .alert)
+    func selected(_ tableView:UITableView) {
+        let alertController = UIAlertController(title: "학번 수정", message: " ", preferredStyle: .alert)
         
         let adjustAction = UIAlertAction(title: "수정", style: .default) {(_) in
             let ID = alertController.textFields![0] as UITextField
             let value = Int(ID.text!)
             
-            if (value! < 20190000) && (value! > 19180000) {
+            if value == nil {
+                let alertErrorController = alertController
+                alertErrorController.message = "학번을 입력해주세요"
+                UIApplication.shared.keyWindow?.rootViewController?.present(alertErrorController, animated: true, completion: nil)
+            } else if value! < 10000000 {
+                let alertErrorController = alertController
+                alertErrorController.message = "여덟 자리 학번을 입력해주세요"
+                UIApplication.shared.keyWindow?.rootViewController?.present(alertErrorController, animated: true, completion: nil)
+            }else if (value! < 20190000) && (value! > 19180000) {
                 studentID.write(value!)
-                
+                tableView.reloadData()
             } else {
-                print("Error")
+                let alertErrorController = alertController
+                alertErrorController.message = "올바른 학번을 입력해주세요"
+                UIApplication.shared.keyWindow?.rootViewController?.present(alertErrorController, animated: true, completion: nil)
             }
         }
         
@@ -189,9 +199,9 @@ class settingIDElement:settingElement {
             textField.placeholder = "학번(8자리)"
             textField.keyboardType = .numberPad
         })
-        alertController.addAction(adjustAction)
-        alertController.addAction(cancelAction)
         
+        alertController.addAction(cancelAction)
+        alertController.addAction(adjustAction)
         
         UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
@@ -220,7 +230,7 @@ class settingGenderElement:settingElement {
     func initializeKey() {
         write(.man)
     }
-    func selected() {
+    func selected(_ tableView:UITableView) {
         
     }
 }
@@ -285,8 +295,7 @@ class SettingTabTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        setting[indexPath.section][indexPath.row].selected()
-        reloadInputViews()
+        setting[indexPath.section][indexPath.row].selected(tableView)
     }
 
     /*
