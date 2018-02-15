@@ -147,9 +147,9 @@ class settingIntElement:intForm {
         
     }
 }
-class settingIDElement:settingElement {
+class settingStudentID:settingElement {
     var name:String
-    var identifier: String = "studentID"
+    var identifier: String = "detail"
     init(name:String) {
         self.name = name
     }
@@ -160,7 +160,7 @@ class settingIDElement:settingElement {
         UserDefaults.standard.set(to, forKey: "setting_" + name)
     }
     func setCell(cell: UITableViewCell) -> UITableViewCell{
-        let resultCell = cell as! SettingStudentIDTableViewCell
+        let resultCell = cell as! SettingDetailTableViewCell
         resultCell.cellName.text = name
         resultCell.cellDetail.text = String(read())
         return resultCell
@@ -206,6 +206,51 @@ class settingIDElement:settingElement {
         UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
 }
+class settingDormitoryRoom:settingElement {
+    var name:String
+    var identifier: String = "detail"
+    init(name:String) {
+        self.name = name
+    }
+    func read() -> Int {
+        return UserDefaults.standard.integer(forKey: "setting_" + name)
+    }
+    func write(_ to:Int) {
+        UserDefaults.standard.set(to, forKey: "setting_" + name)
+    }
+    func setCell(cell: UITableViewCell) -> UITableViewCell{
+        let resultCell = cell as! SettingDetailTableViewCell
+        resultCell.cellName.text = name
+        resultCell.cellDetail.text = String(read())
+        return resultCell
+    }
+    func initializeKey() {
+        write(0)
+    }
+    func selected(_ tableView:UITableView) {
+        let alertController = UIAlertController(title: "기숙사 호실 수정", message: " ", preferredStyle: .alert)
+        
+        let adjustAction = UIAlertAction(title: "수정", style: .default) {(_) in
+            let roomNum = alertController.textFields![0] as UITextField
+            let value = Int(roomNum.text!)
+            
+            dormitoryRoom.write(value!)
+            tableView.reloadData()
+        }
+        
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel)
+        
+        alertController.addTextField(configurationHandler: {(textField) in
+            textField.placeholder = "호실 번호"
+            textField.keyboardType = .numberPad
+        })
+        
+        alertController.addAction(cancelAction)
+        alertController.addAction(adjustAction)
+        
+        UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
+    }
+}
 class settingGenderElement:settingElement {
     var name:String
     var identifier: String = "detail"
@@ -235,14 +280,15 @@ class settingGenderElement:settingElement {
     }
 }
 
-let studentID = settingIDElement(name:"학번")
+let studentID = settingStudentID(name:"학번")
+let dormitoryRoom = settingDormitoryRoom(name: "생활관 호실")
 
 var setting:[[settingElement]] = [
     [studentID,
      settingGenderElement(name:"성별")],
     
     [settingBuildingElement(name:"생활관 건물"),
-     settingIntElement(name:"생활관 호실")],
+     dormitoryRoom],
     
     [settingAlertElement(name:"푸시알림"),
      settingBoolElement(name:"정기생활점검"),
