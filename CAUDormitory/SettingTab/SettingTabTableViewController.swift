@@ -107,7 +107,6 @@ class settingStudentGender:settingElement {
         let editRadiusAlert = UIAlertController(title: "Choose distance", message: "", preferredStyle: .alert)
         editRadiusAlert.setValue(vc, forKey: "contentViewController")
         editRadiusAlert.addAction(UIAlertAction(title: "Done", style: .default, handler: {(_) in
-            studentGender.write(.man)
             tableView.reloadData()
         }))
         editRadiusAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
@@ -146,7 +145,6 @@ class settingDormitoryBuilding:settingElement {
         let editRadiusAlert = UIAlertController(title: "Choose distance", message: "", preferredStyle: .alert)
         editRadiusAlert.setValue(vc, forKey: "contentViewController")
         editRadiusAlert.addAction(UIAlertAction(title: "Done", style: .default, handler: {(_) in
-            studentGender.write(.man)
             tableView.reloadData()
         }))
         editRadiusAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
