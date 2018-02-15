@@ -153,97 +153,6 @@ class settingDormitoryBuilding:settingElement {
         UIApplication.shared.keyWindow?.rootViewController?.present(editRadiusAlert, animated: true, completion: nil)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-class settingBoolElement:settingElement {
-    var name:String
-    var identifier: String = "bool"
-    init(name:String) {
-        self.name = name
-    }
-    func read() -> Bool {
-        return UserDefaults.standard.bool(forKey: "setting_" + name)
-    }
-    func write(_ to:Bool) {
-        UserDefaults.standard.set(to, forKey: "setting_" + name)
-    }
-    func setCell(cell:UITableViewCell) -> UITableViewCell {
-        let resultCell = cell as! SettingButtonTableViewCell
-        resultCell.cellName.text = name
-        resultCell.cellButton.isOn = read()
-        return resultCell
-    }
-    func initializeKey() {
-        write(false)
-    }
-    func selected(_ tableView:UITableView) {
-        
-    }
-}
-
-class settingAlertElement:settingElement {
-    var name:String
-    var identifier: String = "alert"
-    init(name:String) {
-        self.name = name
-    }
-    func read() -> Bool {
-        return UserDefaults.standard.bool(forKey: "setting_" + name)
-    }
-    func write(_ to:Bool) {
-        UserDefaults.standard.set(to, forKey: "setting_" + name)
-    }
-    func setCell(cell:UITableViewCell) -> UITableViewCell  {
-        let resultCell = cell as! SettingAlertTableViewCell
-        resultCell.cellName.text = name
-        resultCell.cellButton.isOn = read()
-        return resultCell
-    }
-    func initializeKey() {
-        write(false)
-    }
-    func selected(_ tableView:UITableView) {
-        
-    }
-}
-class settingStringElement:settingElement {
-    var name:String
-    var identifier: String = "detail"
-    init(name:String) {
-        self.name = name
-    }
-    func read() -> String? {
-        return UserDefaults.standard.string(forKey: "setting_" + name)
-    }
-    func write(_ to:String) {
-        UserDefaults.standard.set(to, forKey: "setting_" + name)
-    }
-    func setCell(cell:UITableViewCell) -> UITableViewCell {
-        let resultCell = cell as! SettingDetailTableViewCell
-        resultCell.cellName.text = name
-        resultCell.cellDetail.text = read()
-        return resultCell
-    }
-    func initializeKey() {
-        write(" ")
-    }
-    func selected(_ tableView:UITableView) {
-        
-    }
-}
-
-
-
 class settingDormitoryRoom:settingElement {
     var name:String
     var identifier: String = "detail"
@@ -289,6 +198,63 @@ class settingDormitoryRoom:settingElement {
         UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
 }
+
+class settingAlertElement:settingElement {
+    var name:String
+    var identifier: String = "alert"
+    init(name:String) {
+        self.name = name
+    }
+    func read() -> Bool {
+        return UserDefaults.standard.bool(forKey: "setting_" + name)
+    }
+    func write(_ to:Bool) {
+        UserDefaults.standard.set(to, forKey: "setting_" + name)
+    }
+    func setCell(cell:UITableViewCell) -> UITableViewCell  {
+        let resultCell = cell as! SettingAlertTableViewCell
+        resultCell.cellName.text = name
+        resultCell.cellButton.isOn = read()
+        return resultCell
+    }
+    func initializeKey() {
+        write(false)
+    }
+    func selected(_ tableView:UITableView) {
+        
+    }
+}
+class settingBoolElement:settingElement {
+    var name:String
+    var identifier: String = "bool"
+    init(name:String) {
+        self.name = name
+    }
+    func read() -> Bool {
+        return UserDefaults.standard.bool(forKey: "setting_" + name)
+    }
+    func write(_ to:Bool) {
+        UserDefaults.standard.set(to, forKey: "setting_" + name)
+    }
+    func setCell(cell:UITableViewCell) -> UITableViewCell {
+        let resultCell = cell as! SettingButtonTableViewCell
+        resultCell.cellName.text = name
+        resultCell.cellButton.isOn = read()
+        return resultCell
+    }
+    func initializeKey() {
+        write(false)
+    }
+    func selected(_ tableView:UITableView) {
+        
+    }
+}
+
+
+
+
+
+
 
 let studentID = settingStudentID(name:"학번")
 let studentGender = settingStudentGender(name: "성별")

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,33 +19,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="aSU-AY-kWQ">
-                                <rect key="frame" x="46" y="272" width="104" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="aSU-AY-kWQ">
+                                <rect key="frame" x="49" y="272" width="104" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="6iJ-N7-PYs"/>
+                                    <constraint firstAttribute="height" constant="55" id="DIt-wN-HEY"/>
+                                    <constraint firstAttribute="width" secondItem="aSU-AY-kWQ" secondAttribute="height" multiplier="104:55" id="nCS-EB-Hnw"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="중앙대학교" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcF-je-rsr">
-                                <rect key="frame" x="158" y="269" width="201" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중앙대학교" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcF-je-rsr">
+                                <rect key="frame" x="154" y="281" width="177.5" height="49"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="* 공식 어플리케이션이 아닙니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCH-q7-ddF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* 공식 어플리케이션이 아닙니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCH-q7-ddF">
                                 <rect key="frame" x="79" y="467" width="217" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="생활관 알리미" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87M-v8-Uo1">
-                                <rect key="frame" x="35" y="326" width="304" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="생활관 알리미" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87M-v8-Uo1">
+                                <rect key="frame" x="87" y="331.5" width="200" height="44.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aSU-AY-kWQ" firstAttribute="trailing" secondItem="AcF-je-rsr" secondAttribute="leading" constant="-1" id="6g3-nR-lvm"/>
+                            <constraint firstItem="87M-v8-Uo1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7pY-b0-XTD"/>
+                            <constraint firstItem="AcF-je-rsr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="55" id="Cgu-Ne-TF1"/>
+                            <constraint firstItem="87M-v8-Uo1" firstAttribute="top" secondItem="aSU-AY-kWQ" secondAttribute="bottom" constant="4.5" id="IHQ-BS-qfa"/>
+                            <constraint firstItem="AcF-je-rsr" firstAttribute="top" secondItem="87M-v8-Uo1" secondAttribute="bottom" constant="-95" id="Ug6-5L-2Di"/>
+                            <constraint firstItem="87M-v8-Uo1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="20" id="WEk-ul-1Xp"/>
+                            <constraint firstItem="cCH-q7-ddF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Zr7-wP-KN1"/>
+                            <constraint firstItem="cCH-q7-ddF" firstAttribute="top" secondItem="87M-v8-Uo1" secondAttribute="bottom" constant="91" id="aYX-yz-ohH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
