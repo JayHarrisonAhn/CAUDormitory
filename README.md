@@ -6,4 +6,4 @@
 강제순
 
 ## 크롤링 서버
-https://github.com/lbr0452000/CAUDormitory_Crawler에서 제작중입니다.
+https://github.com/lbr0452000/CAUDormitory_Crawler 에서 제작중입니다.
