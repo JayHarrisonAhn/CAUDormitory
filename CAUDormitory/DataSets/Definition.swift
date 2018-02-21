@@ -34,14 +34,14 @@ class CampusData {
 //Info 탭
 class facility {
     var name:String
+    var identifier:String
     var icon:UIImage
     var iconSize:Int
-    var baseInfo:[[String:String]]//location:time
-    init(name:String, icon:UIImage, iconSize:Int, baseInfo:[[String:String]]) {
+    init(name:String, icon:UIImage, iconSize:Int, identifier:String) {
         self.name = name
         self.icon = icon
         self.iconSize = iconSize
-        self.baseInfo = baseInfo
+        self.identifier = identifier
     }
 }
 

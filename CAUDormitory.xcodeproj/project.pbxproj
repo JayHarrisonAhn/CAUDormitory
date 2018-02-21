@@ -30,6 +30,7 @@
 		94379980202F83AD00EB79AA /* InfoMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */; };
 		9458B271202E0875007C2A8C /* SubmitTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458B270202E0874007C2A8C /* SubmitTabViewController.swift */; };
 		9458B273202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458B272202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift */; };
+		9486DBF9203DFF720050E8AB /* DetailViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486DBF8203DFF720050E8AB /* DetailViewControllers.swift */; };
 		948BC73D20353F7A003D467B /* SettingTabPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948BC73C20353F7A003D467B /* SettingTabPickerView.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainCollectionViewCell.swift; sourceTree = "<group>"; };
 		9458B270202E0874007C2A8C /* SubmitTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTabViewController.swift; sourceTree = "<group>"; };
 		9458B272202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTab2CollectionViewCell.swift; sourceTree = "<group>"; };
+		9486DBF8203DFF720050E8AB /* DetailViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllers.swift; sourceTree = "<group>"; };
 		948BC73C20353F7A003D467B /* SettingTabPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTabPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				66D07877202BF2230062F4D7 /* InfoTab.storyboard */,
+				9486DBF7203DFF4B0050E8AB /* DetailViewControllers */,
 				9437997D202F57D700EB79AA /* InfoMainViewController.swift */,
 				9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */,
 			);
@@ -167,6 +170,14 @@
 				66E49E7020295B5B006AF127 /* Data.swift */,
 			);
 			path = DataSets;
+			sourceTree = "<group>";
+		};
+		9486DBF7203DFF4B0050E8AB /* DetailViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9486DBF8203DFF720050E8AB /* DetailViewControllers.swift */,
+			);
+			path = DetailViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 				6605E7D32003234E00B3A154 /* AppDelegate.swift in Sources */,
 				9458B271202E0875007C2A8C /* SubmitTabViewController.swift in Sources */,
 				66E49E6F202959F6006AF127 /* Definition.swift in Sources */,
+				9486DBF9203DFF720050E8AB /* DetailViewControllers.swift in Sources */,
 				66D078B2202C35DE0062F4D7 /* SubmitTab1CollectionViewCell.swift in Sources */,
 				66D078AC202C2D170062F4D7 /* SettingTabTableViewController.swift in Sources */,
 				9458B273202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift in Sources */,

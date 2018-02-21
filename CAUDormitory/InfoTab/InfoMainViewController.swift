@@ -76,7 +76,14 @@ class InfoMainViewController: UIViewController, UICollectionViewDataSource, UICo
         return headerView
     }
     
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch facilities[indexPath.section][indexPath.row].identifier {
+        case "cafeteria":
+            performSegue(withIdentifier: facilities[indexPath.section][indexPath.row].identifier, sender: nil)
+        default:
+            break
+        }
+    }
     
     /*
     // MARK: - Navigation

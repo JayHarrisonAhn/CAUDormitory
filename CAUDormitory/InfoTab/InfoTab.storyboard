@@ -141,11 +141,90 @@
                     <connections>
                         <outlet property="infoCollection" destination="eGB-Fs-ZE7" id="ATe-0w-GWt"/>
                         <segue destination="mP9-mK-oCC" kind="presentation" identifier="modalWelcome" id="dDY-JM-Coo"/>
+                        <segue destination="fgA-lD-Dlr" kind="show" identifier="cafeteria" id="Ztr-SA-9o3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hN7-DM-S1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-815.20000000000005" y="58.920539730134934"/>
+        </scene>
+        <!--식당-->
+        <scene sceneID="Ncq-9U-p2y">
+            <objects>
+                <viewController id="fgA-lD-Dlr" customClass="CafeteriaViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lha-pk-WWT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jbg-7f-jkS">
+                                <rect key="frame" x="16" y="80" width="343" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="UAc-eP-dxh"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="308관 식당"/>
+                                    <segment title="309관 식당"/>
+                                </segments>
+                                <connections>
+                                    <action selector="cafeteriaControl:" destination="fgA-lD-Dlr" eventType="valueChanged" id="Rj7-x2-fBj"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="식당 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2M-5z-l3A">
+                                <rect key="frame" x="169" y="128" width="190" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9K5-cj-3Mr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eS-C1-db3">
+                                <rect key="frame" x="169" y="157" width="190" height="73"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="운영시간">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L76-3O-Xpt">
+                                <rect key="frame" x="16" y="124" width="145" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="JYG-mU-jqV"/>
+                                    <constraint firstAttribute="height" constant="106" id="xhM-ok-nFp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jbg-7f-jkS" firstAttribute="top" secondItem="EOV-8g-fSB" secondAttribute="top" constant="16" id="3De-fx-uGU"/>
+                            <constraint firstItem="q2M-5z-l3A" firstAttribute="leading" secondItem="L76-3O-Xpt" secondAttribute="trailing" constant="8" id="4JJ-GT-QTl"/>
+                            <constraint firstItem="jbg-7f-jkS" firstAttribute="leading" secondItem="EOV-8g-fSB" secondAttribute="leading" constant="16" id="Eal-r8-wej"/>
+                            <constraint firstItem="q2M-5z-l3A" firstAttribute="top" secondItem="jbg-7f-jkS" secondAttribute="bottom" constant="20" id="GiD-uv-LSm"/>
+                            <constraint firstItem="6eS-C1-db3" firstAttribute="leading" secondItem="L76-3O-Xpt" secondAttribute="trailing" constant="8" id="HMq-Ml-cXG"/>
+                            <constraint firstItem="L76-3O-Xpt" firstAttribute="bottom" secondItem="6eS-C1-db3" secondAttribute="bottom" id="NxM-MB-D15"/>
+                            <constraint firstItem="jbg-7f-jkS" firstAttribute="trailing" secondItem="EOV-8g-fSB" secondAttribute="trailing" constant="-16" id="WgR-LW-xoP"/>
+                            <constraint firstItem="L76-3O-Xpt" firstAttribute="top" secondItem="jbg-7f-jkS" secondAttribute="bottom" constant="16" id="aKT-8p-rdY"/>
+                            <constraint firstItem="6eS-C1-db3" firstAttribute="top" secondItem="q2M-5z-l3A" secondAttribute="bottom" constant="8" id="hht-Vn-agj"/>
+                            <constraint firstAttribute="trailing" secondItem="6eS-C1-db3" secondAttribute="trailing" constant="16" id="ibT-5S-4sC"/>
+                            <constraint firstItem="L76-3O-Xpt" firstAttribute="leading" secondItem="EOV-8g-fSB" secondAttribute="leading" constant="16" id="qzZ-hq-AYx"/>
+                            <constraint firstItem="EOV-8g-fSB" firstAttribute="trailing" secondItem="q2M-5z-l3A" secondAttribute="trailing" constant="16" id="zKa-oA-uyt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EOV-8g-fSB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="식당" id="LuW-Y5-NZl"/>
+                    <connections>
+                        <outlet property="cafeteriaControl" destination="jbg-7f-jkS" id="fPl-4S-jPS"/>
+                        <outlet property="timeLabel" destination="6eS-C1-db3" id="KgW-gC-aJx"/>
+                        <outlet property="titleLabel" destination="q2M-5z-l3A" id="ps7-kT-C2W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEn-DU-0dZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="-107.49625187406298"/>
         </scene>
         <!--생활정보-->
         <scene sceneID="FUL-Jl-jMR">
