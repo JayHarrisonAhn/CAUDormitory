@@ -16,13 +16,15 @@ class CafeteriaViewController: UIViewController {
     
     
     func select308() {
-        cafeteriaControl.selectedSegmentIndex = 0
         titleLabel.text = "308관 식당"
         timeLabel.text = "조식 07:00 ~ 08:40\n중식 11:00 ~ 13:30\n석식 17:00 ~ 19:00"
+        self.cafeteriaControl.setEnabled(true, forSegmentAt: 0)
     }
+    
     func select309() {
-        cafeteriaControl.selectedSegmentIndex = 1
         titleLabel.text = "309관 식당"
+        timeLabel.text = "ㅇㅇㅇㅇㅇ"
+        self.cafeteriaControl.setEnabled(true, forSegmentAt: 1)
     }
     
     
@@ -40,13 +42,13 @@ class CafeteriaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        switch UserDefaults.standard.integer(forKey: "setting_생활관 건물") {
-        case 0:
-            select308()
-        case 1:
-            select309()
-        default:
-            select308()
-        }
+//        switch UserDefaults.standard.integer(forKey: "setting_생활관 건물") {
+//        case 0:
+//            select308()
+//        case 1:
+//            select309()
+//        default:
+//            select308()
+//        }
     }
 }
