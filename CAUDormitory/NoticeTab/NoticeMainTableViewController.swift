@@ -1,19 +1,47 @@
 //
 //  NoticeMainTableViewController.swift
-//  TestProj
+//  CAUDormitory
 //
-//  Created by CAUADC on 2018. 2. 6..
+//  Created by JaeHyung Ahn on 2018. 3. 5..
 //  Copyright © 2018년 CAUADC. All rights reserved.
 //
 
 import UIKit
+import FirebaseDatabase
 
 class NoticeMainTableViewController: UITableViewController {
+    let building:DormitoryBuilding? = DormitoryBuilding(rawValue: settingDormitoryBuilding(name:"생활관 건물").read().rawValue)
 
+    var postTitle:[String] = []
+    var postDate:[String] = []
+    var postHTML:[String] = []
+    
+    var ref:DatabaseReference?
+    var databaseHandle:DatabaseHandle?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        ref = Database.database().reference()
+        databaseHandle = ref?.child("Seoul_Bluemir/Notices").observe(.childAdded, with: { (snapshot) in
+            var post = snapshot.childSnapshot(forPath: "Title").value as? String
+            if let actualPost = post {
+                self.postTitle.insert(actualPost, at: 0)
+                self.tableView.reloadData()
+            }
+            
+            post = snapshot.childSnapshot(forPath: "Date").value as? String
+            if let actualPost = post {
+                self.postDate.insert(actualPost, at: 0)
+                self.tableView.reloadData()
+            }
+            
+            post = snapshot.childSnapshot(forPath: "DetailHTML").value as? String
+            if let actualPost = post {
+                self.postHTML.insert(actualPost, at: 0)
+                self.tableView.reloadData()
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,21 +52,20 @@ class NoticeMainTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return SeoulData.notices.count
+        return postTitle.count
     }
 
-   
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "noticeCell", for: indexPath)
-
-        cell.textLabel?.text = SeoulData.notices[indexPath.row].title
-        cell.detailTextLabel?.text = SeoulData.notices[indexPath.row].date
+        
+        // Configure the cell...
+        cell.textLabel?.text = postTitle[indexPath.row]
+        cell.detailTextLabel?.text = postDate[indexPath.row]
 
         return cell
     }
@@ -79,17 +106,14 @@ class NoticeMainTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        if let indexPath = tableView.indexPathForSelectedRow {
-            let selectedRow = indexPath.row
-            
-            let vc = segue.destination as? NoticeDetailTableViewController
-            vc?.notice = SeoulData.notices[selectedRow]
-            vc?.noticeKey = selectedRow
-        }
     }
+    */
+
 }

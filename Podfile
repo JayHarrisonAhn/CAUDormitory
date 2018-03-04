@@ -7,4 +7,5 @@ target 'CAUDormitory' do
 
   # Pods for CAUDormitory
 pod 'Firebase/Core'
+pod 'Firebase/Database'
 end

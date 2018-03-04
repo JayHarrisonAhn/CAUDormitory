@@ -9,25 +9,6 @@
 import Foundation
 import UIKit
 
-var SeoulData = CampusData(
-    latestNoticeKey : 2252,
-    
-    notices:[
-    Notice(title: "2018학년도 1학기 서울캠퍼스 생활관 1차 충원 합격자 발표 - 복학생/전과생", date: "18.02.09", image: []),
-    Notice(title: "[생활관]정비기간 편의시설 및 생활관 일정 안내", date: "18.02.09", image: [#imageLiteral(resourceName: "SeoulNotice_6")]),
-    Notice(title: "[생활관]주말당직 사감 안내/Night and Weekend Duty", date: "18.02.09", image: [#imageLiteral(resourceName: "SeoulNotice_5_1"), #imageLiteral(resourceName: "SeoulNotice_5_2")]),
-    Notice(title: "2018학년도 1학기 퓨처하우스 호실배정(2.08까지 등록인원)", date: "18.02.08", image: []),
-    Notice(title: "2018학년도 1학기 블루미르홀 호실배정(2.09까지 등록인원)", date: "18.02.08", image: []),
-    Notice(title: "[생활관]정비기간(휴관) 정비 계획", date: "18.02.07", image: [#imageLiteral(resourceName: "SeoulNotice_4")]),
-    Notice(title: "[긴급공지]308관 호실 천장 냉,난방기 정밀세척작업 일정 안내/Schedule for cleaning air conditioner filters", date: "18.02.06", image: [#imageLiteral(resourceName: "SeoulNotice_1")]),
-    Notice(title: "[생활관]2018학년도 1학기 입관서류 제출 안내", date: "18.02.02", image: [#imageLiteral(resourceName: "SeoulNotice_2")]),
-    Notice(title: "[생활관]2018학년도 1학기 입관 안내/Moving-in Guide", date: "18.02.02", image: [#imageLiteral(resourceName: "SeoulNotice_3_1"), #imageLiteral(resourceName: "SeoulNotice_3_2"), #imageLiteral(resourceName: "SeoulNotice_3_3")]),
-    Notice(title: "생활관 사감(행정인턴) 모집 공고", date: "18.02.01", image: []),
-    Notice(title: "2017학년도 동계방학 호실 이동 관생 퇴관 검사 예약 신청/2017-Winter Register an inspection schedule", date: "18.02.01", image: []),
-])
-
-
-
 func InitUserData() {
     UserDefaults.standard.set(true, forKey: "Checked")
     for section:[settingElement] in setting {

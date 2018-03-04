@@ -9,28 +9,6 @@
 import Foundation
 import UIKit
 
-class Notice {
-    var title:String
-    var date:String
-    var image:[UIImage]
-    
-    init(title:String, date:String, image:[UIImage]) {
-        self.title = title
-        self.date = date
-        self.image = image
-    }
-}
-
-class CampusData {
-    var notices:[Notice]
-    var latestNoticeKey:Int
-    
-    init (latestNoticeKey:Int, notices:[Notice]) {
-        self.latestNoticeKey = latestNoticeKey
-        self.notices = notices
-    }
-}
-
 //Info 탭
 class facility {
     var name:String
