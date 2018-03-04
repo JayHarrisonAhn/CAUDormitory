@@ -26,12 +26,14 @@
 		8463B3F02030CE090031C1DD /* SettingTabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */; };
 		84841081202EF3D800A9B97E /* SubmitSupportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */; };
 		849117BB20297B680001F8DB /* NoticeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */; };
+		941E1574204C66F00073DD68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 941E1573204C66EF0073DD68 /* GoogleService-Info.plist */; };
 		9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997D202F57D700EB79AA /* InfoMainViewController.swift */; };
 		94379980202F83AD00EB79AA /* InfoMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */; };
 		9458B271202E0875007C2A8C /* SubmitTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458B270202E0874007C2A8C /* SubmitTabViewController.swift */; };
 		9458B273202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458B272202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift */; };
 		9486DBF9203DFF720050E8AB /* DetailViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486DBF8203DFF720050E8AB /* DetailViewControllers.swift */; };
 		948BC73D20353F7A003D467B /* SettingTabPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948BC73C20353F7A003D467B /* SettingTabPickerView.swift */; };
+		FD15CAD61DFA2574E415FC4F /* Pods_CAUDormitory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CFA6A8F332E308C39637DE /* Pods_CAUDormitory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,12 +58,16 @@
 		8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTabTableViewCell.swift; sourceTree = "<group>"; };
 		84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitSupportTableViewController.swift; sourceTree = "<group>"; };
 		849117BA20297B680001F8DB /* NoticeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailTableViewController.swift; sourceTree = "<group>"; };
+		941E1573204C66EF0073DD68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9437997D202F57D700EB79AA /* InfoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainViewController.swift; sourceTree = "<group>"; };
 		9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainCollectionViewCell.swift; sourceTree = "<group>"; };
 		9458B270202E0874007C2A8C /* SubmitTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTabViewController.swift; sourceTree = "<group>"; };
 		9458B272202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTab2CollectionViewCell.swift; sourceTree = "<group>"; };
 		9486DBF8203DFF720050E8AB /* DetailViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllers.swift; sourceTree = "<group>"; };
 		948BC73C20353F7A003D467B /* SettingTabPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTabPickerView.swift; sourceTree = "<group>"; };
+		A1CFA6A8F332E308C39637DE /* Pods_CAUDormitory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CAUDormitory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5251473F36A6C6789C0B38D /* Pods-CAUDormitory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAUDormitory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CAUDormitory/Pods-CAUDormitory.debug.xcconfig"; sourceTree = "<group>"; };
+		E6639565FCC93778C9B151A6 /* Pods-CAUDormitory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAUDormitory.release.xcconfig"; path = "Pods/Target Support Files/Pods-CAUDormitory/Pods-CAUDormitory.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,17 +75,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD15CAD61DFA2574E415FC4F /* Pods_CAUDormitory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		623C2B8FEECB45E61D84DF0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5251473F36A6C6789C0B38D /* Pods-CAUDormitory.debug.xcconfig */,
+				E6639565FCC93778C9B151A6 /* Pods-CAUDormitory.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6605E7C62003234E00B3A154 = {
 			isa = PBXGroup;
 			children = (
 				6605E7D12003234E00B3A154 /* CAUDormitory */,
 				6605E7D02003234E00B3A154 /* Products */,
+				623C2B8FEECB45E61D84DF0C /* Pods */,
+				7CD805C09857ACABFEB27D0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +123,7 @@
 				6605E7DB2003234E00B3A154 /* LaunchScreen.storyboard */,
 				6605E7D92003234E00B3A154 /* Assets.xcassets */,
 				6605E7DE2003234E00B3A154 /* Info.plist */,
+				941E1573204C66EF0073DD68 /* GoogleService-Info.plist */,
 				66E49E6B2029598A006AF127 /* DataSets */,
 			);
 			path = CAUDormitory;
@@ -172,6 +191,14 @@
 			path = DataSets;
 			sourceTree = "<group>";
 		};
+		7CD805C09857ACABFEB27D0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1CFA6A8F332E308C39637DE /* Pods_CAUDormitory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9486DBF7203DFF4B0050E8AB /* DetailViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6605E7E12003234E00B3A154 /* Build configuration list for PBXNativeTarget "CAUDormitory" */;
 			buildPhases = (
+				71DEC3CF6188A3FB4C07787B /* [CP] Check Pods Manifest.lock */,
 				6605E7CB2003234E00B3A154 /* Sources */,
 				6605E7CC2003234E00B3A154 /* Frameworks */,
 				6605E7CD2003234E00B3A154 /* Resources */,
+				DF546DFAD48D113D59C4BFEC /* [CP] Embed Pods Frameworks */,
+				1200857BE6C47E88E63DAE5B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +271,7 @@
 			files = (
 				6605E7DD2003234E00B3A154 /* LaunchScreen.storyboard in Resources */,
 				66D07889202C248B0062F4D7 /* SettingTab.storyboard in Resources */,
+				941E1574204C66F00073DD68 /* GoogleService-Info.plist in Resources */,
 				66D07874202BF0DB0062F4D7 /* FirstExecute.storyboard in Resources */,
 				6605E7DA2003234E00B3A154 /* Assets.xcassets in Resources */,
 				66D0787A202BF34A0062F4D7 /* SubmitTab.storyboard in Resources */,
@@ -251,6 +282,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1200857BE6C47E88E63DAE5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CAUDormitory/Pods-CAUDormitory-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71DEC3CF6188A3FB4C07787B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CAUDormitory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF546DFAD48D113D59C4BFEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CAUDormitory/Pods-CAUDormitory-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CAUDormitory/Pods-CAUDormitory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6605E7CB2003234E00B3A154 /* Sources */ = {
@@ -408,6 +495,7 @@
 		};
 		6605E7E22003234E00B3A154 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5251473F36A6C6789C0B38D /* Pods-CAUDormitory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -422,6 +510,7 @@
 		};
 		6605E7E32003234E00B3A154 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6639565FCC93778C9B151A6 /* Pods-CAUDormitory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
