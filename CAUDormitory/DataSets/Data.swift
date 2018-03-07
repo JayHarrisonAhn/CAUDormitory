@@ -31,8 +31,8 @@ enum DormitoryBuilding:Int {
     
     var english:String? {
         switch self {
-        case .blueMir308: return "blueMir 309"
-        case .blueMir309: return "blueMir 308"
+        case .blueMir308: return "blueMir 308"
+        case .blueMir309: return "blueMir 309"
         case .future: return "future house"
         case .global: return "global house"
         }
