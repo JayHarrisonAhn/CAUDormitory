@@ -13,18 +13,40 @@ class SettingDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var cellDetail: UILabel!
 }
 
-class SettingButtonTableViewCell: UITableViewCell {
-    @IBOutlet weak var cellName: UILabel!
-    @IBOutlet weak var cellButton: UISwitch!
-}
-
-class SettingAlertTableViewCell: UITableViewCell {
-    @IBOutlet weak var cellName: UILabel!
-    @IBOutlet weak var cellButton: UISwitch!
-}
-
 class SettingStudentIDTableViewCell:UITableViewCell {
     @IBOutlet weak var cellName: UILabel!
     @IBOutlet weak var cellDetail: UILabel!
     
 }
+
+class SettingAlertTableViewCell: UITableViewCell {
+    var settingClass:settingElement?
+    
+    @IBOutlet weak var cellName: UILabel!
+    @IBOutlet weak var cellButton: UISwitch!
+    
+    @IBAction func cellButton(_ sender: Any) {
+        if cellButton.isOn == false {
+            settingClass?.write(0)
+        } else {
+            settingClass?.write(1)
+        }
+    }
+    
+}
+
+class SettingButtonTableViewCell: UITableViewCell {
+    var settingClass:settingElement?
+    
+    @IBOutlet weak var cellName: UILabel!
+    @IBOutlet weak var cellButton: UISwitch!
+    
+    @IBAction func cellButton(_ sender: Any) {
+        if cellButton.isOn == false {
+            settingClass?.write(0)
+        } else {
+            settingClass?.write(1)
+        }
+    }
+}
+

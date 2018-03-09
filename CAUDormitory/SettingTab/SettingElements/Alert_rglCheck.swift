@@ -15,7 +15,7 @@ class settingAlert_rglCheck:settingAlert {
         super.name_korean = "정기생활점검 알림"
         super.name_english = "Periodic Room Inspection Alert"
         
-        super.UDIdentifier = "setting_ALR"
+        super.UDIdentifier = "setting_PRA"
         super.CellIdentifier = "bool"
     }
     
@@ -23,6 +23,7 @@ class settingAlert_rglCheck:settingAlert {
         let resultCell = cell as! SettingButtonTableViewCell
         
         resultCell.cellName.text = self.name_korean
+        resultCell.settingClass = self
         
         switch self.read() {
         case 0: resultCell.cellButton.isOn = false

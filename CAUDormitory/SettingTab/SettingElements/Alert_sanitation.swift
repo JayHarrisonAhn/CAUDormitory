@@ -23,6 +23,7 @@ class settingAlert_sanitation:settingAlert {
         let resultCell = cell as! SettingButtonTableViewCell
         
         resultCell.cellName.text = self.name_korean
+        resultCell.settingClass = self
         
         switch self.read() {
         case 0: resultCell.cellButton.isOn = false
