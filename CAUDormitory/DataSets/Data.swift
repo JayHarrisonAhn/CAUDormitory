@@ -24,14 +24,3 @@ enum Campus:String {
 }
 
 
-
-
-
-//info 탭
-    //시설정보
-
-
-//submit 탭
-    
-
-//setting 탭

@@ -45,7 +45,7 @@ class settingStudentGender:settingElement {
     func setCell(cell: UITableViewCell) -> UITableViewCell{
         let resultCell = cell as! SettingDetailTableViewCell
         resultCell.cellName.text = self.name_korean
-        resultCell.cellDetail.text = String(read())
+        resultCell.cellDetail.text = Gender(rawValue: self.read())?.korean
         return resultCell
     }
     func initializeKey() {

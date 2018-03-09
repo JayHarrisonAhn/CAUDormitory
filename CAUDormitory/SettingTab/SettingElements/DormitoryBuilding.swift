@@ -25,8 +25,8 @@ enum DormitoryBuilding:Int {
     }
     var korean:String? {
         switch self {
-        case .blueMir308: return "블루미르 309관"
-        case .blueMir309: return "블루미르 308관"
+        case .blueMir308: return "블루미르 308관"
+        case .blueMir309: return "블루미르 309관"
         case .future: return "퓨처하우스"
         case .global: return "글로벌하우스"
         }

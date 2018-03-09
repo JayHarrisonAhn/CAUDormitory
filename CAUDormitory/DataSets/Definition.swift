@@ -34,45 +34,4 @@ class Contact {
 }
 
 //Setting 탭
-class SettingValue {
-    var name:String
-    var settingCode:String
-    var type:valueType
-    
-    func readValue() -> Any? {
-        switch self.type {
-        case .String:
-            return UserDefaults.standard.string(forKey: "Setting_" + settingCode)
-        case .Bool:
-            return UserDefaults.standard.bool(forKey: "Setting_" + settingCode)
-        case .Building:
-            return UserDefaults.standard.string(forKey: "Setting_" + settingCode)
-        }
-    }
-    
-    func setValue(_ to:Any?) {
-        UserDefaults.standard.set(to, forKey: "Setting_" + settingCode)
-        
-    }
-    func setValue(_ to:DormitoryBuilding) {
-        UserDefaults.standard.set(to.rawValue, forKey: "Setting_" + settingCode)
-        
-    }
-    
-    enum valueType {
-        case String
-        case Bool
-        case Building
-    }
-    
-    init (name:String, settingCode:String, type:valueType, value:Any?) {
-        self.name = name
-        self.type = type
-        self.settingCode = settingCode
-        
-        
-        if UserDefaults.standard.object(forKey: "Setting_" + settingCode) == nil {
-            setValue(value)
-        }
-    }
-}
+
