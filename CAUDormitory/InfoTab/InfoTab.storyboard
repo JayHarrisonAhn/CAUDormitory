@@ -21,23 +21,23 @@
         <!--Info Main View Controller-->
         <scene sceneID="8wE-g5-H4L">
             <objects>
-                <viewController id="H0q-cp-Zp2" customClass="InfoMainViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="H0q-cp-Zp2" customClass="InfoMainViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwc-le-mrk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eGB-Fs-ZE7">
-                                <rect key="frame" x="10" y="64" width="355" height="603"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eGB-Fs-ZE7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="G0l-sY-2Mr">
-                                    <size key="itemSize" width="170" height="170"/>
+                                    <size key="itemSize" width="170" height="180"/>
                                     <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="smallCell" id="k3G-zf-wWQ" customClass="SmallCollectionViewCell" customModule="CAUDormitory" customModuleProvider="target">
-                                        <rect key="frame" x="87.5" y="50" width="180" height="76"/>
+                                        <rect key="frame" x="97.5" y="50" width="180" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="76"/>
@@ -64,7 +64,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="bigCell" id="BHb-gB-Fqg" customClass="BigCollectionViewCell" customModule="CAUDormitory" customModuleProvider="target">
-                                        <rect key="frame" x="87.5" y="136" width="180" height="180"/>
+                                        <rect key="frame" x="97.5" y="136" width="180" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
@@ -92,7 +92,7 @@
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="7il-fR-6Ny" customClass="headerCell" customModule="CAUDormitory" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MV-4B-zIm">
@@ -111,8 +111,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Pe2-7z-625" firstAttribute="trailing" secondItem="eGB-Fs-ZE7" secondAttribute="trailing" constant="10" id="09w-Rc-6o4"/>
-                            <constraint firstItem="eGB-Fs-ZE7" firstAttribute="leading" secondItem="Pe2-7z-625" secondAttribute="leading" constant="10" id="B9D-bG-PrT"/>
+                            <constraint firstItem="Pe2-7z-625" firstAttribute="trailing" secondItem="eGB-Fs-ZE7" secondAttribute="trailing" id="09w-Rc-6o4"/>
+                            <constraint firstItem="eGB-Fs-ZE7" firstAttribute="leading" secondItem="Pe2-7z-625" secondAttribute="leading" id="B9D-bG-PrT"/>
                             <constraint firstItem="Pe2-7z-625" firstAttribute="bottom" secondItem="eGB-Fs-ZE7" secondAttribute="bottom" id="BtV-Id-K22"/>
                             <constraint firstItem="eGB-Fs-ZE7" firstAttribute="top" secondItem="Pe2-7z-625" secondAttribute="top" id="hzR-3B-wHD"/>
                         </constraints>
@@ -141,90 +141,20 @@
                     <connections>
                         <outlet property="infoCollection" destination="eGB-Fs-ZE7" id="ATe-0w-GWt"/>
                         <segue destination="mP9-mK-oCC" kind="presentation" identifier="modalWelcome" id="dDY-JM-Coo"/>
-                        <segue destination="fgA-lD-Dlr" kind="show" identifier="cafeteria" id="Ztr-SA-9o3"/>
+                        <segue destination="A6u-Cl-ZZp" kind="show" identifier="CFT" id="VYZ-7M-wHn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hN7-DM-S1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-815.20000000000005" y="58.920539730134934"/>
         </scene>
-        <!--식당-->
-        <scene sceneID="Ncq-9U-p2y">
+        <!--Cafeteria-->
+        <scene sceneID="qQu-L8-hIq">
             <objects>
-                <viewController id="fgA-lD-Dlr" customClass="CafeteriaViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lha-pk-WWT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jbg-7f-jkS">
-                                <rect key="frame" x="16" y="80" width="343" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="UAc-eP-dxh"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="308관 식당"/>
-                                    <segment title="309관 식당"/>
-                                </segments>
-                                <connections>
-                                    <action selector="cafeteriaControl:" destination="fgA-lD-Dlr" eventType="valueChanged" id="Rj7-x2-fBj"/>
-                                </connections>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="식당 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2M-5z-l3A">
-                                <rect key="frame" x="169" y="128" width="190" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="9K5-cj-3Mr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eS-C1-db3">
-                                <rect key="frame" x="169" y="157" width="190" height="73"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="운영시간">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L76-3O-Xpt">
-                                <rect key="frame" x="16" y="124" width="145" height="106"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="JYG-mU-jqV"/>
-                                    <constraint firstAttribute="height" constant="106" id="xhM-ok-nFp"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="jbg-7f-jkS" firstAttribute="top" secondItem="EOV-8g-fSB" secondAttribute="top" constant="16" id="3De-fx-uGU"/>
-                            <constraint firstItem="q2M-5z-l3A" firstAttribute="leading" secondItem="L76-3O-Xpt" secondAttribute="trailing" constant="8" id="4JJ-GT-QTl"/>
-                            <constraint firstItem="jbg-7f-jkS" firstAttribute="leading" secondItem="EOV-8g-fSB" secondAttribute="leading" constant="16" id="Eal-r8-wej"/>
-                            <constraint firstItem="q2M-5z-l3A" firstAttribute="top" secondItem="jbg-7f-jkS" secondAttribute="bottom" constant="20" id="GiD-uv-LSm"/>
-                            <constraint firstItem="6eS-C1-db3" firstAttribute="leading" secondItem="L76-3O-Xpt" secondAttribute="trailing" constant="8" id="HMq-Ml-cXG"/>
-                            <constraint firstItem="L76-3O-Xpt" firstAttribute="bottom" secondItem="6eS-C1-db3" secondAttribute="bottom" id="NxM-MB-D15"/>
-                            <constraint firstItem="jbg-7f-jkS" firstAttribute="trailing" secondItem="EOV-8g-fSB" secondAttribute="trailing" constant="-16" id="WgR-LW-xoP"/>
-                            <constraint firstItem="L76-3O-Xpt" firstAttribute="top" secondItem="jbg-7f-jkS" secondAttribute="bottom" constant="16" id="aKT-8p-rdY"/>
-                            <constraint firstItem="6eS-C1-db3" firstAttribute="top" secondItem="q2M-5z-l3A" secondAttribute="bottom" constant="8" id="hht-Vn-agj"/>
-                            <constraint firstAttribute="trailing" secondItem="6eS-C1-db3" secondAttribute="trailing" constant="16" id="ibT-5S-4sC"/>
-                            <constraint firstItem="L76-3O-Xpt" firstAttribute="leading" secondItem="EOV-8g-fSB" secondAttribute="leading" constant="16" id="qzZ-hq-AYx"/>
-                            <constraint firstItem="EOV-8g-fSB" firstAttribute="trailing" secondItem="q2M-5z-l3A" secondAttribute="trailing" constant="16" id="zKa-oA-uyt"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="EOV-8g-fSB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="식당" id="LuW-Y5-NZl"/>
-                    <connections>
-                        <outlet property="cafeteriaControl" destination="jbg-7f-jkS" id="GoT-tK-vTs"/>
-                        <outlet property="timeLabel" destination="6eS-C1-db3" id="KgW-gC-aJx"/>
-                        <outlet property="titleLabel" destination="q2M-5z-l3A" id="ps7-kT-C2W"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fEn-DU-0dZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Cafeteria" id="A6u-Cl-ZZp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TsV-9E-I5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200.80000000000001" y="-107.49625187406298"/>
+            <point key="canvasLocation" x="-25" y="-75"/>
         </scene>
         <!--생활정보-->
         <scene sceneID="FUL-Jl-jMR">

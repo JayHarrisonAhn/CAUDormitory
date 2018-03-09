@@ -24,13 +24,15 @@
 		66E49E7120295B5B006AF127 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E7020295B5B006AF127 /* Data.swift */; };
 		8463B3F02030CE090031C1DD /* SettingTabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */; };
 		84841081202EF3D800A9B97E /* SubmitSupportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */; };
+		849BAFF1205295FD004D9913 /* Cafeteria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BAFF0205295FD004D9913 /* Cafeteria.storyboard */; };
+		849BAFF42052980B004D9913 /* facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BAFF32052980B004D9913 /* facility.swift */; };
 		941E1574204C66F00073DD68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 941E1573204C66EF0073DD68 /* GoogleService-Info.plist */; };
 		941E1576204C6BA40073DD68 /* NoticeMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */; };
 		9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997D202F57D700EB79AA /* InfoMainViewController.swift */; };
 		94379980202F83AD00EB79AA /* InfoMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */; };
 		9458B271202E0875007C2A8C /* SubmitTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458B270202E0874007C2A8C /* SubmitTabViewController.swift */; };
 		9458B273202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458B272202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift */; };
-		9486DBF9203DFF720050E8AB /* DetailViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486DBF8203DFF720050E8AB /* DetailViewControllers.swift */; };
+		9486DBF9203DFF720050E8AB /* Cafeteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486DBF8203DFF720050E8AB /* Cafeteria.swift */; };
 		948BC73D20353F7A003D467B /* SettingTabPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948BC73C20353F7A003D467B /* SettingTabPickerView.swift */; };
 		FD15CAD61DFA2574E415FC4F /* Pods_CAUDormitory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CFA6A8F332E308C39637DE /* Pods_CAUDormitory.framework */; };
 /* End PBXBuildFile section */
@@ -55,13 +57,15 @@
 		66E49E7020295B5B006AF127 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTabTableViewCell.swift; sourceTree = "<group>"; };
 		84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitSupportTableViewController.swift; sourceTree = "<group>"; };
+		849BAFF0205295FD004D9913 /* Cafeteria.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cafeteria.storyboard; sourceTree = "<group>"; };
+		849BAFF32052980B004D9913 /* facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facility.swift; sourceTree = "<group>"; };
 		941E1573204C66EF0073DD68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeMainTableViewController.swift; sourceTree = "<group>"; };
 		9437997D202F57D700EB79AA /* InfoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainViewController.swift; sourceTree = "<group>"; };
 		9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainCollectionViewCell.swift; sourceTree = "<group>"; };
 		9458B270202E0874007C2A8C /* SubmitTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTabViewController.swift; sourceTree = "<group>"; };
 		9458B272202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTab2CollectionViewCell.swift; sourceTree = "<group>"; };
-		9486DBF8203DFF720050E8AB /* DetailViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllers.swift; sourceTree = "<group>"; };
+		9486DBF8203DFF720050E8AB /* Cafeteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafeteria.swift; sourceTree = "<group>"; };
 		948BC73C20353F7A003D467B /* SettingTabPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTabPickerView.swift; sourceTree = "<group>"; };
 		A1CFA6A8F332E308C39637DE /* Pods_CAUDormitory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CAUDormitory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5251473F36A6C6789C0B38D /* Pods-CAUDormitory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAUDormitory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CAUDormitory/Pods-CAUDormitory.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,9 +153,9 @@
 			isa = PBXGroup;
 			children = (
 				66D07877202BF2230062F4D7 /* InfoTab.storyboard */,
-				9486DBF7203DFF4B0050E8AB /* DetailViewControllers */,
 				9437997D202F57D700EB79AA /* InfoMainViewController.swift */,
 				9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */,
+				9486DBF7203DFF4B0050E8AB /* Detail */,
 			);
 			path = InfoTab;
 			sourceTree = "<group>";
@@ -196,12 +200,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9486DBF7203DFF4B0050E8AB /* DetailViewControllers */ = {
+		849BAFF220529601004D9913 /* Cafeteria */ = {
 			isa = PBXGroup;
 			children = (
-				9486DBF8203DFF720050E8AB /* DetailViewControllers.swift */,
+				849BAFF0205295FD004D9913 /* Cafeteria.storyboard */,
+				9486DBF8203DFF720050E8AB /* Cafeteria.swift */,
 			);
-			path = DetailViewControllers;
+			path = Cafeteria;
+			sourceTree = "<group>";
+		};
+		9486DBF7203DFF4B0050E8AB /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				849BAFF32052980B004D9913 /* facility.swift */,
+				849BAFF220529601004D9913 /* Cafeteria */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +289,7 @@
 				6605E7D82003234E00B3A154 /* Main.storyboard in Resources */,
 				66D07878202BF2230062F4D7 /* InfoTab.storyboard in Resources */,
 				66D07876202BF15B0062F4D7 /* NoticeTab.storyboard in Resources */,
+				849BAFF1205295FD004D9913 /* Cafeteria.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,11 +366,12 @@
 				6605E7D32003234E00B3A154 /* AppDelegate.swift in Sources */,
 				9458B271202E0875007C2A8C /* SubmitTabViewController.swift in Sources */,
 				66E49E6F202959F6006AF127 /* Definition.swift in Sources */,
-				9486DBF9203DFF720050E8AB /* DetailViewControllers.swift in Sources */,
+				9486DBF9203DFF720050E8AB /* Cafeteria.swift in Sources */,
 				66D078B2202C35DE0062F4D7 /* SubmitTab1CollectionViewCell.swift in Sources */,
 				66D078AC202C2D170062F4D7 /* SettingTabTableViewController.swift in Sources */,
 				9458B273202E0DE0007C2A8C /* SubmitTab2CollectionViewCell.swift in Sources */,
 				941E1576204C6BA40073DD68 /* NoticeMainTableViewController.swift in Sources */,
+				849BAFF42052980B004D9913 /* facility.swift in Sources */,
 				9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */,
 				8463B3F02030CE090031C1DD /* SettingTabTableViewCell.swift in Sources */,
 				948BC73D20353F7A003D467B /* SettingTabPickerView.swift in Sources */,

@@ -8,6 +8,15 @@
 
 import UIKit
 
+class Cafeteria:facility {
+    var name_korean = "식당"
+    var name_english = "Cafeteria"
+    
+    var CellSegueIdentifier: String = "CFT"
+    
+    var icon: UIImage = #imageLiteral(resourceName: "info_logo_cafeteria")
+}
+
 class CafeteriaViewController: UIViewController {
 
     @IBOutlet weak var cafeteriaControl: UISegmentedControl!

@@ -10,18 +10,7 @@ import Foundation
 import UIKit
 
 //Info 탭
-class facility {
-    var name:String
-    var identifier:String
-    var icon:UIImage
-    var iconSize:Int
-    init(name:String, icon:UIImage, iconSize:Int, identifier:String) {
-        self.name = name
-        self.icon = icon
-        self.iconSize = iconSize
-        self.identifier = identifier
-    }
-}
+
 
 
 //Submit 탭

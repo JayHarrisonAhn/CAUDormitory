@@ -69,18 +69,7 @@ enum Gender:Int {
 
 //info 탭
     //시설정보
-var facilities:[[facility]] = [
-    [facility(name: "식당", icon: #imageLiteral(resourceName: "info_logo_cafeteria"), iconSize:2, identifier:"cafeteria"),
-    facility(name: "편의점", icon: #imageLiteral(resourceName: "info_logo_cvs"), iconSize:2, identifier:"cvs"),
-    facility(name: "자판기", icon: #imageLiteral(resourceName: "info_logo_vendingmachine"), iconSize:2, identifier:"vendingMachine")],
-    
-    [facility(name: "세탁실", icon: #imageLiteral(resourceName: "info_logo_laundryroom"), iconSize:2, identifier:"laundryRoom"),
-     facility(name: "피트니스실", icon: #imageLiteral(resourceName: "info_logo_fitness"), iconSize:2, identifier:"fitnessRoom"),
-     facility(name: "택배실", icon: #imageLiteral(resourceName: "info_logo_delivery"), iconSize:2, identifier:"deliveryRoom")],
-    
-    [facility(name: "공용PC", icon: #imageLiteral(resourceName: "info_logo_pc"), iconSize:2, identifier:"PC"),
-     facility(name: "프린터(유료)", icon: #imageLiteral(resourceName: "info_logo_printer"), iconSize:2, identifier:"Printer")]
-]
+
 
 //submit 탭
     //현재 진행중인 신청

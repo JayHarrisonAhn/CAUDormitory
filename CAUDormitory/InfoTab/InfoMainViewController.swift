@@ -22,13 +22,6 @@ class InfoMainViewController: UIViewController, UICollectionViewDataSource, UICo
         
         infoCollection.dataSource = self
         infoCollection.delegate = self
-        
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -40,21 +33,17 @@ class InfoMainViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if facilities[indexPath.section][indexPath.row].iconSize == 1 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "smallCell", for: indexPath) as! SmallCollectionViewCell
-            cell.iconImage.image = facilities[indexPath.section][indexPath.row].icon
-            cell.iconLabel.text = facilities[indexPath.section][indexPath.row].name
-            cell.frame.size.height = 76
-            return cell
-        } else if facilities[indexPath.section][indexPath.row].iconSize == 2 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bigCell", for: indexPath) as! BigCollectionViewCell
-            cell.iconImage.image = facilities[indexPath.section][indexPath.row].icon
-            cell.iconLabel.text = facilities[indexPath.section][indexPath.row].name
-            return cell
-        } else {
-            print("collectionViewCell Error")
-            return collectionView.dequeueReusableCell(withReuseIdentifier: "bigCell", for: indexPath)
-        }
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "smallCell", for: indexPath) as! SmallCollectionViewCell
+        
+        
+        let cellDetail = facilities[indexPath.section][indexPath.row]
+        cell.iconLabel.text = cellDetail.name_korean
+        cell.iconImage.image = cellDetail.icon
+        
+        cell.frame.size.height = 80
+        
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -77,22 +66,8 @@ class InfoMainViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        switch facilities[indexPath.section][indexPath.row].identifier {
-        case "cafeteria":
-            performSegue(withIdentifier: facilities[indexPath.section][indexPath.row].identifier, sender: nil)
-        default:
-            break
-        }
+        
+        performSegue(withIdentifier: facilities[indexPath.section][indexPath.row].CellSegueIdentifier, sender: nil)
+        
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

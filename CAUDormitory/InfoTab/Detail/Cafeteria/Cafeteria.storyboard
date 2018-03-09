@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KZS-kq-uZ1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--식당-->
+        <scene sceneID="0hZ-QL-Wsc">
+            <objects>
+                <viewController id="KZS-kq-uZ1" customClass="CafeteriaViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SZk-Qq-9Jb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="52O-ab-Qib">
+                                <rect key="frame" x="16" y="36" width="343" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Dbc-cu-lml"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="308관 식당"/>
+                                    <segment title="309관 식당"/>
+                                </segments>
+                                <connections>
+                                    <action selector="cafeteriaControl:" destination="KZS-kq-uZ1" eventType="valueChanged" id="rF9-vp-FdJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="식당 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qu-GO-5Jb">
+                                <rect key="frame" x="169" y="84" width="190" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="H9P-Qy-HVu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2q4-s8-jZu">
+                                <rect key="frame" x="169" y="113" width="190" height="73"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="운영시간">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dF0-2c-H2L">
+                                <rect key="frame" x="16" y="80" width="145" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="E5B-UO-rT2"/>
+                                    <constraint firstAttribute="width" constant="145" id="Yvr-qV-Vcb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dF0-2c-H2L" firstAttribute="top" secondItem="52O-ab-Qib" secondAttribute="bottom" constant="16" id="48p-2K-NMA"/>
+                            <constraint firstItem="3qu-GO-5Jb" firstAttribute="top" secondItem="52O-ab-Qib" secondAttribute="bottom" constant="20" id="4sD-Wf-hHx"/>
+                            <constraint firstItem="52O-ab-Qib" firstAttribute="trailing" secondItem="mTW-fK-GlF" secondAttribute="trailing" constant="-16" id="BcR-Er-tC6"/>
+                            <constraint firstAttribute="trailing" secondItem="2q4-s8-jZu" secondAttribute="trailing" constant="16" id="Puu-3B-hMN"/>
+                            <constraint firstItem="2q4-s8-jZu" firstAttribute="leading" secondItem="dF0-2c-H2L" secondAttribute="trailing" constant="8" id="TvM-Yy-CBb"/>
+                            <constraint firstItem="52O-ab-Qib" firstAttribute="top" secondItem="mTW-fK-GlF" secondAttribute="top" constant="16" id="hyj-V0-Pbh"/>
+                            <constraint firstItem="3qu-GO-5Jb" firstAttribute="leading" secondItem="dF0-2c-H2L" secondAttribute="trailing" constant="8" id="jjP-h8-b77"/>
+                            <constraint firstItem="dF0-2c-H2L" firstAttribute="bottom" secondItem="2q4-s8-jZu" secondAttribute="bottom" id="qAr-cL-qFZ"/>
+                            <constraint firstItem="2q4-s8-jZu" firstAttribute="top" secondItem="3qu-GO-5Jb" secondAttribute="bottom" constant="8" id="uuY-0u-EN4"/>
+                            <constraint firstItem="mTW-fK-GlF" firstAttribute="trailing" secondItem="3qu-GO-5Jb" secondAttribute="trailing" constant="16" id="wt6-Te-1zL"/>
+                            <constraint firstItem="dF0-2c-H2L" firstAttribute="leading" secondItem="mTW-fK-GlF" secondAttribute="leading" constant="16" id="zbt-2s-nE7"/>
+                            <constraint firstItem="52O-ab-Qib" firstAttribute="leading" secondItem="mTW-fK-GlF" secondAttribute="leading" constant="16" id="zuH-Q3-6ds"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mTW-fK-GlF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="식당" id="O3V-UU-wLV"/>
+                    <connections>
+                        <outlet property="cafeteriaControl" destination="52O-ab-Qib" id="msm-Cs-j3e"/>
+                        <outlet property="timeLabel" destination="2q4-s8-jZu" id="BMf-rH-TOL"/>
+                        <outlet property="titleLabel" destination="3qu-GO-5Jb" id="z8w-oU-dD4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WEp-M2-cZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="-107.49625187406298"/>
+        </scene>
+    </scenes>
+</document>
