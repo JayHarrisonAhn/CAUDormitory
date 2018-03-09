@@ -27,6 +27,18 @@
 		849BAFF1205295FD004D9913 /* Cafeteria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BAFF0205295FD004D9913 /* Cafeteria.storyboard */; };
 		849BAFF42052980B004D9913 /* facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BAFF32052980B004D9913 /* facility.swift */; };
 		849BAFF92052AB6F004D9913 /* Submits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BAFF82052AB6F004D9913 /* Submits.swift */; };
+		849BAFFE2052AECA004D9913 /* StudentID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BAFFD2052AECA004D9913 /* StudentID.swift */; };
+		849BB0002052AEDE004D9913 /* SettingElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BAFFF2052AEDE004D9913 /* SettingElement.swift */; };
+		849BB0032052B3A1004D9913 /* StudentGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0022052B3A1004D9913 /* StudentGender.swift */; };
+		849BB0072052BEBD004D9913 /* DormitoryBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0062052BEBD004D9913 /* DormitoryBuilding.swift */; };
+		849BB0092052BF87004D9913 /* DormitoryRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0082052BF87004D9913 /* DormitoryRoom.swift */; };
+		849BB00B2052CB40004D9913 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB00A2052CB40004D9913 /* Alert.swift */; };
+		849BB00D2052D251004D9913 /* Alert_rglCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB00C2052D251004D9913 /* Alert_rglCheck.swift */; };
+		849BB00F2052D305004D9913 /* Alert_fireDrill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB00E2052D305004D9913 /* Alert_fireDrill.swift */; };
+		849BB0112052D757004D9913 /* Alert_orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0102052D757004D9913 /* Alert_orientation.swift */; };
+		849BB0132052D7D5004D9913 /* Alert_sanitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0122052D7D5004D9913 /* Alert_sanitation.swift */; };
+		849BB0152052D83A004D9913 /* Alert_moveIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0142052D83A004D9913 /* Alert_moveIn.swift */; };
+		849BB0172052D848004D9913 /* Alert_moveOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0162052D848004D9913 /* Alert_moveOut.swift */; };
 		941E1574204C66F00073DD68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 941E1573204C66EF0073DD68 /* GoogleService-Info.plist */; };
 		941E1576204C6BA40073DD68 /* NoticeMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */; };
 		9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997D202F57D700EB79AA /* InfoMainViewController.swift */; };
@@ -60,6 +72,18 @@
 		849BAFF0205295FD004D9913 /* Cafeteria.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cafeteria.storyboard; sourceTree = "<group>"; };
 		849BAFF32052980B004D9913 /* facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facility.swift; sourceTree = "<group>"; };
 		849BAFF82052AB6F004D9913 /* Submits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Submits.swift; sourceTree = "<group>"; };
+		849BAFFD2052AECA004D9913 /* StudentID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentID.swift; sourceTree = "<group>"; };
+		849BAFFF2052AEDE004D9913 /* SettingElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingElement.swift; sourceTree = "<group>"; };
+		849BB0022052B3A1004D9913 /* StudentGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGender.swift; sourceTree = "<group>"; };
+		849BB0062052BEBD004D9913 /* DormitoryBuilding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DormitoryBuilding.swift; sourceTree = "<group>"; };
+		849BB0082052BF87004D9913 /* DormitoryRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DormitoryRoom.swift; sourceTree = "<group>"; };
+		849BB00A2052CB40004D9913 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		849BB00C2052D251004D9913 /* Alert_rglCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_rglCheck.swift; sourceTree = "<group>"; };
+		849BB00E2052D305004D9913 /* Alert_fireDrill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_fireDrill.swift; sourceTree = "<group>"; };
+		849BB0102052D757004D9913 /* Alert_orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_orientation.swift; sourceTree = "<group>"; };
+		849BB0122052D7D5004D9913 /* Alert_sanitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_sanitation.swift; sourceTree = "<group>"; };
+		849BB0142052D83A004D9913 /* Alert_moveIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_moveIn.swift; sourceTree = "<group>"; };
+		849BB0162052D848004D9913 /* Alert_moveOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_moveOut.swift; sourceTree = "<group>"; };
 		941E1573204C66EF0073DD68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeMainTableViewController.swift; sourceTree = "<group>"; };
 		9437997D202F57D700EB79AA /* InfoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +203,7 @@
 				66D078AB202C2D170062F4D7 /* SettingTabTableViewController.swift */,
 				8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */,
 				948BC73C20353F7A003D467B /* SettingTabPickerView.swift */,
+				849BAFFC2052AEB5004D9913 /* SettingElements */,
 			);
 			path = SettingTab;
 			sourceTree = "<group>";
@@ -207,6 +232,25 @@
 				9486DBF8203DFF720050E8AB /* Cafeteria.swift */,
 			);
 			path = Cafeteria;
+			sourceTree = "<group>";
+		};
+		849BAFFC2052AEB5004D9913 /* SettingElements */ = {
+			isa = PBXGroup;
+			children = (
+				849BAFFF2052AEDE004D9913 /* SettingElement.swift */,
+				849BAFFD2052AECA004D9913 /* StudentID.swift */,
+				849BB0022052B3A1004D9913 /* StudentGender.swift */,
+				849BB0062052BEBD004D9913 /* DormitoryBuilding.swift */,
+				849BB0082052BF87004D9913 /* DormitoryRoom.swift */,
+				849BB00A2052CB40004D9913 /* Alert.swift */,
+				849BB00C2052D251004D9913 /* Alert_rglCheck.swift */,
+				849BB00E2052D305004D9913 /* Alert_fireDrill.swift */,
+				849BB0102052D757004D9913 /* Alert_orientation.swift */,
+				849BB0122052D7D5004D9913 /* Alert_sanitation.swift */,
+				849BB0142052D83A004D9913 /* Alert_moveIn.swift */,
+				849BB0162052D848004D9913 /* Alert_moveOut.swift */,
+			);
+			path = SettingElements;
 			sourceTree = "<group>";
 		};
 		9486DBF7203DFF4B0050E8AB /* Detail */ = {
@@ -358,23 +402,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849BB00F2052D305004D9913 /* Alert_fireDrill.swift in Sources */,
 				94379980202F83AD00EB79AA /* InfoMainCollectionViewCell.swift in Sources */,
+				849BB0152052D83A004D9913 /* Alert_moveIn.swift in Sources */,
+				849BB0172052D848004D9913 /* Alert_moveOut.swift in Sources */,
+				849BB00D2052D251004D9913 /* Alert_rglCheck.swift in Sources */,
 				84841081202EF3D800A9B97E /* SubmitSupportTableViewController.swift in Sources */,
 				66D0786A202AABB30062F4D7 /* FirstExecuteViewController.swift in Sources */,
+				849BB00B2052CB40004D9913 /* Alert.swift in Sources */,
+				849BB0072052BEBD004D9913 /* DormitoryBuilding.swift in Sources */,
 				66E49E7120295B5B006AF127 /* Data.swift in Sources */,
 				6605E7D52003234E00B3A154 /* ViewController.swift in Sources */,
 				6605E7D32003234E00B3A154 /* AppDelegate.swift in Sources */,
+				849BB0032052B3A1004D9913 /* StudentGender.swift in Sources */,
 				9458B271202E0875007C2A8C /* SubmitTabViewController.swift in Sources */,
 				66E49E6F202959F6006AF127 /* Definition.swift in Sources */,
 				849BAFF92052AB6F004D9913 /* Submits.swift in Sources */,
 				9486DBF9203DFF720050E8AB /* Cafeteria.swift in Sources */,
+				849BB0092052BF87004D9913 /* DormitoryRoom.swift in Sources */,
+				849BB0132052D7D5004D9913 /* Alert_sanitation.swift in Sources */,
+				849BAFFE2052AECA004D9913 /* StudentID.swift in Sources */,
 				66D078B2202C35DE0062F4D7 /* SubmitTabsCollectionViewCell.swift in Sources */,
 				66D078AC202C2D170062F4D7 /* SettingTabTableViewController.swift in Sources */,
 				941E1576204C6BA40073DD68 /* NoticeMainTableViewController.swift in Sources */,
 				849BAFF42052980B004D9913 /* facility.swift in Sources */,
+				849BB0002052AEDE004D9913 /* SettingElement.swift in Sources */,
 				9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */,
 				8463B3F02030CE090031C1DD /* SettingTabTableViewCell.swift in Sources */,
 				948BC73D20353F7A003D467B /* SettingTabPickerView.swift in Sources */,
+				849BB0112052D757004D9913 /* Alert_orientation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

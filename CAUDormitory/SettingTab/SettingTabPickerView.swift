@@ -16,8 +16,7 @@ class GenderPickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
         return 2
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
-        studentGender.write(Gender(rawValue: row)!)
+        settingStudentGender().write(row)
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return Gender(rawValue: row)?.korean
@@ -32,9 +31,10 @@ class BuildingPickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDele
         return 4
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        dormitoryBuilding.write(DormitoryBuilding(rawValue: row)!)
+        settingDormitoryBuilding().write(row)
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return DormitoryBuilding(rawValue: row)?.korean
     }
 }
+

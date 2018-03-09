@@ -10,7 +10,6 @@ import UIKit
 import FirebaseDatabase
 
 class NoticeMainTableViewController: UITableViewController {
-    let building:DormitoryBuilding? = DormitoryBuilding(rawValue: settingDormitoryBuilding(name:"생활관 건물").read().rawValue)
 
     var postTitle:[String] = []
     var postDate:[String] = []
