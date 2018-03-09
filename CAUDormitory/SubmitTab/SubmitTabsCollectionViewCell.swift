@@ -9,8 +9,11 @@
 import UIKit
 
 class SubmitTab1CollectionViewCell: UICollectionViewCell {
-    
-    
+    @IBOutlet weak var iconLabel: UILabel!
+    @IBOutlet weak var iconImage: UIImageView!
+}
+
+class SubmitTab2CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var iconLabel: UILabel!
     @IBOutlet weak var iconImage: UIImageView!
 }

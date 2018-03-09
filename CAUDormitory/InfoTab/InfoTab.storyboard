@@ -154,7 +154,7 @@
                 <viewControllerPlaceholder storyboardName="Cafeteria" id="A6u-Cl-ZZp" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TsV-9E-I5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="-75"/>
+            <point key="canvasLocation" x="-168" y="-272"/>
         </scene>
         <!--생활정보-->
         <scene sceneID="FUL-Jl-jMR">
