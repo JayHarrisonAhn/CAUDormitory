@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--자판기-->
+        <!--세탁실-->
         <scene sceneID="qEb-Fr-KvK">
             <objects>
-                <viewController id="rhW-K8-igb" customClass="LaundryRoomViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="세탁실" id="rhW-K8-igb" customClass="LaundryRoomViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zkk-tO-00c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,7 +206,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mwl-mf-or8"/>
                     </view>
-                    <navigationItem key="navigationItem" title="자판기" id="RVf-8y-t2H"/>
+                    <navigationItem key="navigationItem" title="세탁실" id="RVf-8y-t2H"/>
                     <connections>
                         <outlet property="cafeteriaControl" destination="B1n-6u-g3v" id="tfF-ZT-Sxx"/>
                         <outlet property="detail" destination="UVc-zJ-Wfc" id="Xqj-Eu-EuT"/>

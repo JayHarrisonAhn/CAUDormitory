@@ -47,15 +47,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="76"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu9-Ga-Ixm">
-                                                    <rect key="frame" x="92" y="20" width="73" height="36"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu9-Ga-Ixm">
+                                                    <rect key="frame" x="78" y="22" width="88" height="36"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-ev-9CH">
-                                                    <rect key="frame" x="20" y="15" width="46" height="46"/>
+                                                    <rect key="frame" x="15" y="17" width="46" height="46"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -128,6 +128,8 @@
                         <segue destination="1mg-86-Ny1" kind="show" identifier="CVS" id="ewh-mj-arn"/>
                         <segue destination="yyJ-wK-qPJ" kind="show" identifier="VDM" id="RJZ-1Z-7yf"/>
                         <segue destination="NsH-r1-9AT" kind="show" identifier="LDR" id="4eV-j7-MkW"/>
+                        <segue destination="gW4-tX-but" kind="show" identifier="FNR" id="Der-RR-N9u"/>
+                        <segue destination="f0H-SP-Pql" kind="show" identifier="CF" id="YOz-4f-dor"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hN7-DM-S1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -165,6 +167,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nmj-LI-qRO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-146" y="-171"/>
+        </scene>
+        <!--FitnessRoom-->
+        <scene sceneID="BcC-Md-8ms">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FitnessRoom" id="gW4-tX-but" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hY3-bN-NC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152" y="-139"/>
+        </scene>
+        <!--Cafe-->
+        <scene sceneID="v58-Ui-Zcj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Cafe" id="f0H-SP-Pql" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tig-kZ-BtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-190" y="-103"/>
         </scene>
         <!--생활정보-->
         <scene sceneID="FUL-Jl-jMR">

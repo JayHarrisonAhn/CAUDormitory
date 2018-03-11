@@ -28,6 +28,10 @@
 		844DC5ED205513E400B94963 /* VendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DC5EC205513E400B94963 /* VendingMachine.swift */; };
 		844DC5F32055275600B94963 /* LaundryRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844DC5F22055275600B94963 /* LaundryRoom.storyboard */; };
 		844DC5F52055276000B94963 /* LaundryRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DC5F42055276000B94963 /* LaundryRoom.swift */; };
+		844DC5F8205534BA00B94963 /* FitnessRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844DC5F7205534BA00B94963 /* FitnessRoom.storyboard */; };
+		844DC5FA205534C200B94963 /* FitnessRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DC5F9205534C200B94963 /* FitnessRoom.swift */; };
+		844DC5FD20553B0B00B94963 /* Cafe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844DC5FC20553B0B00B94963 /* Cafe.storyboard */; };
+		844DC5FF20553B1200B94963 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DC5FE20553B1200B94963 /* Cafe.swift */; };
 		8463B3F02030CE090031C1DD /* SettingTabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */; };
 		84841081202EF3D800A9B97E /* SubmitSupportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */; };
 		849BAFF1205295FD004D9913 /* Cafeteria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BAFF0205295FD004D9913 /* Cafeteria.storyboard */; };
@@ -79,6 +83,10 @@
 		844DC5EC205513E400B94963 /* VendingMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendingMachine.swift; sourceTree = "<group>"; };
 		844DC5F22055275600B94963 /* LaundryRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaundryRoom.storyboard; sourceTree = "<group>"; };
 		844DC5F42055276000B94963 /* LaundryRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryRoom.swift; sourceTree = "<group>"; };
+		844DC5F7205534BA00B94963 /* FitnessRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FitnessRoom.storyboard; sourceTree = "<group>"; };
+		844DC5F9205534C200B94963 /* FitnessRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessRoom.swift; sourceTree = "<group>"; };
+		844DC5FC20553B0B00B94963 /* Cafe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Cafe.storyboard; path = ../../../../../../../Documents/Cafe.storyboard; sourceTree = "<group>"; };
+		844DC5FE20553B1200B94963 /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Cafe.swift; path = ../../../../../../../Documents/Cafe.swift; sourceTree = "<group>"; };
 		8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTabTableViewCell.swift; sourceTree = "<group>"; };
 		84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitSupportTableViewController.swift; sourceTree = "<group>"; };
 		849BAFF0205295FD004D9913 /* Cafeteria.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cafeteria.storyboard; sourceTree = "<group>"; };
@@ -255,22 +263,24 @@
 			path = VendingMachine;
 			sourceTree = "<group>";
 		};
-		844DC5EE2055270000B94963 /* 1 */ = {
+		844DC5EE2055270000B94963 /* 2 */ = {
 			isa = PBXGroup;
 			children = (
 				849BAFF220529601004D9913 /* Cafeteria */,
+				844DC5FB20553AF800B94963 /* Cafe */,
 				844DC5E420550C5B00B94963 /* CVS */,
 				844DC5E92055136100B94963 /* VendingMachine */,
 			);
-			path = 1;
+			path = 2;
 			sourceTree = "<group>";
 		};
-		844DC5EF2055271700B94963 /* 2 */ = {
+		844DC5EF2055271700B94963 /* 1 */ = {
 			isa = PBXGroup;
 			children = (
 				844DC5F12055273700B94963 /* LaundryRoom */,
+				844DC5F62055349D00B94963 /* FitnessRoom */,
 			);
-			path = 2;
+			path = 1;
 			sourceTree = "<group>";
 		};
 		844DC5F02055272500B94963 /* 3 */ = {
@@ -287,6 +297,24 @@
 				844DC5F42055276000B94963 /* LaundryRoom.swift */,
 			);
 			path = LaundryRoom;
+			sourceTree = "<group>";
+		};
+		844DC5F62055349D00B94963 /* FitnessRoom */ = {
+			isa = PBXGroup;
+			children = (
+				844DC5F7205534BA00B94963 /* FitnessRoom.storyboard */,
+				844DC5F9205534C200B94963 /* FitnessRoom.swift */,
+			);
+			path = FitnessRoom;
+			sourceTree = "<group>";
+		};
+		844DC5FB20553AF800B94963 /* Cafe */ = {
+			isa = PBXGroup;
+			children = (
+				844DC5FC20553B0B00B94963 /* Cafe.storyboard */,
+				844DC5FE20553B1200B94963 /* Cafe.swift */,
+			);
+			path = Cafe;
 			sourceTree = "<group>";
 		};
 		849BAFF220529601004D9913 /* Cafeteria */ = {
@@ -321,8 +349,8 @@
 			isa = PBXGroup;
 			children = (
 				849BAFF32052980B004D9913 /* facility.swift */,
-				844DC5EE2055270000B94963 /* 1 */,
-				844DC5EF2055271700B94963 /* 2 */,
+				844DC5EF2055271700B94963 /* 1 */,
+				844DC5EE2055270000B94963 /* 2 */,
 				844DC5F02055272500B94963 /* 3 */,
 			);
 			path = Detail;
@@ -392,8 +420,10 @@
 			files = (
 				844DC5F32055275600B94963 /* LaundryRoom.storyboard in Resources */,
 				6605E7DD2003234E00B3A154 /* LaunchScreen.storyboard in Resources */,
+				844DC5FD20553B0B00B94963 /* Cafe.storyboard in Resources */,
 				66D07889202C248B0062F4D7 /* SettingTab.storyboard in Resources */,
 				941E1574204C66F00073DD68 /* GoogleService-Info.plist in Resources */,
+				844DC5F8205534BA00B94963 /* FitnessRoom.storyboard in Resources */,
 				66D07874202BF0DB0062F4D7 /* FirstExecute.storyboard in Resources */,
 				6605E7DA2003234E00B3A154 /* Assets.xcassets in Resources */,
 				66D0787A202BF34A0062F4D7 /* SubmitTab.storyboard in Resources */,
@@ -492,10 +522,12 @@
 				9486DBF9203DFF720050E8AB /* Cafeteria.swift in Sources */,
 				849BB0092052BF87004D9913 /* DormitoryRoom.swift in Sources */,
 				849BB0132052D7D5004D9913 /* Alert_sanitation.swift in Sources */,
+				844DC5FA205534C200B94963 /* FitnessRoom.swift in Sources */,
 				849BAFFE2052AECA004D9913 /* StudentID.swift in Sources */,
 				66D078B2202C35DE0062F4D7 /* SubmitTabsCollectionViewCell.swift in Sources */,
 				66D078AC202C2D170062F4D7 /* SettingTabTableViewController.swift in Sources */,
 				941E1576204C6BA40073DD68 /* NoticeMainTableViewController.swift in Sources */,
+				844DC5FF20553B1200B94963 /* Cafe.swift in Sources */,
 				849BAFF42052980B004D9913 /* facility.swift in Sources */,
 				849BB0002052AEDE004D9913 /* SettingElement.swift in Sources */,
 				9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */,

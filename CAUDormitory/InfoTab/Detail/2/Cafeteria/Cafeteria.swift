@@ -18,7 +18,7 @@ class Cafeteria:facility {
 }
 
 class CafeteriaViewController: UIViewController {
-
+    
     @IBOutlet weak var cafeteriaControl: UISegmentedControl!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!

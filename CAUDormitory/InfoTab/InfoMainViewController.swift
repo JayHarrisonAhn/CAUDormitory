@@ -51,9 +51,9 @@ class InfoMainViewController: UIViewController, UICollectionViewDataSource, UICo
         
         switch indexPath.section {
         case 0:
-            headerView.headLabel.text = "상업시설"
+            headerView.headLabel.text = "편의시설"
         case 1:
-            headerView.headLabel.text = "생활시설"
+            headerView.headLabel.text = "상업시설"
         case 2:
             headerView.headLabel.text = "공용기기"
         case 3:

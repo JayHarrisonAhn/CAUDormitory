@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1TO-H4-RGr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--피트니스실-->
+        <scene sceneID="C1K-AO-6Lv">
+            <objects>
+                <viewController title="피트니스실" id="1TO-H4-RGr" customClass="FitnessRoomViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rg1-6P-FOk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Iwl-Mr-cK8">
+                                <rect key="frame" x="16" y="36" width="343" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="oEx-hX-ACh"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="308관"/>
+                                    <segment title="309관"/>
+                                    <segment title="퓨처하우스"/>
+                                </segments>
+                                <connections>
+                                    <action selector="cafeteriaControl:" destination="1TO-H4-RGr" eventType="valueChanged" id="yel-51-i0q"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000관 피트니스실" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAa-Vy-fUg">
+                                <rect key="frame" x="204" y="87" width="155" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="krn-bs-44o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRm-az-afJ">
+                                <rect key="frame" x="204" y="116" width="155" height="94"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="운영시간">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pWo-WH-oyj">
+                                <rect key="frame" x="16" y="80" width="180" height="130"/>
+                                <color key="backgroundColor" red="0.59747779190000005" green="0.59747779190000005" blue="0.59747779190000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="S1H-Zh-5yt"/>
+                                    <constraint firstAttribute="width" constant="180" id="SMi-F0-btk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시설 위치" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFt-ei-dbD">
+                                <rect key="frame" x="16" y="235" width="150" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="SxJ-oX-8fP"/>
+                                    <constraint firstAttribute="width" constant="150" id="n5g-9f-ZVv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkb-Jt-M48">
+                                <rect key="frame" x="16" y="257" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GBO-GP-cyq"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="위치">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="피트니스실 이용 방법" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ex1-r9-4qt">
+                                <rect key="frame" x="16" y="327" width="343" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="1Nm-oY-lDV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iR-l8-4w9">
+                                <rect key="frame" x="16" y="349" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="miw-8k-drj"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="이용법">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9iR-l8-4w9" firstAttribute="top" secondItem="ex1-r9-4qt" secondAttribute="bottom" id="00a-Zo-SBh"/>
+                            <constraint firstItem="iRm-az-afJ" firstAttribute="top" secondItem="XAa-Vy-fUg" secondAttribute="bottom" constant="8" id="3jZ-kC-FIA"/>
+                            <constraint firstItem="oFt-ei-dbD" firstAttribute="leading" secondItem="oM6-yi-kqo" secondAttribute="leading" constant="16" id="3pi-X2-k0y"/>
+                            <constraint firstItem="oFt-ei-dbD" firstAttribute="top" secondItem="pWo-WH-oyj" secondAttribute="bottom" constant="25" id="7a2-ii-K6F"/>
+                            <constraint firstItem="pWo-WH-oyj" firstAttribute="top" secondItem="Iwl-Mr-cK8" secondAttribute="bottom" constant="16" id="EgT-pv-u3s"/>
+                            <constraint firstItem="Iwl-Mr-cK8" firstAttribute="leading" secondItem="oM6-yi-kqo" secondAttribute="leading" constant="16" id="HYR-Tn-ybm"/>
+                            <constraint firstItem="pWo-WH-oyj" firstAttribute="bottom" secondItem="iRm-az-afJ" secondAttribute="bottom" id="IC0-c0-kho"/>
+                            <constraint firstItem="oM6-yi-kqo" firstAttribute="trailing" secondItem="9iR-l8-4w9" secondAttribute="trailing" constant="16" id="Izv-on-fbe"/>
+                            <constraint firstItem="oM6-yi-kqo" firstAttribute="trailing" secondItem="XAa-Vy-fUg" secondAttribute="trailing" constant="16" id="KRx-oJ-0aS"/>
+                            <constraint firstItem="XAa-Vy-fUg" firstAttribute="top" secondItem="Iwl-Mr-cK8" secondAttribute="bottom" constant="23" id="LZf-Bf-ZCF"/>
+                            <constraint firstItem="xkb-Jt-M48" firstAttribute="leading" secondItem="oM6-yi-kqo" secondAttribute="leading" constant="16" id="M1U-na-vsK"/>
+                            <constraint firstItem="xkb-Jt-M48" firstAttribute="top" secondItem="oFt-ei-dbD" secondAttribute="bottom" id="N8p-x8-z3V"/>
+                            <constraint firstItem="iRm-az-afJ" firstAttribute="leading" secondItem="pWo-WH-oyj" secondAttribute="trailing" constant="8" id="QiW-p4-QdG"/>
+                            <constraint firstItem="oM6-yi-kqo" firstAttribute="trailing" secondItem="ex1-r9-4qt" secondAttribute="trailing" constant="16" id="SAy-FG-upc"/>
+                            <constraint firstItem="9iR-l8-4w9" firstAttribute="leading" secondItem="oM6-yi-kqo" secondAttribute="leading" constant="16" id="SwY-r0-K6c"/>
+                            <constraint firstItem="ex1-r9-4qt" firstAttribute="leading" secondItem="oM6-yi-kqo" secondAttribute="leading" constant="16" id="WT1-Vs-pRD"/>
+                            <constraint firstItem="pWo-WH-oyj" firstAttribute="leading" secondItem="oM6-yi-kqo" secondAttribute="leading" constant="16" id="Ygg-n4-fTm"/>
+                            <constraint firstItem="XAa-Vy-fUg" firstAttribute="leading" secondItem="pWo-WH-oyj" secondAttribute="trailing" constant="8" id="cwp-Yz-5ga"/>
+                            <constraint firstItem="Iwl-Mr-cK8" firstAttribute="trailing" secondItem="oM6-yi-kqo" secondAttribute="trailing" constant="-16" id="f5L-2z-07b"/>
+                            <constraint firstItem="Iwl-Mr-cK8" firstAttribute="top" secondItem="oM6-yi-kqo" secondAttribute="top" constant="16" id="i0j-Gb-BiU"/>
+                            <constraint firstItem="ex1-r9-4qt" firstAttribute="top" secondItem="xkb-Jt-M48" secondAttribute="bottom" constant="10" id="qCR-pV-g3Q"/>
+                            <constraint firstItem="oM6-yi-kqo" firstAttribute="trailing" secondItem="xkb-Jt-M48" secondAttribute="trailing" constant="16" id="tEV-yx-k96"/>
+                            <constraint firstAttribute="trailing" secondItem="iRm-az-afJ" secondAttribute="trailing" constant="16" id="z25-SD-fWg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oM6-yi-kqo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="피트니스실" id="6El-PJ-059"/>
+                    <connections>
+                        <outlet property="cafeteriaControl" destination="Iwl-Mr-cK8" id="ge4-6G-hmt"/>
+                        <outlet property="howToUse" destination="9iR-l8-4w9" id="Fth-xR-tBw"/>
+                        <outlet property="locationLabel" destination="xkb-Jt-M48" id="xxu-jA-mLW"/>
+                        <outlet property="timeLabel" destination="iRm-az-afJ" id="BBY-6p-vad"/>
+                        <outlet property="titleLabel" destination="XAa-Vy-fUg" id="T6J-hL-bFN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iuv-Hu-ZGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="-107.49625187406298"/>
+        </scene>
+    </scenes>
+</document>
