@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rhW-K8-igb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--자판기-->
+        <scene sceneID="qEb-Fr-KvK">
+            <objects>
+                <viewController id="rhW-K8-igb" customClass="LaundryRoomViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zkk-tO-00c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B1n-6u-g3v">
+                                <rect key="frame" x="16" y="36" width="343" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Hvb-IE-ZU8"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="308관"/>
+                                    <segment title="309관"/>
+                                    <segment title="퓨처"/>
+                                    <segment title="글로벌"/>
+                                </segments>
+                                <connections>
+                                    <action selector="cafeteriaControl:" destination="rhW-K8-igb" eventType="valueChanged" id="Gke-YG-fNI"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000관 세탁실" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oew-zJ-Fty">
+                                <rect key="frame" x="204" y="87" width="155" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="vX7-9r-eee"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkl-ek-kY2">
+                                <rect key="frame" x="204" y="116" width="155" height="94"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="운영시간">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8NX-hQ-iQM">
+                                <rect key="frame" x="16" y="80" width="180" height="130"/>
+                                <color key="backgroundColor" red="0.59747779190000005" green="0.59747779190000005" blue="0.59747779190000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="2cQ-vg-ak6"/>
+                                    <constraint firstAttribute="height" constant="130" id="DjF-yj-HQa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시설 현황" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yx7-hy-4UQ">
+                                <rect key="frame" x="16" y="235" width="150" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Qp4-nS-1WM"/>
+                                    <constraint firstAttribute="height" constant="22" id="WfU-Oh-JxW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVc-zJ-Wfc">
+                                <rect key="frame" x="16" y="257" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IBG-oJ-sEy"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="세탁기">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="개수">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=", ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="건조기">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="개수">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="세제 비치 유무">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세탁실 이용법" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELc-JO-VNe">
+                                <rect key="frame" x="16" y="327" width="343" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="cJk-Id-TOm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQq-di-qLu">
+                                <rect key="frame" x="16" y="349" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ivb-Jm-rqc"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="코인세탁기">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" :  ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="코인건조기 : ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oew-zJ-Fty" firstAttribute="leading" secondItem="8NX-hQ-iQM" secondAttribute="trailing" constant="8" id="0Ys-7v-DFP"/>
+                            <constraint firstItem="Yx7-hy-4UQ" firstAttribute="top" secondItem="8NX-hQ-iQM" secondAttribute="bottom" constant="25" id="1lO-6d-vRQ"/>
+                            <constraint firstItem="B1n-6u-g3v" firstAttribute="leading" secondItem="mwl-mf-or8" secondAttribute="leading" constant="16" id="4OE-gQ-NAo"/>
+                            <constraint firstItem="8NX-hQ-iQM" firstAttribute="bottom" secondItem="nkl-ek-kY2" secondAttribute="bottom" id="848-dX-PwL"/>
+                            <constraint firstItem="UVc-zJ-Wfc" firstAttribute="top" secondItem="Yx7-hy-4UQ" secondAttribute="bottom" id="8Mk-ww-urB"/>
+                            <constraint firstItem="yQq-di-qLu" firstAttribute="leading" secondItem="mwl-mf-or8" secondAttribute="leading" constant="16" id="B1e-BN-nm8"/>
+                            <constraint firstItem="nkl-ek-kY2" firstAttribute="top" secondItem="oew-zJ-Fty" secondAttribute="bottom" constant="8" id="B9V-4W-S8P"/>
+                            <constraint firstItem="ELc-JO-VNe" firstAttribute="leading" secondItem="mwl-mf-or8" secondAttribute="leading" constant="16" id="Jey-Fk-fUt"/>
+                            <constraint firstItem="8NX-hQ-iQM" firstAttribute="top" secondItem="B1n-6u-g3v" secondAttribute="bottom" constant="16" id="T8t-9M-Klw"/>
+                            <constraint firstItem="mwl-mf-or8" firstAttribute="trailing" secondItem="yQq-di-qLu" secondAttribute="trailing" constant="16" id="Y1F-Y2-kTe"/>
+                            <constraint firstItem="B1n-6u-g3v" firstAttribute="trailing" secondItem="mwl-mf-or8" secondAttribute="trailing" constant="-16" id="Yt4-uf-xZf"/>
+                            <constraint firstItem="ELc-JO-VNe" firstAttribute="top" secondItem="UVc-zJ-Wfc" secondAttribute="bottom" constant="10" id="bNS-1p-XxY"/>
+                            <constraint firstItem="8NX-hQ-iQM" firstAttribute="leading" secondItem="mwl-mf-or8" secondAttribute="leading" constant="16" id="deR-UB-psg"/>
+                            <constraint firstItem="yQq-di-qLu" firstAttribute="top" secondItem="ELc-JO-VNe" secondAttribute="bottom" id="erU-bA-xXr"/>
+                            <constraint firstAttribute="trailing" secondItem="nkl-ek-kY2" secondAttribute="trailing" constant="16" id="kCk-pq-uni"/>
+                            <constraint firstItem="Yx7-hy-4UQ" firstAttribute="leading" secondItem="mwl-mf-or8" secondAttribute="leading" constant="16" id="lZ7-72-iw2"/>
+                            <constraint firstItem="mwl-mf-or8" firstAttribute="trailing" secondItem="oew-zJ-Fty" secondAttribute="trailing" constant="16" id="pld-JQ-zxt"/>
+                            <constraint firstItem="oew-zJ-Fty" firstAttribute="top" secondItem="B1n-6u-g3v" secondAttribute="bottom" constant="23" id="qCR-l1-fI0"/>
+                            <constraint firstItem="B1n-6u-g3v" firstAttribute="top" secondItem="mwl-mf-or8" secondAttribute="top" constant="16" id="r6f-HQ-Ap0"/>
+                            <constraint firstItem="nkl-ek-kY2" firstAttribute="leading" secondItem="8NX-hQ-iQM" secondAttribute="trailing" constant="8" id="rxK-PH-PXd"/>
+                            <constraint firstItem="mwl-mf-or8" firstAttribute="trailing" secondItem="ELc-JO-VNe" secondAttribute="trailing" constant="16" id="scS-Bb-ITE"/>
+                            <constraint firstItem="UVc-zJ-Wfc" firstAttribute="leading" secondItem="mwl-mf-or8" secondAttribute="leading" constant="16" id="tPX-U5-EfN"/>
+                            <constraint firstItem="mwl-mf-or8" firstAttribute="trailing" secondItem="UVc-zJ-Wfc" secondAttribute="trailing" constant="16" id="vY5-4G-JXw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mwl-mf-or8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="자판기" id="RVf-8y-t2H"/>
+                    <connections>
+                        <outlet property="cafeteriaControl" destination="B1n-6u-g3v" id="tfF-ZT-Sxx"/>
+                        <outlet property="detail" destination="UVc-zJ-Wfc" id="Xqj-Eu-EuT"/>
+                        <outlet property="howToUse" destination="yQq-di-qLu" id="MWl-az-cwK"/>
+                        <outlet property="timeLabel" destination="nkl-ek-kY2" id="6wZ-Ct-5Wo"/>
+                        <outlet property="titleLabel" destination="oew-zJ-Fty" id="uRt-pv-QrO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mE9-Yj-P5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="-107.49625187406298"/>
+        </scene>
+    </scenes>
+</document>

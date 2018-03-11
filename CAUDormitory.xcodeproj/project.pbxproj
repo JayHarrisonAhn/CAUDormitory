@@ -22,6 +22,12 @@
 		66D078B2202C35DE0062F4D7 /* SubmitTabsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D078B1202C35DE0062F4D7 /* SubmitTabsCollectionViewCell.swift */; };
 		66E49E6F202959F6006AF127 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E6E202959F6006AF127 /* Definition.swift */; };
 		66E49E7120295B5B006AF127 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E49E7020295B5B006AF127 /* Data.swift */; };
+		844DC5E620550CA400B94963 /* CVS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844DC5E520550CA400B94963 /* CVS.storyboard */; };
+		844DC5E820550CFF00B94963 /* CVS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DC5E720550CFF00B94963 /* CVS.swift */; };
+		844DC5EB205513DA00B94963 /* VendingMachine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844DC5EA205513DA00B94963 /* VendingMachine.storyboard */; };
+		844DC5ED205513E400B94963 /* VendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DC5EC205513E400B94963 /* VendingMachine.swift */; };
+		844DC5F32055275600B94963 /* LaundryRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844DC5F22055275600B94963 /* LaundryRoom.storyboard */; };
+		844DC5F52055276000B94963 /* LaundryRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DC5F42055276000B94963 /* LaundryRoom.swift */; };
 		8463B3F02030CE090031C1DD /* SettingTabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */; };
 		84841081202EF3D800A9B97E /* SubmitSupportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */; };
 		849BAFF1205295FD004D9913 /* Cafeteria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BAFF0205295FD004D9913 /* Cafeteria.storyboard */; };
@@ -67,6 +73,12 @@
 		66D078B1202C35DE0062F4D7 /* SubmitTabsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTabsCollectionViewCell.swift; sourceTree = "<group>"; };
 		66E49E6E202959F6006AF127 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
 		66E49E7020295B5B006AF127 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		844DC5E520550CA400B94963 /* CVS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CVS.storyboard; sourceTree = "<group>"; };
+		844DC5E720550CFF00B94963 /* CVS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVS.swift; sourceTree = "<group>"; };
+		844DC5EA205513DA00B94963 /* VendingMachine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VendingMachine.storyboard; sourceTree = "<group>"; };
+		844DC5EC205513E400B94963 /* VendingMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendingMachine.swift; sourceTree = "<group>"; };
+		844DC5F22055275600B94963 /* LaundryRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaundryRoom.storyboard; sourceTree = "<group>"; };
+		844DC5F42055276000B94963 /* LaundryRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryRoom.swift; sourceTree = "<group>"; };
 		8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTabTableViewCell.swift; sourceTree = "<group>"; };
 		84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitSupportTableViewController.swift; sourceTree = "<group>"; };
 		849BAFF0205295FD004D9913 /* Cafeteria.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cafeteria.storyboard; sourceTree = "<group>"; };
@@ -225,6 +237,58 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		844DC5E420550C5B00B94963 /* CVS */ = {
+			isa = PBXGroup;
+			children = (
+				844DC5E520550CA400B94963 /* CVS.storyboard */,
+				844DC5E720550CFF00B94963 /* CVS.swift */,
+			);
+			path = CVS;
+			sourceTree = "<group>";
+		};
+		844DC5E92055136100B94963 /* VendingMachine */ = {
+			isa = PBXGroup;
+			children = (
+				844DC5EA205513DA00B94963 /* VendingMachine.storyboard */,
+				844DC5EC205513E400B94963 /* VendingMachine.swift */,
+			);
+			path = VendingMachine;
+			sourceTree = "<group>";
+		};
+		844DC5EE2055270000B94963 /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				849BAFF220529601004D9913 /* Cafeteria */,
+				844DC5E420550C5B00B94963 /* CVS */,
+				844DC5E92055136100B94963 /* VendingMachine */,
+			);
+			path = 1;
+			sourceTree = "<group>";
+		};
+		844DC5EF2055271700B94963 /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				844DC5F12055273700B94963 /* LaundryRoom */,
+			);
+			path = 2;
+			sourceTree = "<group>";
+		};
+		844DC5F02055272500B94963 /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 3;
+			sourceTree = "<group>";
+		};
+		844DC5F12055273700B94963 /* LaundryRoom */ = {
+			isa = PBXGroup;
+			children = (
+				844DC5F22055275600B94963 /* LaundryRoom.storyboard */,
+				844DC5F42055276000B94963 /* LaundryRoom.swift */,
+			);
+			path = LaundryRoom;
+			sourceTree = "<group>";
+		};
 		849BAFF220529601004D9913 /* Cafeteria */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +321,9 @@
 			isa = PBXGroup;
 			children = (
 				849BAFF32052980B004D9913 /* facility.swift */,
-				849BAFF220529601004D9913 /* Cafeteria */,
+				844DC5EE2055270000B94963 /* 1 */,
+				844DC5EF2055271700B94963 /* 2 */,
+				844DC5F02055272500B94963 /* 3 */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -324,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844DC5F32055275600B94963 /* LaundryRoom.storyboard in Resources */,
 				6605E7DD2003234E00B3A154 /* LaunchScreen.storyboard in Resources */,
 				66D07889202C248B0062F4D7 /* SettingTab.storyboard in Resources */,
 				941E1574204C66F00073DD68 /* GoogleService-Info.plist in Resources */,
@@ -332,8 +399,10 @@
 				66D0787A202BF34A0062F4D7 /* SubmitTab.storyboard in Resources */,
 				6605E7D82003234E00B3A154 /* Main.storyboard in Resources */,
 				66D07878202BF2230062F4D7 /* InfoTab.storyboard in Resources */,
+				844DC5EB205513DA00B94963 /* VendingMachine.storyboard in Resources */,
 				66D07876202BF15B0062F4D7 /* NoticeTab.storyboard in Resources */,
 				849BAFF1205295FD004D9913 /* Cafeteria.storyboard in Resources */,
+				844DC5E620550CA400B94963 /* CVS.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,11 +473,13 @@
 			files = (
 				849BB00F2052D305004D9913 /* Alert_fireDrill.swift in Sources */,
 				94379980202F83AD00EB79AA /* InfoMainCollectionViewCell.swift in Sources */,
+				844DC5E820550CFF00B94963 /* CVS.swift in Sources */,
 				849BB0152052D83A004D9913 /* Alert_moveIn.swift in Sources */,
 				849BB0172052D848004D9913 /* Alert_moveOut.swift in Sources */,
 				849BB00D2052D251004D9913 /* Alert_rglCheck.swift in Sources */,
 				84841081202EF3D800A9B97E /* SubmitSupportTableViewController.swift in Sources */,
 				66D0786A202AABB30062F4D7 /* FirstExecuteViewController.swift in Sources */,
+				844DC5F52055276000B94963 /* LaundryRoom.swift in Sources */,
 				849BB00B2052CB40004D9913 /* Alert.swift in Sources */,
 				849BB0072052BEBD004D9913 /* DormitoryBuilding.swift in Sources */,
 				66E49E7120295B5B006AF127 /* Data.swift in Sources */,
@@ -430,6 +501,7 @@
 				9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */,
 				8463B3F02030CE090031C1DD /* SettingTabTableViewCell.swift in Sources */,
 				948BC73D20353F7A003D467B /* SettingTabPickerView.swift in Sources */,
+				844DC5ED205513E400B94963 /* VendingMachine.swift in Sources */,
 				849BB0112052D757004D9913 /* Alert_orientation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
