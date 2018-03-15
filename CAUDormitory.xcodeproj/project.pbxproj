@@ -308,15 +308,6 @@
 			path = FitnessRoom;
 			sourceTree = "<group>";
 		};
-		847F0AEA2056B174003A7BC8 /* Cafe */ = {
-			isa = PBXGroup;
-			children = (
-				847F0AEB2056B180003A7BC8 /* Cafe.storyboard */,
-				847F0AED2056B192003A7BC8 /* Cafe.swift */,
-			);
-			path = Cafe;
-			sourceTree = "<group>";
-		};
 		849BAFF220529601004D9913 /* Cafeteria */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,7 +411,6 @@
 			files = (
 				844DC5F32055275600B94963 /* LaundryRoom.storyboard in Resources */,
 				6605E7DD2003234E00B3A154 /* LaunchScreen.storyboard in Resources */,
-				847F0AEC2056B180003A7BC8 /* Cafe.storyboard in Resources */,
 				66D07889202C248B0062F4D7 /* SettingTab.storyboard in Resources */,
 				941E1574204C66F00073DD68 /* GoogleService-Info.plist in Resources */,
 				844DC5F8205534BA00B94963 /* FitnessRoom.storyboard in Resources */,
@@ -527,7 +517,6 @@
 				66D078B2202C35DE0062F4D7 /* SubmitTabsCollectionViewCell.swift in Sources */,
 				66D078AC202C2D170062F4D7 /* SettingTabTableViewController.swift in Sources */,
 				941E1576204C6BA40073DD68 /* NoticeMainTableViewController.swift in Sources */,
-				847F0AEE2056B192003A7BC8 /* Cafe.swift in Sources */,
 				849BAFF42052980B004D9913 /* facility.swift in Sources */,
 				849BB0002052AEDE004D9913 /* SettingElement.swift in Sources */,
 				9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */,
