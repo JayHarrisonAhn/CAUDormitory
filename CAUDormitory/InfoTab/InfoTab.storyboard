@@ -41,7 +41,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="smallCell" id="k3G-zf-wWQ" customClass="SmallCollectionViewCell" customModule="CAUDormitory" customModuleProvider="target">
-                                        <rect key="frame" x="98" y="60" width="180" height="76"/>
+                                        <rect key="frame" x="97.5" y="60" width="180" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="76"/>
@@ -129,7 +129,6 @@
                         <segue destination="yyJ-wK-qPJ" kind="show" identifier="VDM" id="RJZ-1Z-7yf"/>
                         <segue destination="NsH-r1-9AT" kind="show" identifier="LDR" id="4eV-j7-MkW"/>
                         <segue destination="gW4-tX-but" kind="show" identifier="FNR" id="Der-RR-N9u"/>
-                        <segue destination="f0H-SP-Pql" kind="show" identifier="CF" id="YOz-4f-dor"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hN7-DM-S1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -175,14 +174,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hY3-bN-NC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-152" y="-139"/>
-        </scene>
-        <!--Cafe-->
-        <scene sceneID="v58-Ui-Zcj">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Cafe" id="f0H-SP-Pql" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tig-kZ-BtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-190" y="-103"/>
         </scene>
         <!--생활정보-->
         <scene sceneID="FUL-Jl-jMR">
