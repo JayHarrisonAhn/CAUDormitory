@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QCJ-rh-T2v">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--카페-->
+        <scene sceneID="cUS-GR-mvQ">
+            <objects>
+                <viewController id="QCJ-rh-T2v" customClass="CafeViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vEQ-eB-T49">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카페 더블유" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiO-48-HRW">
+                                <rect key="frame" x="204" y="43" width="155" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GwZ-p4-lMD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtQ-mY-Lgk">
+                                <rect key="frame" x="204" y="72" width="155" height="94"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="운영시간">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" - 평일 08:00 ~ 20:00 - 주말 10:00 ~ 18:00">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oGf-S8-Fgh">
+                                <rect key="frame" x="16" y="36" width="180" height="130"/>
+                                <color key="backgroundColor" red="0.59747779190000005" green="0.59747779190000005" blue="0.59747779190000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="51F-Vi-nLB"/>
+                                    <constraint firstAttribute="width" constant="180" id="lyB-we-Fw1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQM-M2-z0l">
+                                <rect key="frame" x="16" y="186" width="343" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="vij-g6-Cau"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="308관 1층 식당 앞">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="메뉴 업데이트 예정">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jQM-M2-z0l" firstAttribute="top" secondItem="CtQ-mY-Lgk" secondAttribute="bottom" constant="20" id="5R2-JX-E03"/>
+                            <constraint firstItem="CtQ-mY-Lgk" firstAttribute="leading" secondItem="oGf-S8-Fgh" secondAttribute="trailing" constant="8" id="5oz-Yg-JtU"/>
+                            <constraint firstItem="sav-I3-8zA" firstAttribute="trailing" secondItem="fiO-48-HRW" secondAttribute="trailing" constant="16" id="Ev2-0b-Hrm"/>
+                            <constraint firstItem="oGf-S8-Fgh" firstAttribute="bottom" secondItem="CtQ-mY-Lgk" secondAttribute="bottom" id="KW3-T6-IM0"/>
+                            <constraint firstItem="sav-I3-8zA" firstAttribute="trailing" secondItem="jQM-M2-z0l" secondAttribute="trailing" constant="16" id="L4F-25-t3f"/>
+                            <constraint firstItem="oGf-S8-Fgh" firstAttribute="top" secondItem="sav-I3-8zA" secondAttribute="top" constant="16" id="ek3-nL-rWw"/>
+                            <constraint firstItem="jQM-M2-z0l" firstAttribute="leading" secondItem="sav-I3-8zA" secondAttribute="leading" constant="16" id="hBn-vI-uzo"/>
+                            <constraint firstItem="oGf-S8-Fgh" firstAttribute="leading" secondItem="sav-I3-8zA" secondAttribute="leading" constant="16" id="i4K-Qy-8MB"/>
+                            <constraint firstItem="fiO-48-HRW" firstAttribute="top" secondItem="oGf-S8-Fgh" secondAttribute="top" constant="7" id="r2o-cy-a0Y"/>
+                            <constraint firstAttribute="trailing" secondItem="CtQ-mY-Lgk" secondAttribute="trailing" constant="16" id="s7Z-rn-bUh"/>
+                            <constraint firstItem="CtQ-mY-Lgk" firstAttribute="top" secondItem="fiO-48-HRW" secondAttribute="bottom" constant="8" id="vvz-Nb-5e0"/>
+                            <constraint firstItem="fiO-48-HRW" firstAttribute="leading" secondItem="oGf-S8-Fgh" secondAttribute="trailing" constant="8" id="wWh-pA-AYX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sav-I3-8zA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="카페" id="Ek6-9b-1Rq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoa-Ra-hI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="-107.49625187406298"/>
+        </scene>
+    </scenes>
+</document>

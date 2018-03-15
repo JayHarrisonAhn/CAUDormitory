@@ -31,6 +31,8 @@
 		844DC5F8205534BA00B94963 /* FitnessRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844DC5F7205534BA00B94963 /* FitnessRoom.storyboard */; };
 		844DC5FA205534C200B94963 /* FitnessRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DC5F9205534C200B94963 /* FitnessRoom.swift */; };
 		8463B3F02030CE090031C1DD /* SettingTabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */; };
+		847F0AEC2056B180003A7BC8 /* Cafe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847F0AEB2056B180003A7BC8 /* Cafe.storyboard */; };
+		847F0AEE2056B192003A7BC8 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F0AED2056B192003A7BC8 /* Cafe.swift */; };
 		84841081202EF3D800A9B97E /* SubmitSupportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */; };
 		849BAFF1205295FD004D9913 /* Cafeteria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BAFF0205295FD004D9913 /* Cafeteria.storyboard */; };
 		849BAFF42052980B004D9913 /* facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BAFF32052980B004D9913 /* facility.swift */; };
@@ -84,6 +86,8 @@
 		844DC5F7205534BA00B94963 /* FitnessRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FitnessRoom.storyboard; sourceTree = "<group>"; };
 		844DC5F9205534C200B94963 /* FitnessRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessRoom.swift; sourceTree = "<group>"; };
 		8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTabTableViewCell.swift; sourceTree = "<group>"; };
+		847F0AEB2056B180003A7BC8 /* Cafe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cafe.storyboard; sourceTree = "<group>"; };
+		847F0AED2056B192003A7BC8 /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
 		84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitSupportTableViewController.swift; sourceTree = "<group>"; };
 		849BAFF0205295FD004D9913 /* Cafeteria.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cafeteria.storyboard; sourceTree = "<group>"; };
 		849BAFF32052980B004D9913 /* facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facility.swift; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 		844DC5EE2055270000B94963 /* 2 */ = {
 			isa = PBXGroup;
 			children = (
+				847F0AEA2056B174003A7BC8 /* Cafe */,
 				849BAFF220529601004D9913 /* Cafeteria */,
 				844DC5E420550C5B00B94963 /* CVS */,
 				844DC5E92055136100B94963 /* VendingMachine */,
