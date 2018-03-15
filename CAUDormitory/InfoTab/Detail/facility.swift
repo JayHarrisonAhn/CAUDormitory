@@ -21,6 +21,6 @@ protocol facility {
 
 let facilities:[[facility]] = [
     [LaundryRoom(), FitnessRoom()],
-    [Cafeteria(), CVS(), VendingMachine()]
+    [Cafeteria(), CVS(), VendingMachine(), Cafe()]
 ]
 
