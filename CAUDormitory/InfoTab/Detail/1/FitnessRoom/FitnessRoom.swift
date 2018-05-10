@@ -9,12 +9,12 @@
 import UIKit
 
 class FitnessRoom:facility {
-    var name_korean = "피트니스실"
-    var name_english = "Fitness Room"
-    
-    var CellSegueIdentifier: String = "FNR"
-    
-    var icon: UIImage = #imageLiteral(resourceName: "info_logo_fitness")
+    override init() {
+        super.init()
+        super.name_korean = "피트니스실"
+        super.CellSegueIdentifier = "FNR"
+        super.icon = UIImage(named: "info_logo_"+super.CellSegueIdentifier)!
+    }
 }
 
 class FitnessRoomViewController: UIViewController {

@@ -1,21 +1,21 @@
-
-
-
-
-
-
 import UIKit
 
 class Cafe:facility {
-    var name_korean = "카페"
-    var name_english = "Cafe"
-    
-    var CellSegueIdentifier: String = "CFE"
-    
-    var icon: UIImage = #imageLiteral(resourceName: "info_logo_vendingmachine")
+    override init() {
+        super.init()
+        super.name_korean = "카페"
+        super.CellSegueIdentifier = "CFE"
+        super.icon = UIImage(named: "info_logo_"+super.CellSegueIdentifier)!
+    }
 }
 
 class CafeViewController: UIViewController {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet var detail: UILabel!
+    
+    override func viewDidLoad() {
+        
+    }
 }
-
-

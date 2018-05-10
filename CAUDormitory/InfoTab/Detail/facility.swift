@@ -10,17 +10,15 @@ import Foundation
 import UIKit
 
 
-protocol facility {
-    var name_korean:String {get}
-    var name_english:String {get}
-    
-    var CellSegueIdentifier:String {get}
-    
-    var icon:UIImage {get}
+class facility {
+    var name_korean:String = "시설명"
+    var CellSegueIdentifier:String = "Cell"
+    var icon:UIImage = UIImage(named: "info_logo_default")!
 }
 
 let facilities:[[facility]] = [
     [LaundryRoom(), FitnessRoom()],
     [Cafeteria(), CVS(), VendingMachine(), Cafe()]
+    
 ]
 

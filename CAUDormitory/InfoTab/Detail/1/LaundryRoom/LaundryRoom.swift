@@ -9,12 +9,12 @@
 import UIKit
 
 class LaundryRoom:facility {
-    var name_korean = "세탁실"
-    var name_english = "Laundry Room"
-    
-    var CellSegueIdentifier: String = "LDR"
-    
-    var icon: UIImage = #imageLiteral(resourceName: "info_logo_laundryroom")
+    override init() {
+        super.init()
+        super.name_korean = "세탁실"
+        super.CellSegueIdentifier = "LDR"
+        super.icon = UIImage(named: "info_logo_"+super.CellSegueIdentifier)!
+    }
 }
 
 class LaundryRoomViewController: UIViewController {

@@ -9,12 +9,12 @@
 import UIKit
 
 class CVS:facility {
-    var name_korean = "편의점"
-    var name_english = "Convenient Store"
-    
-    var CellSegueIdentifier: String = "CVS"
-    
-    var icon: UIImage = #imageLiteral(resourceName: "info_logo_cvs")
+    override init() {
+        super.init()
+        super.name_korean = "편의점"
+        super.CellSegueIdentifier = "CVS"
+        super.icon = UIImage(named: "info_logo_"+super.CellSegueIdentifier)!
+    }
 }
 
 class CVSViewController: UIViewController {
