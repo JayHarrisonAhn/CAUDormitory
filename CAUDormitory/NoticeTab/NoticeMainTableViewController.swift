@@ -10,10 +10,9 @@ import UIKit
 import FirebaseDatabase
 
 class NoticeMainTableViewController: UITableViewController {
-
+    var postNum:[String] = []
     var postTitle:[String] = []
     var postDate:[String] = []
-    var postHTML:[String] = []
     
     var ref:DatabaseReference?
     var databaseHandle:DatabaseHandle?
@@ -23,7 +22,13 @@ class NoticeMainTableViewController: UITableViewController {
 
         ref = Database.database().reference()
         databaseHandle = ref?.child("Seoul_Bluemir/Notices").observe(.childAdded, with: { (snapshot) in
-            var post = snapshot.childSnapshot(forPath: "Title").value as? String
+            var post:String? = snapshot.key
+            if let actualPost = post {
+                self.postNum.insert(actualPost, at: 0)
+                self.tableView.reloadData()
+            }
+            
+            post = snapshot.childSnapshot(forPath: "Title").value as? String
             if let actualPost = post {
                 self.postTitle.insert(actualPost, at: 0)
                 self.tableView.reloadData()
@@ -34,13 +39,8 @@ class NoticeMainTableViewController: UITableViewController {
                 self.postDate.insert(actualPost, at: 0)
                 self.tableView.reloadData()
             }
-            
-            post = snapshot.childSnapshot(forPath: "DetailHTML").value as? String
-            if let actualPost = post {
-                self.postHTML.insert(actualPost, at: 0)
-                self.tableView.reloadData()
-            }
         })
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,7 +69,6 @@ class NoticeMainTableViewController: UITableViewController {
         return cell
     }
     
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -105,14 +104,20 @@ class NoticeMainTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "detail" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let controller = segue.destination as! NoticeDetailViewController
+                controller.num = postNum[indexPath.row]
+            }
+        }
+        
     }
-    */
+    
 
 }

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lla-EU-GS5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lla-EU-GS5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -61,6 +62,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="vUn-VL-zYO" kind="show" identifier="detail" id="xTG-yh-Wdb"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -92,6 +96,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZh-Sp-lFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-108" y="-1376"/>
+        </scene>
+        <!--Notice Detail View Controller-->
+        <scene sceneID="wnf-Sf-Kid">
+            <objects>
+                <viewController id="vUn-VL-zYO" customClass="NoticeDetailViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z8d-gI-X36">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeI-VA-hwx">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lu2-aw-aed" firstAttribute="trailing" secondItem="xeI-VA-hwx" secondAttribute="trailing" id="MOD-9N-6mj"/>
+                            <constraint firstItem="xeI-VA-hwx" firstAttribute="top" secondItem="lu2-aw-aed" secondAttribute="top" id="dNI-YD-aOY"/>
+                            <constraint firstItem="lu2-aw-aed" firstAttribute="bottom" secondItem="xeI-VA-hwx" secondAttribute="bottom" id="nrt-UC-mCj"/>
+                            <constraint firstItem="xeI-VA-hwx" firstAttribute="leading" secondItem="lu2-aw-aed" secondAttribute="leading" id="pna-ao-UiI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lu2-aw-aed"/>
+                    </view>
+                    <connections>
+                        <outlet property="web" destination="xeI-VA-hwx" id="hfT-qW-LS5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ntu-cA-ZVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="-1377"/>
         </scene>
     </scenes>
     <resources>
