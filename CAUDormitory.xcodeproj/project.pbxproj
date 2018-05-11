@@ -50,6 +50,7 @@
 		849BB0152052D83A004D9913 /* Alert_moveIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0142052D83A004D9913 /* Alert_moveIn.swift */; };
 		849BB0172052D848004D9913 /* Alert_moveOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0162052D848004D9913 /* Alert_moveOut.swift */; };
 		849E78E520A4FA7400DFE360 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 849E78E420A4FA7400DFE360 /* GoogleService-Info.plist */; };
+		849E78E720A4FFE200DFE360 /* NoticeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E78E620A4FFE200DFE360 /* NoticeDetailViewController.swift */; };
 		941E1576204C6BA40073DD68 /* NoticeMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */; };
 		9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997D202F57D700EB79AA /* InfoMainViewController.swift */; };
 		94379980202F83AD00EB79AA /* InfoMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */; };
@@ -105,6 +106,7 @@
 		849BB0142052D83A004D9913 /* Alert_moveIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_moveIn.swift; sourceTree = "<group>"; };
 		849BB0162052D848004D9913 /* Alert_moveOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_moveOut.swift; sourceTree = "<group>"; };
 		849E78E420A4FA7400DFE360 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		849E78E620A4FFE200DFE360 /* NoticeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailViewController.swift; sourceTree = "<group>"; };
 		941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeMainTableViewController.swift; sourceTree = "<group>"; };
 		9437997D202F57D700EB79AA /* InfoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainViewController.swift; sourceTree = "<group>"; };
 		9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			children = (
 				66D07875202BF15B0062F4D7 /* NoticeTab.storyboard */,
 				941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */,
+				849E78E620A4FFE200DFE360 /* NoticeDetailViewController.swift */,
 			);
 			path = NoticeTab;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				845FDCE1205A69330082D286 /* Cafe.swift in Sources */,
 				849BAFF42052980B004D9913 /* facility.swift in Sources */,
 				849BB0002052AEDE004D9913 /* SettingElement.swift in Sources */,
+				849E78E720A4FFE200DFE360 /* NoticeDetailViewController.swift in Sources */,
 				9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */,
 				8463B3F02030CE090031C1DD /* SettingTabTableViewCell.swift in Sources */,
 				948BC73D20353F7A003D467B /* SettingTabPickerView.swift in Sources */,
