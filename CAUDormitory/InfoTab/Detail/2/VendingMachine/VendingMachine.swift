@@ -17,7 +17,7 @@ class VendingMachine:facility {
     }
 }
 
-class VendingMachineViewController: UIViewController {
+class VendingMachineViewController: AdsViewController {
     
     @IBOutlet weak var cafeteriaControl: UISegmentedControl!
     @IBOutlet weak var titleLabel: UILabel!

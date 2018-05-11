@@ -49,8 +49,8 @@
 		849BB0132052D7D5004D9913 /* Alert_sanitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0122052D7D5004D9913 /* Alert_sanitation.swift */; };
 		849BB0152052D83A004D9913 /* Alert_moveIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0142052D83A004D9913 /* Alert_moveIn.swift */; };
 		849BB0172052D848004D9913 /* Alert_moveOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0162052D848004D9913 /* Alert_moveOut.swift */; };
-		849E78E520A4FA7400DFE360 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 849E78E420A4FA7400DFE360 /* GoogleService-Info.plist */; };
 		849E78E720A4FFE200DFE360 /* NoticeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E78E620A4FFE200DFE360 /* NoticeDetailViewController.swift */; };
+		849E790B20A5E8AA00DFE360 /* AdInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E790A20A5E8AA00DFE360 /* AdInfo.swift */; };
 		941E1576204C6BA40073DD68 /* NoticeMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */; };
 		9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997D202F57D700EB79AA /* InfoMainViewController.swift */; };
 		94379980202F83AD00EB79AA /* InfoMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */; };
@@ -105,8 +105,8 @@
 		849BB0122052D7D5004D9913 /* Alert_sanitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_sanitation.swift; sourceTree = "<group>"; };
 		849BB0142052D83A004D9913 /* Alert_moveIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_moveIn.swift; sourceTree = "<group>"; };
 		849BB0162052D848004D9913 /* Alert_moveOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_moveOut.swift; sourceTree = "<group>"; };
-		849E78E420A4FA7400DFE360 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		849E78E620A4FFE200DFE360 /* NoticeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailViewController.swift; sourceTree = "<group>"; };
+		849E790A20A5E8AA00DFE360 /* AdInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdInfo.swift; sourceTree = "<group>"; };
 		941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeMainTableViewController.swift; sourceTree = "<group>"; };
 		9437997D202F57D700EB79AA /* InfoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainViewController.swift; sourceTree = "<group>"; };
 		9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -169,9 +169,9 @@
 				6605E7D42003234E00B3A154 /* ViewController.swift */,
 				6605E7D62003234E00B3A154 /* Main.storyboard */,
 				6605E7DB2003234E00B3A154 /* LaunchScreen.storyboard */,
+				849E790A20A5E8AA00DFE360 /* AdInfo.swift */,
 				6605E7D92003234E00B3A154 /* Assets.xcassets */,
 				6605E7DE2003234E00B3A154 /* Info.plist */,
-				849E78E420A4FA7400DFE360 /* GoogleService-Info.plist */,
 				66E49E6B2029598A006AF127 /* DataSets */,
 			);
 			path = CAUDormitory;
@@ -372,7 +372,6 @@
 				6605E7CC2003234E00B3A154 /* Frameworks */,
 				6605E7CD2003234E00B3A154 /* Resources */,
 				DF546DFAD48D113D59C4BFEC /* [CP] Embed Pods Frameworks */,
-				1200857BE6C47E88E63DAE5B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -424,7 +423,6 @@
 			files = (
 				844DC5F32055275600B94963 /* LaundryRoom.storyboard in Resources */,
 				6605E7DD2003234E00B3A154 /* LaunchScreen.storyboard in Resources */,
-				849E78E520A4FA7400DFE360 /* GoogleService-Info.plist in Resources */,
 				845FDCDF205A692A0082D286 /* Cafe.storyboard in Resources */,
 				66D07889202C248B0062F4D7 /* SettingTab.storyboard in Resources */,
 				844DC5F8205534BA00B94963 /* FitnessRoom.storyboard in Resources */,
@@ -443,21 +441,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1200857BE6C47E88E63DAE5B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CAUDormitory/Pods-CAUDormitory-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		71DEC3CF6188A3FB4C07787B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,6 +492,7 @@
 				94379980202F83AD00EB79AA /* InfoMainCollectionViewCell.swift in Sources */,
 				844DC5E820550CFF00B94963 /* CVS.swift in Sources */,
 				849BB0152052D83A004D9913 /* Alert_moveIn.swift in Sources */,
+				849E790B20A5E8AA00DFE360 /* AdInfo.swift in Sources */,
 				849BB0172052D848004D9913 /* Alert_moveOut.swift in Sources */,
 				849BB00D2052D251004D9913 /* Alert_rglCheck.swift in Sources */,
 				84841081202EF3D800A9B97E /* SubmitSupportTableViewController.swift in Sources */,

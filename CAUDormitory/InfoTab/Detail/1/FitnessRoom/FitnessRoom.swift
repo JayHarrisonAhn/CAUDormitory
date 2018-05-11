@@ -17,7 +17,7 @@ class FitnessRoom:facility {
     }
 }
 
-class FitnessRoomViewController: UIViewController {
+class FitnessRoomViewController: AdsViewController {
     
     @IBOutlet weak var cafeteriaControl: UISegmentedControl!
     @IBOutlet weak var titleLabel: UILabel!

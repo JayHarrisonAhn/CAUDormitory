@@ -9,7 +9,7 @@ class Cafe:facility {
     }
 }
 
-class CafeViewController: UIViewController {
+class CafeViewController: AdsViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!

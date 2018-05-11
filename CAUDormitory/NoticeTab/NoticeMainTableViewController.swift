@@ -8,8 +8,31 @@
 
 import UIKit
 import FirebaseDatabase
+import GoogleMobileAds
 
-class NoticeMainTableViewController: UITableViewController {
+class NoticeMainTableViewController: UITableViewController, GADBannerViewDelegate {
+    var bannerView: GADBannerView!
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
+    }
+    
     var postNum:[String] = []
     var postTitle:[String] = []
     var postDate:[String] = []
@@ -19,6 +42,12 @@ class NoticeMainTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = adUnitID
+        bannerView.rootViewController = self
+        let request = GADRequest()
+        bannerView.load(request)
 
         ref = Database.database().reference()
         databaseHandle = ref?.child("Seoul_Bluemir/Notices").observe(.childAdded, with: { (snapshot) in

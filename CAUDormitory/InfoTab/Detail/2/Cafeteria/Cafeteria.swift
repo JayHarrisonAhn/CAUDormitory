@@ -17,7 +17,7 @@ class Cafeteria:facility {
     }
 }
 
-class CafeteriaViewController: UIViewController {
+class CafeteriaViewController: AdsViewController {
     
     @IBOutlet weak var cafeteriaControl: UISegmentedControl!
     @IBOutlet weak var titleLabel: UILabel!
