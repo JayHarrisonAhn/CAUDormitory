@@ -1,13 +1,22 @@
 # Chung-Ang Univ. Dormitory App
 
+Check this before build :
+  This repository doesn't include Database Server key. So when you build the project, SIGABRT error can be happened. Please contact our team when want to test this project.
+
 ## Team
 ### Members
  * **안재형(JaeHyung Ahn) : lbr0452000**
  * 한진수() :
  * 강제순() :
 
-### Related Project
- * Crawler for this project is doing by lbr0452000 privately.
+### Database
+ * A Firebase Database is operating by lbr0452000.
+ * Crawler for this project is at https://github.com/lbr0452000/CAUDormitory_Crawler
+ * All backend servers are operated by lbr0452000.
+ 
+### Advertisement
+ * Banner advertisements are admitted with Google Admob.
+ * Ad is connected with database for analatics.
 
 ## Develope Rules
 ### Language
