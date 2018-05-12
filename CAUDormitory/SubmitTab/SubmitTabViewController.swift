@@ -7,14 +7,43 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class SubmitTabViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class SubmitTabViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, GADBannerViewDelegate {
+    
+    var bannerView: GADBannerView!
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
+    }
     
     @IBOutlet weak var submit1CollectionView: UICollectionView!
     @IBOutlet weak var submit2CollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = adUnitID
+        bannerView.rootViewController = self
+        let request = GADRequest()
+        bannerView.load(request)
         
         submit1CollectionView.delegate = self
         submit1CollectionView.dataSource = self

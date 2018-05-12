@@ -7,19 +7,19 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class InfoMainViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    
+class InfoMainViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, GADBannerViewDelegate {
     
     @IBOutlet weak var infoCollection: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setAdInfo()
+        
         if UserDefaults.standard.object(forKey: "Checked") == nil {
             self.performSegue(withIdentifier: "modalWelcome", sender: self)
         }
-        
         infoCollection.dataSource = self
         infoCollection.delegate = self
     }

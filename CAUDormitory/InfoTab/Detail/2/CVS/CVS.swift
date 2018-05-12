@@ -17,7 +17,7 @@ class CVS:facility {
     }
 }
 
-class CVSViewController: UIViewController {
+class CVSViewController: AdsViewController {
     
     @IBOutlet weak var cafeteriaControl: UISegmentedControl!
     @IBOutlet weak var titleLabel: UILabel!

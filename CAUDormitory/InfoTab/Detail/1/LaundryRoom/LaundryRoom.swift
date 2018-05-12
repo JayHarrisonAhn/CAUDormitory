@@ -17,7 +17,7 @@ class LaundryRoom:facility {
     }
 }
 
-class LaundryRoomViewController: UIViewController {
+class LaundryRoomViewController: AdsViewController {
     
     @IBOutlet weak var cafeteriaControl: UISegmentedControl!
     @IBOutlet weak var titleLabel: UILabel!
