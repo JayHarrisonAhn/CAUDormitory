@@ -9,15 +9,15 @@
 import UIKit
 
 class Cafeteria:facility {
-    var name_korean = "식당"
-    var name_english = "Cafeteria"
-    
-    var CellSegueIdentifier: String = "CFT"
-    
-    var icon: UIImage = #imageLiteral(resourceName: "info_logo_cafeteria")
+    override init() {
+        super.init()
+        super.name_korean = "식당"
+        super.CellSegueIdentifier = "CFT"
+        super.icon = UIImage(named: "info_logo_"+super.CellSegueIdentifier)!
+    }
 }
 
-class CafeteriaViewController: UIViewController {
+class CafeteriaViewController: AdsViewController {
     
     @IBOutlet weak var cafeteriaControl: UISegmentedControl!
     @IBOutlet weak var titleLabel: UILabel!

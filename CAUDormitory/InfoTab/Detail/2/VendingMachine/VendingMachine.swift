@@ -9,15 +9,15 @@
 import UIKit
 
 class VendingMachine:facility {
-    var name_korean = "자판기"
-    var name_english = "Vending Machine"
-    
-    var CellSegueIdentifier: String = "VDM"
-    
-    var icon: UIImage = #imageLiteral(resourceName: "info_logo_vendingmachine")
+    override init() {
+        super.init()
+        super.name_korean = "자판기"
+        super.CellSegueIdentifier = "VDM"
+        super.icon = UIImage(named: "info_logo_"+super.CellSegueIdentifier)!
+    }
 }
 
-class VendingMachineViewController: UIViewController {
+class VendingMachineViewController: AdsViewController {
     
     @IBOutlet weak var cafeteriaControl: UISegmentedControl!
     @IBOutlet weak var titleLabel: UILabel!

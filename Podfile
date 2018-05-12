@@ -8,4 +8,5 @@ target 'CAUDormitory' do
   # Pods for CAUDormitory
 pod 'Firebase/Core'
 pod 'Firebase/Database'
+pod 'Google-Mobile-Ads-SDK'
 end

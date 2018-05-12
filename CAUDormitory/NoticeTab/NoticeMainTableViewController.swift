@@ -8,22 +8,56 @@
 
 import UIKit
 import FirebaseDatabase
+import GoogleMobileAds
 
-class NoticeMainTableViewController: UITableViewController {
-
+class NoticeMainTableViewController: UITableViewController, GADBannerViewDelegate {
+    var bannerView: GADBannerView!
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
+    }
+    
+    var postNum:[String] = []
     var postTitle:[String] = []
     var postDate:[String] = []
-    var postHTML:[String] = []
     
     var ref:DatabaseReference?
     var databaseHandle:DatabaseHandle?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = adUnitID
+        bannerView.rootViewController = self
+        let request = GADRequest()
+        bannerView.load(request)
 
         ref = Database.database().reference()
         databaseHandle = ref?.child("Seoul_Bluemir/Notices").observe(.childAdded, with: { (snapshot) in
-            var post = snapshot.childSnapshot(forPath: "Title").value as? String
+            var post:String? = snapshot.key
+            if let actualPost = post {
+                self.postNum.insert(actualPost, at: 0)
+                self.tableView.reloadData()
+            }
+            
+            post = snapshot.childSnapshot(forPath: "Title").value as? String
             if let actualPost = post {
                 self.postTitle.insert(actualPost, at: 0)
                 self.tableView.reloadData()
@@ -34,13 +68,8 @@ class NoticeMainTableViewController: UITableViewController {
                 self.postDate.insert(actualPost, at: 0)
                 self.tableView.reloadData()
             }
-            
-            post = snapshot.childSnapshot(forPath: "DetailHTML").value as? String
-            if let actualPost = post {
-                self.postHTML.insert(actualPost, at: 0)
-                self.tableView.reloadData()
-            }
         })
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,7 +98,6 @@ class NoticeMainTableViewController: UITableViewController {
         return cell
     }
     
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -105,14 +133,20 @@ class NoticeMainTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "detail" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let controller = segue.destination as! NoticeDetailViewController
+                controller.num = postNum[indexPath.row]
+            }
+        }
+        
     }
-    */
+    
 
 }

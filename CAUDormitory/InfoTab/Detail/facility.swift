@@ -8,19 +8,50 @@
 
 import Foundation
 import UIKit
+import GoogleMobileAds
 
 
-protocol facility {
-    var name_korean:String {get}
-    var name_english:String {get}
-    
-    var CellSegueIdentifier:String {get}
-    
-    var icon:UIImage {get}
+class facility {
+    var name_korean:String = "시설명"
+    var CellSegueIdentifier:String = "Cell"
+    var icon:UIImage = UIImage(named: "info_logo_default")!
 }
 
 let facilities:[[facility]] = [
     [LaundryRoom(), FitnessRoom()],
     [Cafeteria(), CVS(), VendingMachine(), Cafe()]
+    
 ]
 
+class AdsViewController:UIViewController, GADBannerViewDelegate {
+    var bannerView: GADBannerView!
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = adUnitID
+        bannerView.rootViewController = self
+        let request = GADRequest()
+        bannerView.load(request)
+    }
+}
