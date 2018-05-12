@@ -31,6 +31,10 @@ class FirstExecuteViewController: UIViewController {
         if (check1 == true) && (check2 == true) {
             InitUserData()            
             self.dismiss(animated: true)
+        } else if check1 == false {
+            Label1.setTitleColor(UIColor.red, for: .normal)
+        } else if check2 == false {
+            Label2.setTitleColor(UIColor.red, for: .normal)
         }
     }
     
