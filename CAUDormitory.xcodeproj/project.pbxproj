@@ -51,6 +51,7 @@
 		849BB0172052D848004D9913 /* Alert_moveOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0162052D848004D9913 /* Alert_moveOut.swift */; };
 		849E78E720A4FFE200DFE360 /* NoticeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E78E620A4FFE200DFE360 /* NoticeDetailViewController.swift */; };
 		849E790B20A5E8AA00DFE360 /* AdInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E790A20A5E8AA00DFE360 /* AdInfo.swift */; };
+		84B6FA7120A79535009A57D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84B6FA7020A79535009A57D9 /* GoogleService-Info.plist */; };
 		941E1576204C6BA40073DD68 /* NoticeMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */; };
 		9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997D202F57D700EB79AA /* InfoMainViewController.swift */; };
 		94379980202F83AD00EB79AA /* InfoMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */; };
@@ -107,6 +108,7 @@
 		849BB0162052D848004D9913 /* Alert_moveOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_moveOut.swift; sourceTree = "<group>"; };
 		849E78E620A4FFE200DFE360 /* NoticeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailViewController.swift; sourceTree = "<group>"; };
 		849E790A20A5E8AA00DFE360 /* AdInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdInfo.swift; sourceTree = "<group>"; };
+		84B6FA7020A79535009A57D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeMainTableViewController.swift; sourceTree = "<group>"; };
 		9437997D202F57D700EB79AA /* InfoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainViewController.swift; sourceTree = "<group>"; };
 		9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				849E790A20A5E8AA00DFE360 /* AdInfo.swift */,
 				6605E7D92003234E00B3A154 /* Assets.xcassets */,
 				6605E7DE2003234E00B3A154 /* Info.plist */,
+				84B6FA7020A79535009A57D9 /* GoogleService-Info.plist */,
 				66E49E6B2029598A006AF127 /* DataSets */,
 			);
 			path = CAUDormitory;
@@ -423,6 +426,7 @@
 			files = (
 				844DC5F32055275600B94963 /* LaundryRoom.storyboard in Resources */,
 				6605E7DD2003234E00B3A154 /* LaunchScreen.storyboard in Resources */,
+				84B6FA7120A79535009A57D9 /* GoogleService-Info.plist in Resources */,
 				845FDCDF205A692A0082D286 /* Cafe.storyboard in Resources */,
 				66D07889202C248B0062F4D7 /* SettingTab.storyboard in Resources */,
 				844DC5F8205534BA00B94963 /* FitnessRoom.storyboard in Resources */,
