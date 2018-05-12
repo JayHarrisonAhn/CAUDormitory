@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class NoticeDetailViewController: UIViewController {
+class NoticeDetailViewController: AdsViewController {
 
     @IBOutlet weak var web: WKWebView!
     
