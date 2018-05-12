@@ -45,7 +45,7 @@ class SettingTabTableViewController: UITableViewController {
         case 1:
             return "호실 정보"
         case 2:
-            return "푸시알림"
+            return "푸시알림 (미완성 기능, Beta)"
         default:
             return nil
         }
