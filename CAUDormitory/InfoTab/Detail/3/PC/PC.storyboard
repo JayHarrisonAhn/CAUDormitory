@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6DV-41-B4t">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--자판기-->
+        <scene sceneID="aTo-FF-O3x">
+            <objects>
+                <viewController id="6DV-41-B4t" customClass="PCViewController" customModule="CAUDormitory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GCr-ag-aBw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BUd-l5-cPq">
+                                <rect key="frame" x="16" y="36" width="343" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="oXQ-xZ-KKg"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="308관"/>
+                                    <segment title="309관"/>
+                                </segments>
+                                <connections>
+                                    <action selector="cafeteriaControl:" destination="6DV-41-B4t" eventType="valueChanged" id="tmB-b0-pVq"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공용 PC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUk-Ee-9kT">
+                                <rect key="frame" x="204" y="87" width="155" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7qY-tv-Ty3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6n-r8-Iz7">
+                                <rect key="frame" x="204" y="116" width="155" height="94"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="위치">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gdp-yy-Elc">
+                                <rect key="frame" x="16" y="80" width="180" height="130"/>
+                                <color key="backgroundColor" red="0.59747779190000005" green="0.59747779190000005" blue="0.59747779190000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="BIM-hc-JzW"/>
+                                    <constraint firstAttribute="width" constant="180" id="mZU-ef-aqW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용방법" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdc-dh-atB">
+                                <rect key="frame" x="16" y="235" width="150" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Sg3-kc-Z1D"/>
+                                    <constraint firstAttribute="width" constant="150" id="WRe-9Q-psF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ut-YS-gQw">
+                                <rect key="frame" x="16" y="257" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="mqZ-Y0-hbL"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="상세사용방법">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Ut-YS-gQw" firstAttribute="leading" secondItem="jj5-XH-aVc" secondAttribute="leading" constant="16" id="4Ce-47-5Fl"/>
+                            <constraint firstItem="Gdp-yy-Elc" firstAttribute="leading" secondItem="jj5-XH-aVc" secondAttribute="leading" constant="16" id="60q-3e-YZp"/>
+                            <constraint firstItem="Gdp-yy-Elc" firstAttribute="bottom" secondItem="m6n-r8-Iz7" secondAttribute="bottom" id="8yu-6I-SVH"/>
+                            <constraint firstItem="m6n-r8-Iz7" firstAttribute="leading" secondItem="Gdp-yy-Elc" secondAttribute="trailing" constant="8" id="C6A-lg-Oi5"/>
+                            <constraint firstItem="BUd-l5-cPq" firstAttribute="leading" secondItem="jj5-XH-aVc" secondAttribute="leading" constant="16" id="FJk-Wr-xIG"/>
+                            <constraint firstItem="Gdp-yy-Elc" firstAttribute="top" secondItem="BUd-l5-cPq" secondAttribute="bottom" constant="16" id="HIv-SW-vRD"/>
+                            <constraint firstItem="m6n-r8-Iz7" firstAttribute="top" secondItem="aUk-Ee-9kT" secondAttribute="bottom" constant="8" id="JcP-u0-zV1"/>
+                            <constraint firstItem="fdc-dh-atB" firstAttribute="leading" secondItem="jj5-XH-aVc" secondAttribute="leading" constant="16" id="L7s-15-FjA"/>
+                            <constraint firstItem="jj5-XH-aVc" firstAttribute="trailing" secondItem="1Ut-YS-gQw" secondAttribute="trailing" constant="16" id="UYA-iM-g5G"/>
+                            <constraint firstAttribute="trailing" secondItem="m6n-r8-Iz7" secondAttribute="trailing" constant="16" id="YVU-h3-Xzt"/>
+                            <constraint firstItem="jj5-XH-aVc" firstAttribute="trailing" secondItem="aUk-Ee-9kT" secondAttribute="trailing" constant="16" id="Zn5-7m-cxm"/>
+                            <constraint firstItem="BUd-l5-cPq" firstAttribute="top" secondItem="jj5-XH-aVc" secondAttribute="top" constant="16" id="bA9-MM-n0a"/>
+                            <constraint firstItem="fdc-dh-atB" firstAttribute="top" secondItem="Gdp-yy-Elc" secondAttribute="bottom" constant="25" id="cSc-Of-ULg"/>
+                            <constraint firstItem="1Ut-YS-gQw" firstAttribute="top" secondItem="fdc-dh-atB" secondAttribute="bottom" id="jbH-Wh-i5V"/>
+                            <constraint firstItem="aUk-Ee-9kT" firstAttribute="leading" secondItem="Gdp-yy-Elc" secondAttribute="trailing" constant="8" id="jcw-Oj-RdG"/>
+                            <constraint firstItem="BUd-l5-cPq" firstAttribute="trailing" secondItem="jj5-XH-aVc" secondAttribute="trailing" constant="-16" id="nio-vW-eSD"/>
+                            <constraint firstItem="aUk-Ee-9kT" firstAttribute="top" secondItem="BUd-l5-cPq" secondAttribute="bottom" constant="23" id="wy4-Kb-IbM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jj5-XH-aVc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="자판기" id="fzt-HI-uCb"/>
+                    <connections>
+                        <outlet property="cafeteriaControl" destination="BUd-l5-cPq" id="OYQ-ZO-Epw"/>
+                        <outlet property="detail" destination="1Ut-YS-gQw" id="pGk-GX-Omj"/>
+                        <outlet property="timeLabel" destination="m6n-r8-Iz7" id="xId-95-Kaq"/>
+                        <outlet property="titleLabel" destination="aUk-Ee-9kT" id="RZw-xm-4Yc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBA-1z-do5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="-107.49625187406298"/>
+        </scene>
+    </scenes>
+</document>

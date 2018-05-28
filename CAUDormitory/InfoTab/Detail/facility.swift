@@ -19,9 +19,10 @@ class facility {
 
 let facilities:[[facility]] = [
     [LaundryRoom(), FitnessRoom()],
-    [Cafeteria(), CVS(), VendingMachine(), Cafe()]
-    
+    [Cafeteria(), CVS(), VendingMachine(), Cafe()],
+    [PC()]
 ]
+//방호실, 운영실 추가 필요
 
 class AdsViewController:UIViewController, GADBannerViewDelegate {
     var bannerView: GADBannerView!
