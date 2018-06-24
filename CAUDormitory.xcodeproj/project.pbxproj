@@ -33,6 +33,8 @@
 		845FDCDF205A692A0082D286 /* Cafe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845FDCDE205A692A0082D286 /* Cafe.storyboard */; };
 		845FDCE1205A69330082D286 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FDCE0205A69330082D286 /* Cafe.swift */; };
 		8463B3F02030CE090031C1DD /* SettingTabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */; };
+		846A3DEF20B2BEE000E395A6 /* PC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846A3DEE20B2BEE000E395A6 /* PC.storyboard */; };
+		846A3DF120B2BFC900E395A6 /* PC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A3DF020B2BFC900E395A6 /* PC.swift */; };
 		84841081202EF3D800A9B97E /* SubmitSupportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */; };
 		849BAFF1205295FD004D9913 /* Cafeteria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BAFF0205295FD004D9913 /* Cafeteria.storyboard */; };
 		849BAFF42052980B004D9913 /* facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BAFF32052980B004D9913 /* facility.swift */; };
@@ -52,6 +54,7 @@
 		849E78E720A4FFE200DFE360 /* NoticeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E78E620A4FFE200DFE360 /* NoticeDetailViewController.swift */; };
 		849E790B20A5E8AA00DFE360 /* AdInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E790A20A5E8AA00DFE360 /* AdInfo.swift */; };
 		84B6FA7120A79535009A57D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84B6FA7020A79535009A57D9 /* GoogleService-Info.plist */; };
+		84D2B67F20ACB113002CDB31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D2B67E20ACB112002CDB31 /* GoogleService-Info.plist */; };
 		941E1576204C6BA40073DD68 /* NoticeMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */; };
 		9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997D202F57D700EB79AA /* InfoMainViewController.swift */; };
 		94379980202F83AD00EB79AA /* InfoMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */; };
@@ -90,6 +93,8 @@
 		845FDCDE205A692A0082D286 /* Cafe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cafe.storyboard; sourceTree = "<group>"; };
 		845FDCE0205A69330082D286 /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
 		8463B3EF2030CE090031C1DD /* SettingTabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTabTableViewCell.swift; sourceTree = "<group>"; };
+		846A3DEE20B2BEE000E395A6 /* PC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PC.storyboard; sourceTree = "<group>"; };
+		846A3DF020B2BFC900E395A6 /* PC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PC.swift; sourceTree = "<group>"; };
 		84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitSupportTableViewController.swift; sourceTree = "<group>"; };
 		849BAFF0205295FD004D9913 /* Cafeteria.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cafeteria.storyboard; sourceTree = "<group>"; };
 		849BAFF32052980B004D9913 /* facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facility.swift; sourceTree = "<group>"; };
@@ -109,6 +114,7 @@
 		849E78E620A4FFE200DFE360 /* NoticeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailViewController.swift; sourceTree = "<group>"; };
 		849E790A20A5E8AA00DFE360 /* AdInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdInfo.swift; sourceTree = "<group>"; };
 		84B6FA7020A79535009A57D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84D2B67E20ACB112002CDB31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeMainTableViewController.swift; sourceTree = "<group>"; };
 		9437997D202F57D700EB79AA /* InfoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainViewController.swift; sourceTree = "<group>"; };
 		9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -162,6 +168,7 @@
 		6605E7D12003234E00B3A154 /* CAUDormitory */ = {
 			isa = PBXGroup;
 			children = (
+				84D2B67E20ACB112002CDB31 /* GoogleService-Info.plist */,
 				66D0786D202AABF50062F4D7 /* FirstExecute */,
 				66D07871202BF0570062F4D7 /* InfoTab */,
 				66D07872202BF06D0062F4D7 /* SubmitTab */,
@@ -292,6 +299,8 @@
 		844DC5F02055272500B94963 /* 3 */ = {
 			isa = PBXGroup;
 			children = (
+				846A3DED20B2BEA500E395A6 /* PC */,
+				846A3DEC20B2BE9A00E395A6 /* Printer */,
 			);
 			path = 3;
 			sourceTree = "<group>";
@@ -322,6 +331,22 @@
 			);
 			name = Cafe;
 			path = ../Cafe;
+			sourceTree = "<group>";
+		};
+		846A3DEC20B2BE9A00E395A6 /* Printer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Printer;
+			sourceTree = "<group>";
+		};
+		846A3DED20B2BEA500E395A6 /* PC */ = {
+			isa = PBXGroup;
+			children = (
+				846A3DEE20B2BEE000E395A6 /* PC.storyboard */,
+				846A3DF020B2BFC900E395A6 /* PC.swift */,
+			);
+			path = PC;
 			sourceTree = "<group>";
 		};
 		849BAFF220529601004D9913 /* Cafeteria */ = {
@@ -430,9 +455,11 @@
 				845FDCDF205A692A0082D286 /* Cafe.storyboard in Resources */,
 				66D07889202C248B0062F4D7 /* SettingTab.storyboard in Resources */,
 				844DC5F8205534BA00B94963 /* FitnessRoom.storyboard in Resources */,
+				846A3DEF20B2BEE000E395A6 /* PC.storyboard in Resources */,
 				66D07874202BF0DB0062F4D7 /* FirstExecute.storyboard in Resources */,
 				6605E7DA2003234E00B3A154 /* Assets.xcassets in Resources */,
 				66D0787A202BF34A0062F4D7 /* SubmitTab.storyboard in Resources */,
+				84D2B67F20ACB113002CDB31 /* GoogleService-Info.plist in Resources */,
 				6605E7D82003234E00B3A154 /* Main.storyboard in Resources */,
 				66D07878202BF2230062F4D7 /* InfoTab.storyboard in Resources */,
 				844DC5EB205513DA00B94963 /* VendingMachine.storyboard in Resources */,
@@ -510,6 +537,7 @@
 				849BB0032052B3A1004D9913 /* StudentGender.swift in Sources */,
 				9458B271202E0875007C2A8C /* SubmitTabViewController.swift in Sources */,
 				66E49E6F202959F6006AF127 /* Definition.swift in Sources */,
+				846A3DF120B2BFC900E395A6 /* PC.swift in Sources */,
 				849BAFF92052AB6F004D9913 /* Submits.swift in Sources */,
 				9486DBF9203DFF720050E8AB /* Cafeteria.swift in Sources */,
 				849BB0092052BF87004D9913 /* DormitoryRoom.swift in Sources */,
@@ -666,12 +694,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DYNS5BXWD7;
 				INFOPLIST_FILE = "$(SRCROOT)/CAUDormitory/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.CAUDormitory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -681,12 +710,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DYNS5BXWD7;
 				INFOPLIST_FILE = "$(SRCROOT)/CAUDormitory/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.CAUDormitory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

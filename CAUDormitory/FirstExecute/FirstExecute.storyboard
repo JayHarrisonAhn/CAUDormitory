@@ -43,9 +43,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQb-GZ-8eK">
-                                <rect key="frame" x="220" y="550" width="128" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQb-GZ-8eK">
+                                <rect key="frame" x="213.66666666666663" y="489.66666666666669" width="128" height="31.000000000000057"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="XYd-T8-5wp"/>
+                                    <constraint firstAttribute="width" constant="128" id="mSP-3y-GzE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="다음으로 &gt;"/>
                                 <connections>
@@ -55,6 +58,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cQb-GZ-8eK" firstAttribute="top" secondItem="rVf-vA-x3i" secondAttribute="bottom" constant="50" id="4Hi-5b-2gW"/>
+                            <constraint firstItem="cQb-GZ-8eK" firstAttribute="centerX" secondItem="zfY-9y-DMa" secondAttribute="centerX" constant="90" id="5Qr-iK-EkD"/>
                             <constraint firstItem="rVf-vA-x3i" firstAttribute="centerX" secondItem="zfY-9y-DMa" secondAttribute="centerX" constant="25" id="BYT-qP-VRS"/>
                             <constraint firstItem="yxu-Aq-BCZ" firstAttribute="centerY" secondItem="zfY-9y-DMa" secondAttribute="centerY" id="FWb-Nf-dRu"/>
                             <constraint firstItem="rVf-vA-x3i" firstAttribute="leading" secondItem="1sh-JZ-hjf" secondAttribute="trailing" constant="5" id="IEF-HO-cs5"/>

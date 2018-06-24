@@ -130,6 +130,7 @@
                         <segue destination="NsH-r1-9AT" kind="show" identifier="LDR" id="4eV-j7-MkW"/>
                         <segue destination="gW4-tX-but" kind="show" identifier="FNR" id="Der-RR-N9u"/>
                         <segue destination="nH1-um-ChN" kind="show" identifier="CFE" id="LQD-G8-AyR"/>
+                        <segue destination="tyd-tW-cK2" kind="show" identifier="PC" id="gXq-Lq-gWz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hN7-DM-S1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,7 +183,15 @@
                 <viewControllerPlaceholder storyboardName="Cafe" id="nH1-um-ChN" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cc9-LF-arj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-81" y="-58"/>
+            <point key="canvasLocation" x="-190" y="-105"/>
+        </scene>
+        <!--PC-->
+        <scene sceneID="2rc-ol-DBZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PC" id="tyd-tW-cK2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcL-01-fRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201" y="-72"/>
         </scene>
         <!--생활정보-->
         <scene sceneID="FUL-Jl-jMR">

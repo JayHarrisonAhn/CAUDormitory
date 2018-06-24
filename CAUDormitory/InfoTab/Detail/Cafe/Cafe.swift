@@ -16,6 +16,6 @@ class CafeViewController: AdsViewController {
     @IBOutlet var detail: UILabel!
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
     }
 }
