@@ -36,6 +36,7 @@
 		846A3DEF20B2BEE000E395A6 /* PC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846A3DEE20B2BEE000E395A6 /* PC.storyboard */; };
 		846A3DF120B2BFC900E395A6 /* PC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A3DF020B2BFC900E395A6 /* PC.swift */; };
 		84841081202EF3D800A9B97E /* SubmitSupportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */; };
+		848AF4F920E0393B00AA1503 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848AF4F820E0393B00AA1503 /* GoogleService-Info.plist */; };
 		849BAFF1205295FD004D9913 /* Cafeteria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BAFF0205295FD004D9913 /* Cafeteria.storyboard */; };
 		849BAFF42052980B004D9913 /* facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BAFF32052980B004D9913 /* facility.swift */; };
 		849BAFF92052AB6F004D9913 /* Submits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BAFF82052AB6F004D9913 /* Submits.swift */; };
@@ -53,8 +54,6 @@
 		849BB0172052D848004D9913 /* Alert_moveOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0162052D848004D9913 /* Alert_moveOut.swift */; };
 		849E78E720A4FFE200DFE360 /* NoticeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E78E620A4FFE200DFE360 /* NoticeDetailViewController.swift */; };
 		849E790B20A5E8AA00DFE360 /* AdInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E790A20A5E8AA00DFE360 /* AdInfo.swift */; };
-		84B6FA7120A79535009A57D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84B6FA7020A79535009A57D9 /* GoogleService-Info.plist */; };
-		84D2B67F20ACB113002CDB31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D2B67E20ACB112002CDB31 /* GoogleService-Info.plist */; };
 		941E1576204C6BA40073DD68 /* NoticeMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */; };
 		9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997D202F57D700EB79AA /* InfoMainViewController.swift */; };
 		94379980202F83AD00EB79AA /* InfoMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */; };
@@ -96,6 +95,7 @@
 		846A3DEE20B2BEE000E395A6 /* PC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PC.storyboard; sourceTree = "<group>"; };
 		846A3DF020B2BFC900E395A6 /* PC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PC.swift; sourceTree = "<group>"; };
 		84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitSupportTableViewController.swift; sourceTree = "<group>"; };
+		848AF4F820E0393B00AA1503 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		849BAFF0205295FD004D9913 /* Cafeteria.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cafeteria.storyboard; sourceTree = "<group>"; };
 		849BAFF32052980B004D9913 /* facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facility.swift; sourceTree = "<group>"; };
 		849BAFF82052AB6F004D9913 /* Submits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Submits.swift; sourceTree = "<group>"; };
@@ -113,8 +113,6 @@
 		849BB0162052D848004D9913 /* Alert_moveOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_moveOut.swift; sourceTree = "<group>"; };
 		849E78E620A4FFE200DFE360 /* NoticeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailViewController.swift; sourceTree = "<group>"; };
 		849E790A20A5E8AA00DFE360 /* AdInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdInfo.swift; sourceTree = "<group>"; };
-		84B6FA7020A79535009A57D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		84D2B67E20ACB112002CDB31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeMainTableViewController.swift; sourceTree = "<group>"; };
 		9437997D202F57D700EB79AA /* InfoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainViewController.swift; sourceTree = "<group>"; };
 		9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 		6605E7D12003234E00B3A154 /* CAUDormitory */ = {
 			isa = PBXGroup;
 			children = (
-				84D2B67E20ACB112002CDB31 /* GoogleService-Info.plist */,
 				66D0786D202AABF50062F4D7 /* FirstExecute */,
 				66D07871202BF0570062F4D7 /* InfoTab */,
 				66D07872202BF06D0062F4D7 /* SubmitTab */,
@@ -181,7 +178,7 @@
 				849E790A20A5E8AA00DFE360 /* AdInfo.swift */,
 				6605E7D92003234E00B3A154 /* Assets.xcassets */,
 				6605E7DE2003234E00B3A154 /* Info.plist */,
-				84B6FA7020A79535009A57D9 /* GoogleService-Info.plist */,
+				848AF4F820E0393B00AA1503 /* GoogleService-Info.plist */,
 				66E49E6B2029598A006AF127 /* DataSets */,
 			);
 			path = CAUDormitory;
@@ -451,7 +448,6 @@
 			files = (
 				844DC5F32055275600B94963 /* LaundryRoom.storyboard in Resources */,
 				6605E7DD2003234E00B3A154 /* LaunchScreen.storyboard in Resources */,
-				84B6FA7120A79535009A57D9 /* GoogleService-Info.plist in Resources */,
 				845FDCDF205A692A0082D286 /* Cafe.storyboard in Resources */,
 				66D07889202C248B0062F4D7 /* SettingTab.storyboard in Resources */,
 				844DC5F8205534BA00B94963 /* FitnessRoom.storyboard in Resources */,
@@ -459,7 +455,7 @@
 				66D07874202BF0DB0062F4D7 /* FirstExecute.storyboard in Resources */,
 				6605E7DA2003234E00B3A154 /* Assets.xcassets in Resources */,
 				66D0787A202BF34A0062F4D7 /* SubmitTab.storyboard in Resources */,
-				84D2B67F20ACB113002CDB31 /* GoogleService-Info.plist in Resources */,
+				848AF4F920E0393B00AA1503 /* GoogleService-Info.plist in Resources */,
 				6605E7D82003234E00B3A154 /* Main.storyboard in Resources */,
 				66D07878202BF2230062F4D7 /* InfoTab.storyboard in Resources */,
 				844DC5EB205513DA00B94963 /* VendingMachine.storyboard in Resources */,
@@ -696,6 +692,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYNS5BXWD7;
 				INFOPLIST_FILE = "$(SRCROOT)/CAUDormitory/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.CAUDormitory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -712,6 +709,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYNS5BXWD7;
 				INFOPLIST_FILE = "$(SRCROOT)/CAUDormitory/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.CAUDormitory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
