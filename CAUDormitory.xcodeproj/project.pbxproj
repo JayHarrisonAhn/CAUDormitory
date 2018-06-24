@@ -36,7 +36,7 @@
 		846A3DEF20B2BEE000E395A6 /* PC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846A3DEE20B2BEE000E395A6 /* PC.storyboard */; };
 		846A3DF120B2BFC900E395A6 /* PC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A3DF020B2BFC900E395A6 /* PC.swift */; };
 		84841081202EF3D800A9B97E /* SubmitSupportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */; };
-		848AF4F920E0393B00AA1503 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848AF4F820E0393B00AA1503 /* GoogleService-Info.plist */; };
+		848AF4FB20E03C4700AA1503 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848AF4FA20E03C4700AA1503 /* GoogleService-Info.plist */; };
 		849BAFF1205295FD004D9913 /* Cafeteria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BAFF0205295FD004D9913 /* Cafeteria.storyboard */; };
 		849BAFF42052980B004D9913 /* facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BAFF32052980B004D9913 /* facility.swift */; };
 		849BAFF92052AB6F004D9913 /* Submits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BAFF82052AB6F004D9913 /* Submits.swift */; };
@@ -95,7 +95,7 @@
 		846A3DEE20B2BEE000E395A6 /* PC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PC.storyboard; sourceTree = "<group>"; };
 		846A3DF020B2BFC900E395A6 /* PC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PC.swift; sourceTree = "<group>"; };
 		84841080202EF3D800A9B97E /* SubmitSupportTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitSupportTableViewController.swift; sourceTree = "<group>"; };
-		848AF4F820E0393B00AA1503 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		848AF4FA20E03C4700AA1503 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		849BAFF0205295FD004D9913 /* Cafeteria.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cafeteria.storyboard; sourceTree = "<group>"; };
 		849BAFF32052980B004D9913 /* facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facility.swift; sourceTree = "<group>"; };
 		849BAFF82052AB6F004D9913 /* Submits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Submits.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 				849E790A20A5E8AA00DFE360 /* AdInfo.swift */,
 				6605E7D92003234E00B3A154 /* Assets.xcassets */,
 				6605E7DE2003234E00B3A154 /* Info.plist */,
-				848AF4F820E0393B00AA1503 /* GoogleService-Info.plist */,
+				848AF4FA20E03C4700AA1503 /* GoogleService-Info.plist */,
 				66E49E6B2029598A006AF127 /* DataSets */,
 			);
 			path = CAUDormitory;
@@ -455,7 +455,7 @@
 				66D07874202BF0DB0062F4D7 /* FirstExecute.storyboard in Resources */,
 				6605E7DA2003234E00B3A154 /* Assets.xcassets in Resources */,
 				66D0787A202BF34A0062F4D7 /* SubmitTab.storyboard in Resources */,
-				848AF4F920E0393B00AA1503 /* GoogleService-Info.plist in Resources */,
+				848AF4FB20E03C4700AA1503 /* GoogleService-Info.plist in Resources */,
 				6605E7D82003234E00B3A154 /* Main.storyboard in Resources */,
 				66D07878202BF2230062F4D7 /* InfoTab.storyboard in Resources */,
 				844DC5EB205513DA00B94963 /* VendingMachine.storyboard in Resources */,
@@ -694,7 +694,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/CAUDormitory/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.CAUDormitory;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codershigh.CAUDormitory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -711,7 +711,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/CAUDormitory/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ac.kr.cau.CAUDormitory;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codershigh.CAUDormitory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
