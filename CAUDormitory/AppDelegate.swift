@@ -26,10 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         FirebaseApp.configure()
         GADMobileAds.configure(withApplicationID: adAppID)
         
-        
-        
-        
-        
         UNUserNotificationCenter.current().delegate = self
         
         let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
@@ -38,7 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             completionHandler: {_, _ in })
         
         application.registerForRemoteNotifications()
-        
         
         UIApplication.shared.applicationIconBadgeNumber = 0
         
@@ -70,7 +65,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         // Convert token to string
         let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
-        
         // Print it to console
         print("APNs device token: \(deviceTokenString)")
         
@@ -90,6 +84,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             ref.child("Users").child(certToken).child("lastDate").setValue(DateInFormat)
         }
     }
-    
-    
 }
