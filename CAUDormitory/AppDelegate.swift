@@ -66,7 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         // Convert token to string
         let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
@@ -89,6 +89,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             let DateInFormat = dateFormatter.string(from: todaysDate)
             ref.child("Users").child(certToken).child("lastDate").setValue(DateInFormat)
         }
-        // Persist it in your backend in case it's new
     }
+    
+    
 }

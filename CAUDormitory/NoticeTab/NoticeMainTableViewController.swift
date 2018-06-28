@@ -83,13 +83,17 @@ class NoticeMainTableViewController: UITableViewController, GADBannerViewDelegat
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return postTitle.count
+        return postTitle.count+1
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "noticeCell", for: indexPath)
-        
+        if indexPath.row >= postTitle.count {
+            cell.textLabel?.text = nil
+            cell.detailTextLabel?.text = nil
+            return cell
+        }
         // Configure the cell...
         cell.textLabel?.text = postTitle[indexPath.row]
         cell.detailTextLabel?.text = postDate[indexPath.row]
