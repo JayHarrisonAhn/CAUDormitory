@@ -8,18 +8,54 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
+import FirebaseMessaging
 import GoogleMobileAds
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
         FirebaseApp.configure()
         GADMobileAds.configure(withApplicationID: adAppID)
+        
+        
+        
+        
+        
+        UNUserNotificationCenter.current().delegate = self
+        
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(
+            options: authOptions,
+            completionHandler: {_, _ in })
+        
+        application.registerForRemoteNotifications()
+        
+        Messaging.messaging().delegate = self
+        let token = Messaging.messaging().fcmToken
+        print("FCM token: \(token ?? "")")
+        
+        if let certToken = token {
+            let ref = Database.database().reference()
+            Auth.auth().signIn(withEmail: "a@gmail.com", password: "123456") { (user, error) in
+                print("유저id:", user?.uid)
+            }
+            let todaysDate = Date()
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            let DateInFormat = dateFormatter.string(from: todaysDate)
+            ref.child("Users").child(certToken).child("lastDate").setValue(DateInFormat)
+        }
+        
+        
         return true
     }
 
@@ -45,6 +81,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        // Convert token to string
+        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+        
+        // Print it to console
+        print("APNs device token: \(deviceTokenString)")
+        
+        // Persist it in your backend in case it's new
+    }
 }
-

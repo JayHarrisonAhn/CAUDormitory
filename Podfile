@@ -7,6 +7,8 @@ target 'CAUDormitory' do
 
   # Pods for CAUDormitory
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
 pod 'Firebase/Database'
+pod 'Firebase/Messaging'
 pod 'Google-Mobile-Ads-SDK'
 end

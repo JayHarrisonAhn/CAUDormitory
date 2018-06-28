@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseMessaging
 
 class FirstExecuteViewController: UIViewController {
     
@@ -36,6 +37,8 @@ class FirstExecuteViewController: UIViewController {
         } else if check2 == false {
             Label2.setTitleColor(UIColor.red, for: .normal)
         }
+        
+        
     }
     
     override func viewDidLoad() {

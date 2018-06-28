@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -54,6 +54,8 @@
 		849BB0172052D848004D9913 /* Alert_moveOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB0162052D848004D9913 /* Alert_moveOut.swift */; };
 		849E78E720A4FFE200DFE360 /* NoticeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E78E620A4FFE200DFE360 /* NoticeDetailViewController.swift */; };
 		849E790B20A5E8AA00DFE360 /* AdInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E790A20A5E8AA00DFE360 /* AdInfo.swift */; };
+		84BDF8F820E04C9C000C3E76 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BDF8F720E04C9C000C3E76 /* UserNotifications.framework */; };
+		84BDF8FA20E04CA1000C3E76 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BDF8F920E04CA1000C3E76 /* PushKit.framework */; };
 		941E1576204C6BA40073DD68 /* NoticeMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */; };
 		9437997E202F57D700EB79AA /* InfoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997D202F57D700EB79AA /* InfoMainViewController.swift */; };
 		94379980202F83AD00EB79AA /* InfoMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */; };
@@ -113,6 +115,9 @@
 		849BB0162052D848004D9913 /* Alert_moveOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_moveOut.swift; sourceTree = "<group>"; };
 		849E78E620A4FFE200DFE360 /* NoticeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailViewController.swift; sourceTree = "<group>"; };
 		849E790A20A5E8AA00DFE360 /* AdInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdInfo.swift; sourceTree = "<group>"; };
+		84BDF8F720E04C9C000C3E76 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		84BDF8F920E04CA1000C3E76 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		84D3E35D20E0485F000D586F /* CAUDormitory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CAUDormitory.entitlements; sourceTree = "<group>"; };
 		941E1575204C6BA40073DD68 /* NoticeMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeMainTableViewController.swift; sourceTree = "<group>"; };
 		9437997D202F57D700EB79AA /* InfoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainViewController.swift; sourceTree = "<group>"; };
 		9437997F202F83AD00EB79AA /* InfoMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -129,6 +134,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BDF8FA20E04CA1000C3E76 /* PushKit.framework in Frameworks */,
+				84BDF8F820E04C9C000C3E76 /* UserNotifications.framework in Frameworks */,
 				FD15CAD61DFA2574E415FC4F /* Pods_CAUDormitory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +173,7 @@
 		6605E7D12003234E00B3A154 /* CAUDormitory */ = {
 			isa = PBXGroup;
 			children = (
+				84D3E35D20E0485F000D586F /* CAUDormitory.entitlements */,
 				66D0786D202AABF50062F4D7 /* FirstExecute */,
 				66D07871202BF0570062F4D7 /* InfoTab */,
 				66D07872202BF06D0062F4D7 /* SubmitTab */,
@@ -250,6 +258,8 @@
 		7CD805C09857ACABFEB27D0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84BDF8F920E04CA1000C3E76 /* PushKit.framework */,
+				84BDF8F720E04C9C000C3E76 /* UserNotifications.framework */,
 				A1CFA6A8F332E308C39637DE /* Pods_CAUDormitory.framework */,
 			);
 			name = Frameworks;
@@ -419,12 +429,16 @@
 				TargetAttributes = {
 					6605E7CE2003234E00B3A154 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
 			buildConfigurationList = 6605E7CA2003234E00B3A154 /* Build configuration list for PBXProject "CAUDormitory" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -493,13 +507,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CAUDormitory/Pods-CAUDormitory-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -625,7 +643,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -676,10 +694,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -689,13 +708,17 @@
 			baseConfigurationReference = B5251473F36A6C6789C0B38D /* Pods-CAUDormitory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CAUDormitory/CAUDormitory.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYNS5BXWD7;
 				INFOPLIST_FILE = "$(SRCROOT)/CAUDormitory/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codershigh.CAUDormitory;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codershigh.CAUDomitory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -706,13 +729,17 @@
 			baseConfigurationReference = E6639565FCC93778C9B151A6 /* Pods-CAUDormitory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CAUDormitory/CAUDormitory.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYNS5BXWD7;
 				INFOPLIST_FILE = "$(SRCROOT)/CAUDormitory/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codershigh.CAUDormitory;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codershigh.CAUDomitory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

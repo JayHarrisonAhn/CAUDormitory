@@ -69,7 +69,6 @@ class NoticeMainTableViewController: UITableViewController, GADBannerViewDelegat
                 self.tableView.reloadData()
             }
         })
-        
     }
 
     override func didReceiveMemoryWarning() {
