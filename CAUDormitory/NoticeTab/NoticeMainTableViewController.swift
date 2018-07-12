@@ -12,6 +12,7 @@ import GoogleMobileAds
 
 class NoticeMainTableViewController: UITableViewController, GADBannerViewDelegate {
     var bannerView: GADBannerView!
+    
     func addBannerViewToView(_ bannerView: GADBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(bannerView)
@@ -49,6 +50,20 @@ class NoticeMainTableViewController: UITableViewController, GADBannerViewDelegat
         let request = GADRequest()
         bannerView.load(request)
 
+        getData()
+        
+        self.refreshControl = UIRefreshControl()
+        self.tableView.addSubview(self.refreshControl!)
+        self.refreshControl?.addTarget(self, action: #selector(reload), for: .valueChanged)
+    }
+
+    @objc func reload() {
+        getData()
+        tableView.reloadData()
+        self.refreshControl?.endRefreshing()
+    }
+    
+    func getData() {
         ref = Database.database().reference()
         databaseHandle = ref?.child("Seoul_Bluemir/Notices").observe(.childAdded, with: { (snapshot) in
             var post:String? = snapshot.key
@@ -70,7 +85,7 @@ class NoticeMainTableViewController: UITableViewController, GADBannerViewDelegat
             }
         })
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
